@@ -23,19 +23,32 @@
         <div class="searchbarCenter">
             <input type="search" id="searchbar" placeholder="Keresés">
         </div>
+
         <div class="leftLogo">
             <a href="index.html" id="logo">LOGO</a>
         </div>
 
         <div class="menu">
-            <button id="menuBTN" onclick="openNav()">&#9776;Menü</button>
+            <button onclick="openNav()" id="menuBTN">&#9776;Menü</button>
         </div>
+
         <div class="rightSide">
-            <button id="loginBTN">Bejelentkezés</button>
+            <button onclick="dropdownLogin()" class="loginBTN">Bejelentkezés</button>
         </div>
     </nav>
     <main class="main">
-        
+        <div class="mainPart">
+            <h2>Jelenleg futó sorozatok</h2>
+            <div class="sorozat-part">
+
+            </div>
+
+            <h2>Nemrég megjelent filmek</h2>
+            <div class="fil-part"></div>
+        </div>
+        <div class="secondary">
+
+        </div>
     </main>
     <footer class="lablec">
 
