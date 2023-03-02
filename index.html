@@ -6,16 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleMain.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
+    <div id="menuOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Filmek</a>
+          <a href="#">Sorozatok</a>
+          <a href="#">Naptár</a>
+        </div>
+      </div>
+
     <nav class="navBar">
-        <a href="index.html"><img src="img/mainIMG/logo" alt="logo" id="logo"></a>
-        <input type="search" id="search" placeholder="Keresés...">
-        <input type="button" id="menuBTN" value="Menü">
-        <input type="button" id="fiokBTN" value="Bejelentkezés">
+        <div class="searchbarCenter">
+            <input type="search" id="searchbar" placeholder="Keresés">
+        </div>
+        <div class="leftLogo">
+            <a href="index.html" id="logo">LOGO</a>
+        </div>
+
+        <div class="menu">
+            <button id="menuBTN" onclick="openNav()">&#9776;Menü</button>
+        </div>
+        <div class="rightSide">
+            <button id="loginBTN">Bejelentkezés</button>
+        </div>
     </nav>
-    <div class="main"></div>
-    <div class="sub"></div>
-    <footer class="footer"></footer>
+    <main class="main">
+        
+    </main>
+    <footer class="lablec">
+
+    </footer>    
 </body>
 </html>
