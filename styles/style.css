@@ -22,40 +22,7 @@ body {
   color: black;
 }
 
- .searchbarCenter #searchbar {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-
- #searchbar {
-  box-sizing: border-box;
-  font-size: 1em;
-  width: 40%;
-  z-index: 1;
-  outline:solid rgb(0, 1, 38) 0;
-  border: solid 3px #323232;
-  border-radius: 20px;
- }
-
- #searchbar:focus {
-  border: solid 3px #09f;      
-  outline: solid rgb(9, 1, 43) 2000px;  
-  transition: all 1s ease-in;
-  text-align: left;
-}
-
-#searchbar::placeholder {
-  text-align: center;
-}
-
-#searchbar:hover {
-  border: solid 3px rgb(5, 31, 48);
-}
-
- .menu {
+.menu {
   float: left;
   padding: 14px 100px;
  }
@@ -75,6 +42,52 @@ body {
   background-color: #ddd;
   color: black;
  }
+
+ .rightSide {
+  float: right;
+  padding: 15px 10px;
+  position: relative;
+  display: inline-block;
+ }
+
+ .searchbarCenter .searchbar, .searchOverlay-btn {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .searchbar {
+  box-sizing: border-box;
+  font-size: 1em;
+  width: 40%;
+  
+  outline:solid rgb(0, 1, 38) 0;
+  border: solid 3px #323232;
+  border-radius: 20px;
+ }
+
+ .searchbar:focus {
+  border: solid 3px #09f;      
+  outline: solid rgb(9, 1, 43) 2000px;  
+  transition: all 1s ease-in;
+  text-align: left;
+  z-index: 1;
+}
+
+.searchbar::placeholder {
+  text-align: center;
+}
+
+.searchbar:hover {
+  border: solid 3px rgb(5, 31, 48);
+  border: none;
+}
+
+.searchOverlay-btn {
+  background-color: rgba(255, 255, 255, 0);
+}
 
  .overlay {
   height: 0%;
@@ -97,6 +110,17 @@ body {
   margin-top: 30px;
 }
 
+.overlayTable {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+
+.overlayTable td {
+  padding: 10px 0;
+}
+
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -107,7 +131,7 @@ body {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #6b6b6b;
 }
 
 .overlay .closebtn {
@@ -116,10 +140,3 @@ body {
   right: 45px;
   font-size: 60px;
 }
-
-.rightSide {
-  float: right;
-  padding: 14px 10px;
-  position: relative;
-  display: inline-block;
- }

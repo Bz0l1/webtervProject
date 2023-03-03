@@ -12,20 +12,40 @@
 <body>
     <div id="menuOverlay" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">Filmek</a>
-          <a href="#">Sorozatok</a>
-          <a href="#">Naptár</a>
+        <div class="overlay-content">     
+          <table class="overlayTable">
+            <thead>
+                <tr>
+                    <th><a href="#">Filmek</a></th>
+                    <th><a href="#">Sorozatok</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Top 10 film</a></td>
+                    <td><a href="#">Top 10 sorozat</a></td>                    
+                </tr>
+                <tr>
+                    <td><a href="#">Film megjelenések</a></td>
+                    <td><a href="#">Sorozat megjelenések</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Film műfaj</a></td>
+                    <td><a href="#">Sorozat műfaj</a></td>
+                </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
+    </div>
 
     <nav class="navBar">
         <div class="searchbarCenter">
-            <input type="search" id="searchbar" placeholder="Keresés">
+            <input type="search" class="searchbar" placeholder="Keresés">
+            <button class="searchOverlay-btn"><img src="img/navbar/searchIcon.svg" alt="search"></button>
         </div>
 
         <div class="leftLogo">
-            <a href="index.html" id="logo">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
         </div>
 
         <div class="menu">
@@ -36,19 +56,9 @@
             <button onclick="dropdownLogin()" class="loginBTN">Bejelentkezés</button>
         </div>
     </nav>
+
     <main class="main">
-        <div class="mainPart">
-            <h2>Jelenleg futó sorozatok</h2>
-            <div class="sorozat-part">
 
-            </div>
-
-            <h2>Nemrég megjelent filmek</h2>
-            <div class="fil-part"></div>
-        </div>
-        <div class="secondary">
-
-        </div>
     </main>
     <footer class="lablec">
 
