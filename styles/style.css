@@ -27,7 +27,7 @@ body {
   padding: 14px 100px;
  }
 
- #menuBTN, .loginBTN {
+ #menuBTN, .loginBTN, .searchOverlay-btn {
   background-color: #333;
   border: none;
   color: #f2f2f2;
@@ -50,7 +50,7 @@ body {
   display: inline-block;
  }
 
- .searchbarCenter .searchbar, .searchOverlay-btn {
+ .searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
   float: none;
   position: absolute;
   top: 50%;
@@ -62,13 +62,13 @@ body {
   box-sizing: border-box;
   font-size: 1em;
   width: 40%;
-  
+  padding-left: 20px;  
   outline:solid rgb(0, 1, 38) 0;
   border: solid 3px #323232;
   border-radius: 20px;
  }
 
- .searchbar:focus {
+ #mainSearch:focus {
   border: solid 3px #09f;      
   outline: solid rgb(9, 1, 43) 2000px;  
   transition: all 1s ease-in;
@@ -81,15 +81,20 @@ body {
 }
 
 .searchbar:hover {
-  border: solid 3px rgb(5, 31, 48);
-  border: none;
+  border: solid 5px rgb(5, 31, 48);
 }
 
 .searchOverlay-btn {
   background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
- .overlay {
+.searchOverlay-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+ .overlay, .searchOverlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -139,4 +144,22 @@ body {
   top: 50px;
   right: 45px;
   font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainSearch, .leftLogo {
+    display: none;
+  }
+  .searchOverlay-btn {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #mainSearch, .leftLogo{
+    display: block;
+  }
+  .searchOverlay-btn {
+    display: none;
+  }
 }

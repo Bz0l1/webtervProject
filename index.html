@@ -38,10 +38,18 @@
         </div>
     </div>
 
+    <div id="searchOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+        <div class="overlay-content">
+            <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
+        </div>
+    </div>
+
+
     <nav class="navBar">
         <div class="searchbarCenter">
-            <input type="search" class="searchbar" placeholder="Keresés">
-            <button class="searchOverlay-btn"><img src="img/navbar/searchIcon.svg" alt="search"></button>
+            <input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
+            <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg" alt="search"></button>
         </div>
 
         <div class="leftLogo">
