@@ -7,23 +7,19 @@
     <title>Project</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleMain.css">
+    <link rel="stylesheet" href="styles/styleLogin.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
 
-
+// bejelentkezés gomb
 <div id="id01" class="modal">
-
     <form class="modal-content animate" method="post">
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        </div>
-
         <div class="container">
-            <label for="uname"><b>Felhasználónév</b></label>
+            <b>Felhasználónév</b></label>
             <input type="text" placeholder="Írja be a felhasználónevet" name="uname" required>
 
-            <label for="psw"><b>Jelszó</b></label>
+            <b>Jelszó</b></label>
             <input type="password" placeholder="Jelszó" name="psw" required>
 
             <button type="submit">Login</button>
@@ -33,16 +29,15 @@
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="registerbtn">Regisztráció</button>        </div>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mégse</button>
+            <button type="button" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Regisztráció</button>
+        </div>
     </form>
 </div>
 
 <script>
-    // Get the modal
     var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
+    // ha az oldalon kívül kattint bezárul az oldal
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -59,13 +54,36 @@
         </div>
       </div>
 
-    <div id="menuOverlay" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#">Filmek</a>
-            <a href="#">Sorozatok</a>
-            <a href="#">Naptár</a>
-        </div>
+
+    <div id="register" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Regisztráció</h1>
+                <hr>
+                <label>Teljes név <br>
+                <input type="text" placeholder="pl.: Kovács Ilona" name="name" required></label>
+
+                <label>Születési dátum: <br>
+                    <input type="date" name="date-of-birth" min="1920-01-01"/></label> <br/>
+
+                <label>E-mail cím<br>
+                <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" required> <br></label>
+
+                <label>Jelszó<br>
+                <input type="password" placeholder="Írja be a jelszót" name="psw" required></label>
+
+                <label>Jelszó újra<br>
+                <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" required></label>
+
+                <label><input type="checkbox"required/>
+                A regisztrációhoz kapcsolódó <a href="#" style="color:dodgerblue">Felhasználási feltételeket</a> és<a href="#" style="color:dodgerblue">Adatkezelési szabályzatot</a> elolvastam és elfogadom.</label>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Vissza a bejelentkezéshez</button>
+                    <button type="submit" class="signupbtn">Regisztráció</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <nav class="navBar">
