@@ -46,13 +46,69 @@
 </script>
 
     <div id="menuOverlay" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">Filmek</a>
-          <a href="#">Sorozatok</a>
-          <a href="#">Naptár</a>
+        <div id="menuActions">
+            <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
+            <a href="./index.html" id="menuHome">&#8962;</a>
         </div>
-      </div>
+
+        <div class="overlay-content wide-screen">     
+          <table class="overlayTable">
+            <thead>
+                <tr>
+                    <th><a href="#" class="overlayFilmek">Filmek</a></th>
+                    <th><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="#" class="overlayT10Film">Top 10 film</a></td>
+                    <td><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>                    
+                </tr>
+
+                <tr>
+                    <td><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+                    <td><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+                    <td><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="overlay-content mobile-screen">
+            <a href="#" class="overlayFilmek">Filmek</a>
+
+            <div class="overlayFilm-dropdown">
+                <a href="#" class="overlayT10Film">Top 10 film</a>
+                <a href="#" class="overlayFilmRelease">Film megjelenések</a>
+                <a href="#" class="overlayFilmGenre">Film műfaj</a>
+            </div>
+
+            <a href="#" class="overlaySorozatok">Sorozatok</a>
+
+            <div class="overlaySorozat-dropdown">
+                <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
+                <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
+                <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="searchOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+
+        <div class="overlay-content">
+            <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
+        </div>
+    </div>
+
+
+
+
 
 
     <div id="register" class="modal">
@@ -88,11 +144,12 @@
 
     <nav class="navBar">
         <div class="searchbarCenter">
-            <input type="search" id="searchbar" placeholder="Keresés">
+            <input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
+            <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg" alt="search"></button>
         </div>
 
         <div class="leftLogo">
-            <a href="index.html" id="logo">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
         </div>
 
         <div class="menu">
@@ -102,20 +159,54 @@
         <div class="rightSide">
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Bejelentkezés</button>        </div>
     </nav>
+
     <main class="main">
         <div class="mainPart">
-            <h2>Jelenleg futó sorozatok</h2>
-            <div class="sorozat-part">
-
+          <div class="poster">
+            <img src="./img/main/Avatar2.jpg" alt="poster" id="posterIMG">
+      
+            <div class="descriptionPart">
+              <div class="description">
+                <h2 id="mainTitle">Az AVATAR: A VÍZ ÚTJA</h2>
+                <p>Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.</p>
+              </div>
+      
+              <div class="categories">
+                <button class="categoryBTN" id="action">Akció</button>
+                <button class="categoryBTN" id="adventure">Kaland</button>
+                <button class="categoryBTN" id="Fantasy">Fantázia</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="smallPoster">
+            <div class="smallPoster-slide" onclick="replaceImage(this)">
+              <img src="./img/main/HouseOfTheDragon.jpg" alt="slide">
+              <p class="slide-desc">House of the Dragon</p>
             </div>
 
-            <h2>Nemrég megjelent filmek</h2>
-            <div class="fil-part"></div>
-        </div>
-        <div class="secondary">
+            <div class="smallPoster-slide" onclick="replaceImage(this)">
+              <img src="./img/main/BlackAdam.jpg" alt="slide">
+              <p class="slide-desc">Black Adam</p>
+            </div>
 
+            <div class="smallPoster-slide" onclick="replaceImage(this)">
+              <img src="./img/main/TopGunMaverick.jpg" alt="slide">
+              <p class="slide-desc">Top Gun: Maverick</p>
+            </div>
+            
+            <div class="smallPoster-slide" onclick="replaceImage(this)">
+              <img src="./img/main/RingsOfPower.jpg" alt="slide">
+              <p class="slide-desc">Rings of Power</p>
+            </div>
+          </div>
         </div>
-    </main>
+
+        <div class="secondary">
+          
+        </div>
+      </main>
+      
     <footer class="lablec">
 
     </footer>
