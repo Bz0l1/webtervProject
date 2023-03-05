@@ -25,9 +25,10 @@ body {
 .menu {
   float: left;
   padding: 14px 100px;
- }
+}
 
- #menuBTN, .loginBTN, .searchOverlay-btn {
+
+#menuBTN, .loginBTN, .searchOverlay-btn {
   background-color: #333;
   border: none;
   color: #f2f2f2;
@@ -36,29 +37,29 @@ body {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
- }
+}
 
- #menuBTN:hover, .loginBTN:hover {
+#menuBTN:hover, .loginBTN:hover {
   background-color: #ddd;
   color: black;
- }
+}
 
- .rightSide {
+.rightSide {
   float: right;
   padding: 15px 10px;
   position: relative;
   display: inline-block;
- }
+}
 
- .searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
+.searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
   float: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- }
+}
 
- .searchbar {
+.searchbar {
   box-sizing: border-box;
   font-size: 1em;
   width: 40%;
@@ -66,9 +67,9 @@ body {
   outline:solid rgb(0, 1, 38) 0;
   border: solid 3px #323232;
   border-radius: 20px;
- }
+}
 
- #mainSearch:focus {
+#mainSearch:focus {
   border: solid 3px #09f;      
   outline: solid rgb(9, 1, 43) 2000px;  
   transition: all 1s ease-in;
@@ -139,27 +140,77 @@ body {
   color: #6b6b6b;
 }
 
-.overlay .closebtn {
+.overlay .closeBTN {
   position: absolute;
   top: 50px;
   right: 45px;
-  font-size: 60px;
+  font-size: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-  #mainSearch, .leftLogo {
+#menuActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menuHome {
+  display: none;
+}
+
+.mobile-screen .overlayFilmek, .mobile-screen .overlaySorozatok {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.mobile-screen a {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 835px) {
+  #mainSearch {
     display: none;
   }
   .searchOverlay-btn {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 836px) {
+  #mainSearch {
+    display: block;
+  }
+  .searchOverlay-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .leftLogo {
+    display: none;
+  }
+
+  .menu {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .overlay #menuHome {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    font-size: 40px;
+  }
+
+  .wide-screen {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  #mainSearch, .leftLogo{
+  .leftLogo{
     display: block;
-  }
-  .searchOverlay-btn {
-    display: none;
   }
 }

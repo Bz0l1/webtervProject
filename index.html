@@ -11,39 +11,68 @@
 </head>
 <body>
     <div id="menuOverlay" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">     
+        <div id="menuActions">
+            <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
+            <a href="./index.html" id="menuHome">&#8962;</a>
+        </div>
+
+        <div class="overlay-content wide-screen">     
           <table class="overlayTable">
             <thead>
                 <tr>
-                    <th><a href="#">Filmek</a></th>
-                    <th><a href="#">Sorozatok</a></th>
+                    <th><a href="#" class="overlayFilmek">Filmek</a></th>
+                    <th><a href="#" class="overlaySorozatok">Sorozatok</a></th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
-                    <td><a href="#">Top 10 film</a></td>
-                    <td><a href="#">Top 10 sorozat</a></td>                    
+                    <td><a href="#" class="overlayT10Film">Top 10 film</a></td>
+                    <td><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>                    
                 </tr>
+
                 <tr>
-                    <td><a href="#">Film megjelenések</a></td>
-                    <td><a href="#">Sorozat megjelenések</a></td>
+                    <td><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+                    <td><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
                 </tr>
+
                 <tr>
-                    <td><a href="#">Film műfaj</a></td>
-                    <td><a href="#">Sorozat műfaj</a></td>
+                    <td><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+                    <td><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
                 </tr>
             </tbody>
           </table>
+        </div>
+
+        <div class="overlay-content mobile-screen">
+            <a href="#" class="overlayFilmek">Filmek</a>
+
+            <div class="overlayFilm-dropdown">
+                <a href="#" class="overlayT10Film">Top 10 film</a>
+                <a href="#" class="overlayFilmRelease">Film megjelenések</a>
+                <a href="#" class="overlayFilmGenre">Film műfaj</a>
+            </div>
+
+            <a href="#" class="overlaySorozatok">Sorozatok</a>
+
+            <div class="overlaySorozat-dropdown">
+                <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
+                <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
+                <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
+            </div>
         </div>
     </div>
 
     <div id="searchOverlay" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+
         <div class="overlay-content">
             <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
         </div>
     </div>
+
+
+
 
 
     <nav class="navBar">
@@ -65,8 +94,27 @@
         </div>
     </nav>
 
-    <main class="main">
 
+
+    <main class="main">
+        <div class="mainPart">
+            <div class="poster">
+                <img src="img/main/Awatar-2-trailer.jpg" alt="poster" id="posterIMG">
+
+                <div class="descriptionPart">
+                    <div class="description">
+                        <h2 id="mainTitle">Az AVATAR: A VÍZ ÚTJA</h2>
+                        <p>Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.</p>
+                    </div>
+                    
+                    <div class="categories">
+                        <button class="categoryBTN" id="action">Akció</button>
+                        <button class="categoryBTN" id="adventure">Kaland</button>
+                        <button class="categoryBTN" id="Fantasy">Fantázia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="lablec">
 
