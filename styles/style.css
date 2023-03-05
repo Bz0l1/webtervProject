@@ -2,6 +2,22 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3e3e3e; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 1, 38); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 2, 64);   
+}
+
 .navBar {
   position: relative;
   overflow: hidden;
@@ -22,45 +38,13 @@ body {
   color: black;
 }
 
- .searchbarCenter #searchbar {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-
- #searchbar {
-  box-sizing: border-box;
-  font-size: 1em;
-  width: 40%;
-  z-index: 1;
-  outline:solid rgb(0, 1, 38) 0;
-  border: solid 3px #323232;
-  border-radius: 20px;
- }
-
- #searchbar:focus {
-  border: solid 3px #09f;      
-  outline: solid rgb(9, 1, 43) 2000px;  
-  transition: all 1s ease-in;
-  text-align: left;
-}
-
-#searchbar::placeholder {
-  text-align: center;
-}
-
-#searchbar:hover {
-  border: solid 3px rgb(5, 31, 48);
-}
-
- .menu {
+.menu {
   float: left;
   padding: 14px 100px;
- }
+}
 
- #menuBTN, .loginBTN {
+
+#menuBTN, .loginBTN, .searchOverlay-btn {
   background-color: #333;
   border: none;
   color: #f2f2f2;
@@ -69,14 +53,65 @@ body {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
- }
+}
 
- #menuBTN:hover, .loginBTN:hover {
+#menuBTN:hover, .loginBTN:hover {
   background-color: #ddd;
   color: black;
- }
+}
 
- .overlay {
+.rightSide {
+  float: right;
+  padding: 15px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchbar {
+  box-sizing: border-box;
+  font-size: 1em;
+  width: 40%;
+  padding-left: 20px;  
+  outline:solid rgb(0, 1, 38) 0;
+  border: solid 3px #323232;
+  border-radius: 20px;
+}
+
+#mainSearch:focus {
+  border: solid 3px #09f;      
+  outline: solid rgb(9, 1, 43) 2000px;  
+  transition: all 1s ease-in;
+  text-align: left;
+  z-index: 1;
+}
+
+.searchbar::placeholder {
+  text-align: center;
+}
+
+.searchbar:hover {
+  border: solid 5px rgb(5, 31, 48);
+}
+
+.searchOverlay-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.searchOverlay-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+ .overlay, .searchOverlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -97,6 +132,17 @@ body {
   margin-top: 30px;
 }
 
+.overlayTable {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+
+.overlayTable td {
+  padding: 10px 0;
+}
+
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -107,19 +153,88 @@ body {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #6b6b6b;
 }
 
-.overlay .closebtn {
+.overlay .closeBTN {
   position: absolute;
   top: 50px;
   right: 45px;
-  font-size: 60px;
+  font-size: 40px;
 }
 
-.rightSide {
-  float: right;
-  padding: 14px 10px;
-  position: relative;
-  display: inline-block;
- }
+#menuActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menuHome {
+  display: none;
+}
+
+.mobile-screen .overlayFilmek, .mobile-screen .overlaySorozatok {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.mobile-screen a {
+  font-size: 20px;
+}
+
+.mobile-screen {
+  display: none;
+}
+
+@media only screen and (max-width: 835px) {
+  #mainSearch {
+    display: none;
+  }
+  .searchOverlay-btn {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 836px) {
+  #mainSearch {
+    display: block;
+  }
+  .searchOverlay-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .leftLogo {
+    display: none;
+  }
+
+  .menu {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .overlay #menuHome {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    font-size: 40px;
+  }
+
+  .wide-screen {
+    display: none;
+  }
+
+  .mobile-screen {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .leftLogo{
+    display: block;
+  }
+}
