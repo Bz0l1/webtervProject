@@ -2,6 +2,22 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3e3e3e; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 1, 38); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 2, 64);   
+}
+
 .navBar {
   position: relative;
   overflow: hidden;
@@ -167,6 +183,10 @@ body {
   font-size: 20px;
 }
 
+.mobile-screen {
+  display: none;
+}
+
 @media only screen and (max-width: 835px) {
   #mainSearch {
     display: none;
@@ -206,6 +226,10 @@ body {
 
   .wide-screen {
     display: none;
+  }
+
+  .mobile-screen {
+    display: block;
   }
 }
 
