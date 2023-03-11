@@ -80,34 +80,3 @@ function replaceImage(slide) {
   slideDesc.textContent = titleText;
   description.textContent = descText;
 }
-
-function randomSwap() {
-  var posterImage = document.getElementById("posterIMG");
-  var mainTitle = document.getElementById("mainTitle");
-  var description = document.querySelector(".description p");
-  var slides = document.querySelectorAll(".smallPoster-slide");
-  var randomIndex = Math.floor(Math.random() * slides.length);
-
-  var slide = slides[randomIndex];
-  var slideImage = slide.querySelector("img");
-  var slideDesc = slide.querySelector(".slide-desc");
-  var imageSrc = slideImage.getAttribute("src");
-  var descText = slideDesc.textContent;
-  var titleText = mainTitle.textContent;
-  var tempImageSrc = posterImage.getAttribute("src");
-
-  posterImage.style.transition = "opacity 0.5s ease-out";
-  slideImage.style.transition = "opacity 0.5s ease-out";
-  posterImage.style.opacity = 0;
-  slideImage.style.opacity = 1;
-
-  setTimeout(function() {
-    posterImage.setAttribute("src", imageSrc);
-    slideImage.setAttribute("src", tempImageSrc);
-    
-    mainTitle.textContent = descText;
-    slideDesc.textContent = titleText;
-    description.textContent = descText;
-    posterImage.style.opacity = 1;
-  }, 500);
-}
