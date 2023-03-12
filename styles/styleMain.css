@@ -1,0 +1,241 @@
+* {
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    color: whitesmoke;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main {
+    width: 100%;
+    background-color: #000000c5;
+}
+
+.mainPart {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.poster {
+    width: 100%;
+    height: 30%;
+}
+
+#posterIMG {
+    width: 100%;
+    height: 100%;
+}
+
+.sidePosters {
+    padding-left: 100px;
+}
+
+.smallPoster-slide {
+    width: 50%;
+    height: 20%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.smallPoster-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.smallPoster-slide:hover .slide-desc {
+    opacity: 1;
+}
+
+.smallPoster-slide:hover {
+    cursor: pointer;
+}
+
+.categoryBTN {
+    border: none;
+    border-radius: 25%;
+    margin-right: 5px;
+    background-color: rgba(53, 53, 53, 0.5);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.categoryBTN:hover {
+    background-color: rgba(75, 75, 75, 0.5);
+}
+
+.slider-container {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    color: #010055;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+.lablec {
+    margin-top: 70px;
+    width: 100%;
+    background-color: #000000c4;
+    padding-top: 80px;
+    display: flex;
+}
+
+.lablec a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.lablec a {
+    margin: 40px;
+}
+
+.lablec li {
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .mainPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster {
+        width: 60%;
+        height: auto;
+    }
+
+    .sidePosters {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+    }
+
+    .smallPoster-slide {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .smallPoster-slide img {
+        width: 100%;
+        height: 180px;
+        object-fit: fill;
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .slider-container {
+        height: 40%;
+    }
+    
+    .slider-item img {
+        width: 80%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .description p {
+        display: none;
+    }
+
+    .categoryBTN {
+        display: none;
+    }
+
+    #mainTitle {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sidePosters {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .poster {
+        width: 100%;
+        height: 100%;
+    }
+}
