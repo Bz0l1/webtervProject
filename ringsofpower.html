@@ -3,12 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>A gyűrűk ura: Hatalom gyűrűi</title>
-    <link rel="stylesheet" href="styles/styleMain.css">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
-
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleLogin.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+          <div class="container">
+            <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
+            <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
+            <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
+            <div style="display: flex; justify-content: space-between;">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Mégse</button>
+              <button type="button" onclick="document.getElementById('register').style.display='flex'"
+                class="signupBTN">Regisztráció</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="register" class="modal">
+        <form class="modal-content">
+          <div class="container">
+            <h1>Regisztráció</h1>
+            <hr>
+            <label>Teljes név <br>
+              <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput" required></label>
+    
+            <label>Születési dátum: <br>
+              <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" /></label> <br />
+    
+            <label>E-mail cím<br>
+              <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput" required>
+              <br></label>
+    
+            <label>Jelszó<br>
+              <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput" required></label>
+    
+            <label>Jelszó újra<br>
+              <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
+                required></label>
+    
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('register').style.display='none'"
+                class="cancelbtn">Vissza a bejelentkezéshez</button>
+              <button type="submit" class="signupbtn">Regisztráció</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="menuOverlay" class="overlay">
+        <div id="menuActions">
+          <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
+          <a href="./index.html" id="menuHome">&#8962;</a>
+        </div>
+    
+        <div class="overlay-content wide-screen">
+          <table class="overlayTable">
+            <thead>
+              <tr>
+                <th><a href="#" class="overlayFilmek">Filmek</a></th>
+                <th><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td><a href="#" class="overlayT10Film">Top 10 film</a></td>
+                <td><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
+              </tr>
+    
+              <tr>
+                <td><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+                <td><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
+              </tr>
+    
+              <tr>
+                <td><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+                <td><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="overlay-content mobile-screen">
+          <a href="#" class="overlayFilmek">Filmek</a>
+    
+          <div class="overlayFilm-dropdown">
+            <a href="#" class="overlayT10Film">Top 10 film</a>
+            <a href="#" class="overlayFilmRelease">Film megjelenések</a>
+            <a href="#" class="overlayFilmGenre">Film műfaj</a>
+          </div>
+    
+          <a href="#" class="overlaySorozatok">Sorozatok</a>
+    
+          <div class="overlaySorozat-dropdown">
+            <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
+            <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
+            <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
+          </div>
+        </div>
+      </div>
+    
+      <div id="searchOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+    
+        <div class="overlay-content">
+          <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
+        </div>
+      </div>
+    
+      <nav class="navBar">
+        <div class="searchbarCenter">
+          <input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
+          <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
+              alt="search"></button>
+        </div>
+    
+        <div class="leftLogo">
+          <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+        </div>
+    
+        <div class="menu">
+          <button onclick="openNav()" id="menuBTN">&#9776;Menü</button>
+        </div>
+    
+        <div class="rightSide">
+          <button onclick="document.getElementById('id01').style.display='flex'" class="loginBTN">Bejelentkezés</button>
+        </div>
+      </nav>
 <h1>A gyűrűk ura: Hatalom gyűrűi</h1>
 Egy epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien "A hobbit" és "A Gyűrűk Ura" című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket, ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.<br>
 <br>
