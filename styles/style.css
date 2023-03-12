@@ -1,5 +1,14 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  background-color: #000000;
+  background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
+  background-size: 400% 400%;
+  animation: gradient 20s ease-in;
+  color: whitesmoke;
 }
 
 ::-webkit-scrollbar {

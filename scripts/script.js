@@ -39,30 +39,6 @@ function animateSearchPlaceholder() {
   }, 500);
 }
 
-
-
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        let data = JSON.parse(this.responseText);
-        let moviesArray = [];
-        data.movies.forEach(function(movie) {
-            let newMovieObject = {
-                title: movie.title,
-                tags: movie.tags,
-                posterURL: movie.posterURL,
-                description: movie.description
-            };
-            moviesArray.push(newMovieObject);
-        });
-        console.log(moviesArray);
-        console.log(data.movies[0].tags)
-    }
-};
-xhttp.open("GET", "./filmDB/filmek.json", true);
-xhttp.send();
-
-
 function replaceImage(slide) {  
   var posterImage = document.getElementById("posterIMG");
   var mainTitle = document.getElementById("mainTitle");
