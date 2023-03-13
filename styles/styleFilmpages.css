@@ -1,6 +1,35 @@
-table{
+table {
     text-align: left;
+    position: relative;
+    left: 30px;
+    width: 725px;
+    border-collapse: collapse;
+}
+tr:nth-of-type(odd) { background-color: gray; }
+
+tr:hover { background-color: darkgrey; }
+
+caption{
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
 }
 .comment{
     font-size: smaller;
+    position: relative;
+    left: 30px;
+}
+iframe{
+    position: relative;
+    left: 30px;
+}
+h1{
+    position: relative;
+    left: 30px;
+}
+.szoveg{
+    position: relative;
+    left: 30px;
+    width: 730px;
+    display: inline-block
 }
