@@ -1,35 +1,43 @@
-table {
+.tableFilmek {
     text-align: left;
     position: relative;
     left: 30px;
-    width: 725px;
+    width: 50%;
     border-collapse: collapse;
 }
-tr:nth-of-type(odd) { background-color: gray; }
+.tableFilmek tr:nth-child(even) {
+    background-color: gray;}
 
-tr:hover { background-color: darkgrey; }
+.tableFilmek tr:hover {
+    background-color: darkgrey;
+}
 
 caption{
     text-align: left;
     font-size: larger;
     font-weight: bold;
 }
+
 .comment{
     font-size: smaller;
-    position: relative;
-    left: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-left: 30px;
 }
+
 iframe{
     position: relative;
     left: 30px;
+    width: 60%;
+    height: calc(60vw * 0.5625); /* 9:16 arány */
 }
+
 h1{
-    position: relative;
-    left: 30px;
+    text-align: center;
 }
+
 .szoveg{
-    position: relative;
-    left: 30px;
-    width: 730px;
-    display: inline-block
+    margin-left: auto;
+    margin-right: 30px;
+    margin-left: 30px;
 }
