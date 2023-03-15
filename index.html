@@ -22,14 +22,14 @@
         <div style="display: flex; justify-content: space-between;">
           <button type="button" onclick="document.getElementById('id01').style.display='none'"
             class="cancelbtn">Mégse</button>
-          <button type="button" onclick="document.getElementById('register').style.display='flex'"
+          <button type="button" onclick="document.getElementById('registration').style.display='flex'"
             class="signupBTN">Regisztráció</button>
         </div>
       </div>
     </form>
   </div>
 
-  <div id="register" class="modal">
+  <div id="registration" class="modal">
     <form class="modal-content">
       <div class="container">
         <h1>Regisztráció</h1>
@@ -52,7 +52,7 @@
             required></label>
 
         <div class="clearfix">
-          <button type="button" onclick="document.getElementById('register').style.display='none'"
+          <button type="button" onclick="document.getElementById('registration').style.display='none'"
             class="cancelbtn">Vissza a bejelentkezéshez</button>
           <button type="submit" class="signupbtn">Regisztráció</button>
         </div>
@@ -69,34 +69,32 @@
     <div class="overlay-content wide-screen">
       <table class="overlayTable">
         <thead>
-          <tr>
-            <th><a href="#" class="overlayFilmek">Filmek</a></th>
-            <th><a href="#" class="overlaySorozatok">Sorozatok</a></th>
-          </tr>
+        <tr>
+          <th id="filmek"><a href="#" class="overlayFilmek">Filmek</a></th>
+          <th id="sorozatok"><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+        </tr>
         </thead>
-
         <tbody>
-          <tr>
-            <td><a href="#" class="overlayT10Film">Top 10 film</a></td>
-            <td><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
-          </tr>
+        <tr>
+          <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
+          <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
+        </tr>
 
-          <tr>
-            <td><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
-            <td><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
-          </tr>
+        <tr>
+          <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+          <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
+        </tr>
 
-          <tr>
-            <td><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
-            <td><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
-          </tr>
+        <tr>
+          <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+          <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
+        </tr>
         </tbody>
       </table>
     </div>
 
     <div class="overlay-content mobile-screen">
       <a href="#" class="overlayFilmek">Filmek</a>
-
       <div class="overlayFilm-dropdown">
         <a href="#" class="overlayT10Film">Top 10 film</a>
         <a href="#" class="overlayFilmRelease">Film megjelenések</a>
@@ -104,7 +102,6 @@
       </div>
 
       <a href="#" class="overlaySorozatok">Sorozatok</a>
-
       <div class="overlaySorozat-dropdown">
         <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
         <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>

@@ -18,14 +18,14 @@
             <div style="display: flex; justify-content: space-between;">
               <button type="button" onclick="document.getElementById('id01').style.display='none'"
                 class="cancelbtn">Mégse</button>
-              <button type="button" onclick="document.getElementById('register').style.display='flex'"
+              <button type="button" onclick="document.getElementById('registration').style.display='flex'"
                 class="signupBTN">Regisztráció</button>
             </div>
           </div>
         </form>
       </div>
     
-      <div id="register" class="modal">
+      <div id="registration" class="modal">
         <form class="modal-content">
           <div class="container">
             <h1>Regisztráció</h1>
@@ -48,7 +48,7 @@
                 required></label>
     
             <div class="clearfix">
-              <button type="button" onclick="document.getElementById('register').style.display='none'"
+              <button type="button" onclick="document.getElementById('registration').style.display='none'"
                 class="cancelbtn">Vissza a bejelentkezéshez</button>
               <button type="submit" class="signupbtn">Regisztráció</button>
             </div>
@@ -63,31 +63,30 @@
         </div>
     
         <div class="overlay-content wide-screen">
-          <table class="overlayTable">
-            <thead>
-              <tr>
-                <th><a href="#" class="overlayFilmek">Filmek</a></th>
-                <th><a href="#" class="overlaySorozatok">Sorozatok</a></th>
-              </tr>
-            </thead>
-    
-            <tbody>
-              <tr>
-                <td><a href="#" class="overlayT10Film">Top 10 film</a></td>
-                <td><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
-              </tr>
-    
-              <tr>
-                <td><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
-                <td><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
-              </tr>
-    
-              <tr>
-                <td><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
-                <td><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
-              </tr>
-            </tbody>
-          </table>
+            <table class="overlayTable">
+                <thead>
+                <tr>
+                    <th id="filmek"><a href="#" class="overlayFilmek">Filmek</a></th>
+                    <th id="sorozatok"><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
+                </tr>
+
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
+                </tr>
+
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     
         <div class="overlay-content mobile-screen">
@@ -138,66 +137,97 @@
       </nav>
 
 <h1>Sárkányok háza</h1>
-Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése előtt 172 évvel.<br>
-<br>
-<iframe width="720" height="405"
-        src="https://www.youtube.com/embed/JOXj6CHQPYI">
-</iframe>
-<br>
-A sorozat előzménye a Trónok harca (2011–2019) című televíziós sorozatnak, és Martin: A tűz és jég dala című regénysorozatán alapul.<br>
-<br>
-<table>
+<div class = "szoveg"> Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése előtt 172 évvel.<br></div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/JOXj6CHQPYI" allowfullscreen></iframe><br>
+        <img src="./img/houseofthedragon/houseofthedragon1.jpg" alt="Black Adam"/>
+    </div>
+
+<table class="tableFilmek">
+    <caption>A sorozat adatai:</caption>
     <tr>
         <th class = firstcolumn id="originalTitle">Eredeti cím: </th>
-        <th class = firstcolumn id="originalTitleValue">House of the Dragon</th>
+        <th class = secondcolumn id="originalTitleValue">House of the Dragon</th>
     </tr>
     <tr>
         <th class = firstcolumn id="genre">Műfaj: </th>
-        <th class = firstcolumn id="genreValue">Akció, Kaland, Dráma</th>
+        <th class = secondcolumn id="genreValue">Akció, Kaland, Dráma</th>
     </tr>
     <tr>
         <th class = firstcolumn id="premier">Bemutató ideje: </th>
-        <th class = firstcolumn id="premierValue">2022. augusztus 2.</th>
+        <th class = secondcolumn id="premierValue">2022. augusztus 2.</th>
     </tr>
     <tr>
         <th class = firstcolumn id="seasons">Évadok száma: </th>
-        <th class = firstcolumn id="seasonsValue">1</th>
+        <th class = secondcolumn id="seasonsValue">1</th>
     </tr>
     <tr>
         <th class = firstcolumn id="episodes">Epizódok száma: </th>
-        <th class = firstcolumn id="episodesValue">10</th>
+        <th class = secondcolumn id="episodesValue">10</th>
     </tr>
     <tr>
         <th class = firstcolumn id="stars">Főszereplők: </th>
-        <th class = firstcolumn id="starsValue">Rhys Ifans, Matt Smith, Fabien Frankel</th>
+        <th class = secondcolumn id="starsValue">Rhys Ifans, Matt Smith, Fabien Frankel</th>
     </tr>
     <tr>
         <th class = firstcolumn id="ageLimit">Korhatár: </th>
-        <th class = firstcolumn id="ageLimitValue">18+</th>
+        <th class = secondcolumn id="ageLimitValue">18+</th>
     </tr>
     <tr>
         <th class = firstcolumn id="director">Rendező: </th>
-        <th class = firstcolumn id="directorValue"></th>
+        <th class = secondcolumn id="directorValue">Greg Yaitanes, Miguel Sapochnik</th>
     </tr>
     <tr>
         <th class = firstcolumn id="writer">Író: </th>
-        <th class = firstcolumn id="writerValue"></th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="manifacturer">Gyártó: </th>
-        <th class = firstcolumn id="manifacturerValue"></th>
+        <th class = secondcolumn id="writerValue">George R. R. Martin, Ryan Condal, Sara Hess, Charmaine DeGraté</th>
     </tr>
     <tr>
         <th class = firstcolumn id="distributor">Forgalmazó: </th>
-        <th class = firstcolumn id="distributorValue"></th>
+        <th class = secondcolumn id="distributorValue">HBO</th>
     </tr>
     <tr>
         <th class = firstcolumn id="language">Nyelv: </th>
-        <th class = firstcolumn id="languageValue">Angol</th>
+        <th class = secondcolumn id="languageValue">Angol</th>
     </tr>
 </table>
-<br>
-<a class = comment> * A műsor megtekintése HBO Max-on lehetséges, amihez előfizetés szükséges.<br></a>
 
+
+    <div class="photo-gallery">
+        <img src="./img/houseofthedragon/houseofthedragon5.jpg" width="100%"/>
+        <img src="./img/houseofthedragon/houseofthedragon3.jpg" width="49%"/>
+        <img src="./img/houseofthedragon/houseofthedragon4.jpg" width="48%"/>
+        <img src="./img/houseofthedragon/houseofthedragon2.jpeg" width="100%"/>
+    </div>
+
+    <div class="comment">
+        A sorozat előzménye a Trónok harca (2011–2019) című televíziós sorozatnak, és Martin: A tűz és jég dala című regénysorozatán alapul.<br>
+        * A műsor megtekintése HBO Max-on lehetséges, amihez előfizetés szükséges.<br></div>
+
+    <footer class="lablec">
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <a href="#">Discord</a>
+                </li>
+            </ul>
+        </div>
+        <div class="settings">
+            <ul>
+                <li>
+                    <a href="#">Profil</a>
+                </li>
+                <li>
+                    <a href="#">Beállítások</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
