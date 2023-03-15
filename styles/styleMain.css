@@ -29,6 +29,7 @@ body {
 }
 
 .main {
+    margin-top: 5%;
     width: 100%;
     background-color: #000000c5;
 }
@@ -101,7 +102,6 @@ body {
 
 .slider-container {
     width: 100%;
-    height: 15%;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -119,8 +119,8 @@ body {
 }
 
 .slider-item img {
-    width: 100%;
-    height: 200px;
+    width: 50%;
+    height: 250px;
     object-fit: fill;
 }
 
@@ -154,6 +154,23 @@ body {
     background-color: #000000c4;
     padding-top: 80px;
     display: flex;
+    justify-content: center;
+}
+
+.socialMedia,
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia::after {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 1px;
+    background-color: whitesmoke;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .lablec a {
@@ -168,7 +185,6 @@ body {
 .lablec li {
     margin: 20px;
 }
-
 
 @media only screen and (max-width: 1600px) {
     .mainPart {
@@ -224,6 +240,11 @@ body {
 
     #mainTitle {
         text-align: center;
+    }
+
+    .socialMedia::after {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 

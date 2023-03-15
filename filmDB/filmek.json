@@ -13,7 +13,8 @@
             "directors": [
                 "James Cameron"
             ],
-            "posterURL": "./img/main/Avatar2.jpg",
+            "mainPosterURL": "./img/main/Avatar2.jpg",
+            "posterURL": "./img/main/smallPoster/Avatar2.jpg",
             "tags": [
                 "Akció",
                 "Kaland",
@@ -21,9 +22,15 @@
             ],
             "title": "Avatar - A víz útja",
             "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
-            "year": 2022
+            "year": 2022,
+            "pictures": [
+                "./img/fimlPage/avatar2/Avatar2-1.jpg",
+                "./img/fimlPage/avatar2/Avatar2-2.jpg",
+                "./img/fimlPage/avatar2/Avatar2-3.jpg",
+                "./img/fimlPage/avatar2/Avatar2-4.jpg",
+                "./img/fimlPage/avatar2/Avatar2-5.jpg"
+            ]
         },
-
         {
             "actors": [
                 "Dwayne Johnson",
@@ -47,7 +54,6 @@
             "trailerUrl": "https://www.youtube.com/watch?v=X0tOpBuYasI",
             "year": 2022
         },
-
         {
             "actors": [
                 "Paddy Considine",
@@ -82,36 +88,34 @@
             "trailerUrl": "https://www.youtube.com/watch?v=DotnJ7tTA34",
             "year": 2022
         },
-
         {
             "actors": [
-                "Morfydd Clark",   
-                "Benjamin Walker",    
-                "Nazanin Boniadi",    
-                "Peter Mullan",    
-                "Cynthia Addai-Robinson",    
-                "Trystan Gravelle",    
-                "Augustus Prew",    
-                "Lenny Henry",    
+                "Morfydd Clark",
+                "Benjamin Walker",
+                "Nazanin Boniadi",
+                "Peter Mullan",
+                "Cynthia Addai-Robinson",
+                "Trystan Gravelle",
+                "Augustus Prew",
+                "Lenny Henry",
                 "Lloyd Owen"
             ],
             "description": "A viszonylagos béke korszakától kezdve követhetjük nyomon egy népes szereplőgárda történetét, miközben szembenéznek a Középföldén újból megjelenő gonosszal. A Ködhegység legsötétebb bugyraitól Lindon fenséges erdőin és Númenor lélegzetelállító szigetkirályságán át a térkép legtávolabbi szegletéig felbukkanó különféle királyságok és szereplők öröksége még az eltűntük után is sokáig tovább él majd.",
-            "directors": [    
-                "Wayne Yip",    
-                "Juan Antonio Bayona",    
+            "directors": [
+                "Wayne Yip",
+                "Juan Antonio Bayona",
                 "Charlotte Brandstrom"
             ],
             "posterURL": "./img/main/RingsOfPower.jpg",
-            "tags": [    
-                "Akció",    
-                "Kaland",    
+            "tags": [
+                "Akció",
+                "Kaland",
                 "Dráma"
             ],
             "title": "A hatalom gyűrűi",
             "trailerUrl": "https://www.youtube.com/watch?v=x8UAUAuKNcU",
             "year": 2022
         },
-
         {
             "actors": [
                 "Tom Cruise",
