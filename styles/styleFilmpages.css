@@ -4,6 +4,7 @@
     left: 30px;
     width: 45%;
     border-collapse: collapse;
+    float: left;
 
 }
 .tableFilmek tr:nth-child(even) {
@@ -20,10 +21,11 @@ caption{
 }
 
 .comment{
+    text-align: left;
     font-size: smaller;
-    margin-left: auto;
     margin-right: 30px;
     margin-left: 30px;
+    float: bottom;
 }
 
 .video-container {
@@ -50,12 +52,49 @@ caption{
     margin-bottom: 30px;
 }
 
+.photo-gallery {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 48%;
+    float: right;
+}
+
+.photo-gallery img {
+    height: auto;
+    display: block;
+}
+
 h1{
     text-align: center;
 }
 
 .szoveg{
-    margin-left: auto;
+    text-align: left;
     margin-right: 30px;
     margin-left: 30px;
 }
+.lablec {
+    margin-top: 70px;
+    width: 100%;
+    background-color: #000000c4;
+    padding-top: 80px;
+    display: flex;
+}
+
+.lablec a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.lablec a {
+    margin: 40px;
+}
+
+.lablec li {
+    margin: 20px;
+}
+
+
