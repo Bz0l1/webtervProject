@@ -1,6 +1,61 @@
-table{
+.tableFilmek {
     text-align: left;
+    position: relative;
+    left: 30px;
+    width: 45%;
+    border-collapse: collapse;
+
 }
+.tableFilmek tr:nth-child(even) {
+    background-color: gray;}
+
+.tableFilmek tr:hover {
+    background-color: darkgrey;
+}
+
+caption{
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
 .comment{
     font-size: smaller;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.video-container iframe {
+    position: relative;
+    left: 30px;
+    width: 60%;
+    height: calc(60vw * 0.5625); /* 9:16 arány */
+    margin-right: 110px;
+    margin-bottom: 30px;
+}
+
+
+.video-container img {
+    height: calc(60vw * 0.5625);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.szoveg{
+    margin-left: auto;
+    margin-right: 30px;
+    margin-left: 30px;
 }
