@@ -31,7 +31,7 @@ body {
 .main {
     margin-top: 5%;
     width: 100%;
-    background-color: #000000c5;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .mainPart {
@@ -42,49 +42,16 @@ body {
 .poster {
     width: 100%;
     height: 30%;
+    display: flex;
 }
 
 #posterIMG {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
-.sidePosters {
-    padding-left: 100px;
-}
-
-.smallPoster-slide {
-    width: 50%;
-    height: 20%;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.smallPoster-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide-desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: whitesmoke;
-    padding: 5px;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.smallPoster-slide:hover .slide-desc {
-    opacity: 1;
-}
-
-.smallPoster-slide:hover {
-    cursor: pointer;
+.description {
+    padding-left: 20px;
 }
 
 .categoryBTN {
@@ -100,51 +67,51 @@ body {
     background-color: rgba(75, 75, 75, 0.5);
 }
 
-.slider-container {
+
+.secondary {
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 30px;
 }
 
-.slider-wrapper {
+.topmusorok {
+    background-color: #000000c4;
+    padding: 20px;
     display: flex;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
+  
 
-.slider-item {
-    width: 100%;
-    height: 100%;
-}
-
-.slider-item img {
-    width: 50%;
-    height: 250px;
-    object-fit: fill;
-}
-
-.slider-btn {
+.slide-desc {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.slider-btn:hover {
-    color: #010055;
-}
-
-.prev-btn {
+    bottom: 0;
     left: 0;
-}
+    background: black;
+    color: whitesmoke;
+    margin-bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .topmusorok a {
+    position: relative;
+  }
+  
+  .topmusorok a:hover .slide-desc {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+  }
+  
+  
+  
 
-.next-btn {
-    right: 0;
+.topmusorok img {
+    height: 300px;
+    width: 200px;
+    padding-right: 100px;
 }
 
 
@@ -200,7 +167,8 @@ body {
 
     .sidePosters {
         width: 100%;
-        padding-left: 0;
+        padding-left: 120px;
+        padding-top: 25px;
         display: flex;
     }
 
@@ -210,19 +178,21 @@ body {
     }
 
     .smallPoster-slide img {
-        width: 100%;
-        height: 180px;
+        width: 50%;
+        height: 250px;
         object-fit: fill;
     }
+
+    .slide-desc {
+        width: 60%;
+    }
 }
-
-
 
 @media only screen and (max-width: 1300px) {
     .slider-container {
         height: 40%;
     }
-    
+
     .slider-item img {
         width: 80%;
         height: 300px;
