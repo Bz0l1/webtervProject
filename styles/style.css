@@ -28,9 +28,13 @@ body {
 }
 
 .navBar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   overflow: hidden;
   background-color: #333;
+  z-index: 1000;
 }
 
 #logo {
