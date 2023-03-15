@@ -2,8 +2,9 @@
     text-align: left;
     position: relative;
     left: 30px;
-    width: 50%;
+    width: 45%;
     border-collapse: collapse;
+
 }
 .tableFilmek tr:nth-child(even) {
     background-color: gray;}
@@ -25,11 +26,28 @@ caption{
     margin-left: 30px;
 }
 
-iframe{
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.video-container iframe {
     position: relative;
     left: 30px;
     width: 60%;
     height: calc(60vw * 0.5625); /* 9:16 arány */
+    margin-right: 110px;
+    margin-bottom: 30px;
+}
+
+
+.video-container img {
+    height: calc(60vw * 0.5625);
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 h1{
