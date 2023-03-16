@@ -5,9 +5,8 @@
     width: 45%;
     border-collapse: collapse;
     float: left;
-
-
 }
+
 .tableFilmek th{
     padding: 5px;
 }
@@ -15,7 +14,6 @@
 .tableFilmek tr:nth-child(even) {
     background-color: gray;
 }
-
 
 .tableFilmek tr:hover {
     background-color: darkgrey;
@@ -70,9 +68,22 @@ caption{
     margin-bottom: 30px;
 }
 
+.firsInGalley, .fourthInGalley{
+    width: 100%;
+}
+
+.secondInGalley{
+    width: 49%;
+}
+
+.thirdInGalley{
+    width: 48%;
+}
+
+
 .photo-gallery img {
     height: auto;
-    display: block;
+    display: inline-block;
 }
 
 h1{
