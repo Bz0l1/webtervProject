@@ -30,30 +30,31 @@
     </div>
     
     <div id="registration" class="modal">
-        <form class="modal-content">
+        <form method="post" class="modal-content">
             <div class="container">
                 <h1>Regisztráció</h1>
-                <hr>
-                <label>Teljes név <br>
-                    <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput"
-                           required></label>
-                <label>Születési dátum: <br>
-                    <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required></label>
-                <label>E-mail cím<br>
-                    <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput"
-                           required></label>
-                <label>Jelszó<br>
-                    <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput"
-                           required></label>
-                <label>Jelszó újra<br>
-                    <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
-                           required></label>
+                <fieldset>
+                    <label>Teljes név <br>
+                        <input type="text" placeholder="pl.: Kovács Ilona" name="name"
+                               class="formInput firstInput" required></label>
+                    <label>Születési dátum: <br>
+                        <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required/></label>
+                    <label>E-mail cím<br>
+                        <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email"
+                               class="formInput" required></label>
+                    <label>Jelszó<br>
+                        <input type="password" placeholder="Írja be a jelszót" name="psw"
+                               class="formInput" required></label>
+                    <label>Jelszó újra<br>
+                        <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat"
+                               class="formInput" required></label>
 
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('registration').style.display='none'"
-                            class="cancelbtn">Vissza a bejelentkezéshez</button>
-                    <button type="submit" class="signupbtn">Regisztráció</button>
-                </div>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('registration').style.display='none'"
+                                class="cancelbtn">Vissza a bejelentkezéshez</button>
+                        <button type="submit" class="signupbtn">Regisztráció</button>
+                    </div>
+                </fieldset>
             </div>
         </form>
     </div>
