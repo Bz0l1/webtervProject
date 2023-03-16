@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +10,16 @@
   <link rel="stylesheet" href="styles/styleLogin.css">
   <script src="scripts/script.js"></script>
 </head>
-
 <body>
   <div id="id01" class="modal">
     <form class="modal-content animate" method="post">
       <div class="container">
-        <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
-        <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
+        <label>
+          <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
+        </label>
+        <label>
+          <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
+        </label>
         <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
         <div style="display: flex; justify-content: space-between;">
           <button type="button" onclick="document.getElementById('id01').style.display='none'"
@@ -79,12 +81,10 @@
           <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
           <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
         </tr>
-
         <tr>
           <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
           <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
         </tr>
-
         <tr>
           <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
           <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
@@ -114,13 +114,13 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
 
     <div class="overlay-content">
-      <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
+      <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
     </div>
   </div>
 
   <nav class="navBar">
     <div class="searchbarCenter">
-      <input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
+      <label for="mainSearch"></label><input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
       <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
           alt="search"></button>
     </div>
@@ -159,30 +159,29 @@
         </div>
       </div>
     </div>
+
+    <div class="secondary">
+      <h2>Top műsorok</h2>
+      <div class="topmusorok">
+        <a href="houseofthedragon.html" target="_blank">
+          <img src="./img/main/smallPoster/HouseOfDragons.jpg" alt="slide">
+          <p class="slide-desc">House of the Dragon</p>
+        </a>
+        <a href="blackadam.html">
+          <img src="./img/main/smallPoster/BlackAdam.jpg" alt="slide">
+          <p class="slide-desc">Black Adam</p>
+        </a>
+        <a href="topgunmaverick.html">
+          <img src="./img/main/smallPoster/TopGunMaverick.jpg" alt="slide">
+          <p class="slide-desc">Top Gun: Maverick</p>
+        </a>
+        <a href="ringsofpower.html">
+          <img src="./img/main/smallPoster/RingsOfPower.jpg" alt="slide">
+          <p class="slide-desc">Rings of Power</p>
+        </a>
+      </div>
     </div>
   </main>
-
-  <div class="secondary">
-    <h2>Top műsorok</h2>
-    <div class="topmusorok">
-      <a href="houseofthedragon.html" target="_blank">
-        <img src="./img/main/smallPoster/HouseOfDragons.jpg" alt="slide">
-        <p class="slide-desc">House of the Dragon</p>
-      </a>
-      <a href="blackadam.html">
-        <img src="./img/main/smallPoster/BlackAdam.jpg" alt="slide">
-        <p class="slide-desc">Black Adam</p>
-      </a>
-      <a href="topgunmaverick.html">
-        <img src="./img/main/smallPoster/TopGunMaverick.jpg" alt="slide">
-        <p class="slide-desc">Top Gun: Maverick</p>
-      </a>
-      <a href="ringsofpower.html">
-        <img src="./img/main/smallPoster/RingsOfPower.jpg" alt="slide">
-        <p class="slide-desc">Rings of Power</p>
-      </a>
-    </div>
-  </div>
 
   <footer class="lablec">
     <div class="socialMedia">
@@ -210,5 +209,4 @@
     </div>
   </footer>
 </body>
-
 </html>
