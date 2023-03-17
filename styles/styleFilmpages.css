@@ -137,15 +137,6 @@ h1{
         position: relative;
     }
 
-    .overlay, .navBar, footer, iframe, .comment {
-        display: none !important;
-    }
-
-    body {
-        color: black !important;
-        font-family: Arial, sans-serif !important;
-    }
-
     .tableFilmek{
         position: absolute;
         top: 155px;

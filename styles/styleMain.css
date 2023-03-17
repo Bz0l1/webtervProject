@@ -28,6 +28,15 @@ body {
     }
 }
 
+#filmVerzum{
+    font-size: 50px;
+    margin-top: 10px;
+    position: center;
+}
+#topMusorok{
+    margin-left: 30px;
+}
+
 .main {
     margin-top: 5%;
     width: 100%;
@@ -124,8 +133,7 @@ body {
     justify-content: center;
 }
 
-.socialMedia,
-.settings {
+.socialMedia, .settings {
     display: flex;
     align-items: center;
 }
@@ -228,5 +236,39 @@ body {
     .poster {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media print {
+    #filmVerzum{
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+    .main{
+        background: none;
+    }
+    .topmusorok{
+        background: none;
+        width: 90%;
+        alignment: center;
+        position: absolute;
+    }
+    .topmusorok img{
+        height: 380px;
+        width: auto;
+        padding: 10px;
+    }
+    .poster{
+        position: absolute;
+        top: 100px;
+
+    }
+    .secondary{
+        position: absolute;
+        top: 550px;
+    }
+    .fourthInTopFilmek{
+        display: none;
     }
 }
