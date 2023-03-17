@@ -124,6 +124,10 @@ body {
   height: 20px;
 }
 
+.searchOverlay-btn {
+  display: none;
+}
+
  .overlay, .searchOverlay {
   height: 0%;
   width: 100%;
@@ -200,7 +204,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width: 1000px) {
   #mainSearch {
     display: none;
   }
@@ -209,14 +213,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 836px) {
-  #mainSearch {
-    display: block;
-  }
-  .searchOverlay-btn {
-    display: none;
-  }
-}
+
 
 @media only screen and (max-width: 600px) {
   .leftLogo {
