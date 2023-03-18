@@ -32,6 +32,10 @@ body {
   background: rgb(0, 2, 64);
 }
 
+a {
+  color: whitesmoke;
+}
+
 .navBar {
   position: fixed;
   top: 0;
