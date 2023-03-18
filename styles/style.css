@@ -21,15 +21,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #3e3e3e; 
+  background: #3e3e3e;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(0, 1, 38); 
+  background: rgb(0, 1, 38);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 2, 64);   
+  background: rgb(0, 2, 64);
 }
 
 .navBar {
@@ -62,7 +62,9 @@ body {
 }
 
 
-#menuBTN, .loginBTN, .searchOverlay-btn {
+#menuBTN,
+.loginBTN,
+.searchOverlay-btn {
   background-color: #333;
   border: none;
   color: #f2f2f2;
@@ -73,7 +75,8 @@ body {
   cursor: pointer;
 }
 
-#menuBTN:hover, .loginBTN:hover {
+#menuBTN:hover,
+.loginBTN:hover {
   background-color: #ddd;
   color: black;
 }
@@ -85,7 +88,9 @@ body {
   display: inline-block;
 }
 
-.searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
+.searchbarCenter .searchbar,
+.searchOverlay-btn,
+.searchbar {
   float: none;
   position: absolute;
   top: 50%;
@@ -97,15 +102,15 @@ body {
   box-sizing: border-box;
   font-size: 1em;
   width: 40%;
-  padding-left: 20px;  
-  outline:solid rgb(0, 1, 38) 0;
+  padding-left: 20px;
+  outline: solid rgb(0, 1, 38) 0;
   border: solid 3px #323232;
   border-radius: 20px;
 }
 
 #mainSearch:focus {
-  border: solid 3px #09f;      
-  outline: solid rgb(9, 1, 43) 2000px;  
+  border: solid 3px #09f;
+  outline: solid rgb(9, 1, 43) 2000px;
   transition: all 1s ease-in;
   text-align: left;
   z-index: 1;
@@ -130,7 +135,8 @@ body {
   height: 20px;
 }
 
- .overlay, .searchOverlay {
+.overlay,
+.searchOverlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -152,10 +158,10 @@ body {
 }
 
 .overlayTable {
-    margin-left:auto; 
-    margin-right:auto;
-    border-collapse: separate;
-    border-spacing: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 50px 0;
 }
 
 .overlayTable td {
@@ -171,7 +177,8 @@ body {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #6b6b6b;
 }
 
@@ -192,7 +199,8 @@ body {
   display: none;
 }
 
-.mobile-screen .overlayFilmek, .mobile-screen .overlaySorozatok {
+.mobile-screen .overlayFilmek,
+.mobile-screen .overlaySorozatok {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -244,8 +252,8 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .socialMedia::after {
-      margin-left: 10px;
-      margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -253,6 +261,7 @@ body {
   #mainSearch {
     display: none;
   }
+
   .searchOverlay-btn {
     display: block;
   }
@@ -292,7 +301,7 @@ body {
 }
 
 @media only screen and (min-width: 601px) {
-  .leftLogo{
+  .leftLogo {
     display: block;
   }
 }
@@ -301,17 +310,23 @@ body {
 @media only screen and (max-width: 460px) {
   .socialMedia::after {
     display: none;
-}
-
-@media print {
-  body{
-    background: none !important;
-    font-family: Arial, sans-serif !important;
-    color: black !important;
   }
 
-  .overlay, .navBar, footer, iframe, .comment {
-    display: none !important;
-
-  }
 }
+
+  @media print {
+    body {
+      background: none !important;
+      font-family: Arial, sans-serif !important;
+      color: black !important;
+    }
+
+    .overlay,
+    .navBar,
+    footer,
+    iframe,
+    .comment {
+      display: none !important;
+
+    }
+  }
