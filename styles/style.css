@@ -1,3 +1,9 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 html {
   height: 100%;
 }
@@ -117,6 +123,7 @@ body {
 .searchOverlay-btn {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  display: none;
 }
 
 .searchOverlay-btn img {
@@ -200,21 +207,55 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 835px) {
-  #mainSearch {
-    display: none;
-  }
-  .searchOverlay-btn {
-    display: block;
+.lablec {
+  margin-top: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+.socialMedia,
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia::after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 1px;
+  background-color: whitesmoke;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.lablec a {
+  margin: 40px;
+}
+
+.lablec li {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialMedia::after {
+      margin-left: 10px;
+      margin-right: 10px;
   }
 }
 
-@media only screen and (min-width: 836px) {
+@media only screen and (max-width: 990px) {
   #mainSearch {
-    display: block;
+    display: none;
   }
   .searchOverlay-btn {
-    display: none;
+    display: block;
   }
 }
 
@@ -244,6 +285,11 @@ body {
   .mobile-screen {
     display: block;
   }
+
+  .socialMedia::after {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -251,6 +297,12 @@ body {
     display: block;
   }
 }
+
+
+@media only screen and (max-width: 460px) {
+  .socialMedia::after {
+    display: none;
+
 @media print {
   body{
     background: none !important;
@@ -260,5 +312,6 @@ body {
 
   .overlay, .navBar, footer, iframe, .comment {
     display: none !important;
+
   }
 }
