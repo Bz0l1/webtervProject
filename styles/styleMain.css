@@ -60,7 +60,7 @@ body {
     padding-left: 20px;
 }
 
-.categoryBTN {
+.category {
     border: none;
     border-radius: 25%;
     margin-right: 5px;
@@ -68,11 +68,6 @@ body {
     color: whitesmoke;
     cursor: pointer;
 }
-
-.categoryBTN:hover {
-    background-color: rgba(75, 75, 75, 0.5);
-}
-
 
 .secondary {
     width: 100%;
