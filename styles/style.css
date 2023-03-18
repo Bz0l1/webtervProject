@@ -1,6 +1,7 @@
 * {
   list-style-type: none;
   text-decoration: none;
+  color: whitesmoke;
 }
 
 html {
@@ -13,7 +14,6 @@ body {
   background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
   background-size: 400% 400%;
   animation: gradient 20s ease-in;
-  color: whitesmoke;
 }
 
 ::-webkit-scrollbar {
@@ -30,10 +30,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 2, 64);
-}
-
-a {
-  color: whitesmoke;
 }
 
 .navBar {
@@ -318,19 +314,23 @@ a {
 
 }
 
-  @media print {
-    body {
-      background: none !important;
-      font-family: Arial, sans-serif !important;
-      color: black !important;
-    }
+@media print {
+  * {
 
-    .overlay,
-    .navBar,
-    footer,
-    iframe,
-    .comment {
-      display: none !important;
-
-    }
+    color: black !important;
   }
+
+  body {
+    background: none !important;
+    font-family: Arial, sans-serif !important;
+  }
+
+  .overlay,
+  .navBar,
+  footer,
+  iframe,
+  .comment {
+    display: none !important;
+
+  }
+}
