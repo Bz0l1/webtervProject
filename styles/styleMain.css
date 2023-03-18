@@ -11,6 +11,8 @@ body {
     animation: gradient 20s ease infinite;
 }
 
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -38,6 +40,10 @@ body {
     margin-top: 5%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+#filmVerzum {
+    display: none;
 }
 
 .mainPart {
