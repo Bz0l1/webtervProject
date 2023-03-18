@@ -298,8 +298,20 @@ body {
   }
 }
 
+
 @media only screen and (max-width: 460px) {
   .socialMedia::after {
     display: none;
+
+@media print {
+  body{
+    background: none !important;
+    font-family: Arial, sans-serif !important;
+    color: black !important;
+  }
+
+  .overlay, .navBar, footer, iframe, .comment {
+    display: none !important;
+
   }
 }
