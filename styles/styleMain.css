@@ -5,11 +5,9 @@ body {
     animation: gradient 20s ease infinite;
 }
 
-
-
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -17,7 +15,7 @@ body {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
