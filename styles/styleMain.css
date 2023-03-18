@@ -205,13 +205,13 @@ body {
       margin: 20px auto; 
     }
   }
-}
 
 @media print {
     #filmVerzum{
         position: absolute;
         top: 0;
         text-align: center;
+        display: block;
     }
     .main{
         background: none;
