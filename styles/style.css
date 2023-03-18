@@ -1,7 +1,6 @@
 * {
   list-style-type: none;
   text-decoration: none;
-  color: whitesmoke;
 }
 
 html {
@@ -302,6 +301,7 @@ body {
 @media only screen and (max-width: 460px) {
   .socialMedia::after {
     display: none;
+}
 
 @media print {
   body{
