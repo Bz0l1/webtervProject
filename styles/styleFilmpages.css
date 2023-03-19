@@ -2,6 +2,55 @@
     margin-top: 5%;
 }
 
+.userAvatar{
+    width: 30px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.userRealName{
+    font-size: large;
+}
+
+.fullRealComment{
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-body p {
+    margin: 0;
+    left: 0;
+}
+
+.comment-date{
+    font-size: smaller;
+}
+
+.commentSection{
+    width: 45%;
+    position: absolute;
+    left: 30px;
+    top: 1100px;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    color: black;
+}
+
+#submit-btn{
+    color: black;
+}
+
 .tableFilmek {
     text-align: left;
     position: relative;
@@ -177,5 +226,4 @@ h1{
         display: none;
     }
 }
-
 
