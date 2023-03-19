@@ -1,3 +1,9 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 html {
   height: 100%;
 }
@@ -8,7 +14,6 @@ body {
   background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
   background-size: 400% 400%;
   animation: gradient 20s ease-in;
-  color: whitesmoke;
 }
 
 ::-webkit-scrollbar {
@@ -16,15 +21,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #3e3e3e; 
+  background: #3e3e3e;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(0, 1, 38); 
+  background: rgb(0, 1, 38);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 2, 64);   
+  background: rgb(0, 2, 64);
 }
 
 .navBar {
@@ -57,7 +62,9 @@ body {
 }
 
 
-#menuBTN, .loginBTN, .searchOverlay-btn {
+#menuBTN,
+.loginBTN,
+.searchOverlay-btn {
   background-color: #333;
   border: none;
   color: #f2f2f2;
@@ -68,7 +75,8 @@ body {
   cursor: pointer;
 }
 
-#menuBTN:hover, .loginBTN:hover {
+#menuBTN:hover,
+.loginBTN:hover {
   background-color: #ddd;
   color: black;
 }
@@ -80,7 +88,9 @@ body {
   display: inline-block;
 }
 
-.searchbarCenter .searchbar, .searchOverlay-btn, .searchbar {
+.searchbarCenter .searchbar,
+.searchOverlay-btn,
+.searchbar {
   float: none;
   position: absolute;
   top: 50%;
@@ -92,15 +102,15 @@ body {
   box-sizing: border-box;
   font-size: 1em;
   width: 40%;
-  padding-left: 20px;  
-  outline:solid rgb(0, 1, 38) 0;
+  padding-left: 20px;
+  outline: solid rgb(0, 1, 38) 0;
   border: solid 3px #323232;
   border-radius: 20px;
 }
 
 #mainSearch:focus {
-  border: solid 3px #09f;      
-  outline: solid rgb(9, 1, 43) 2000px;  
+  border: solid 3px #09f;
+  outline: solid rgb(9, 1, 43) 2000px;
   transition: all 1s ease-in;
   text-align: left;
   z-index: 1;
@@ -117,6 +127,7 @@ body {
 .searchOverlay-btn {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  display: none;
 }
 
 .searchOverlay-btn img {
@@ -124,8 +135,9 @@ body {
   height: 20px;
 }
 
- .overlay, .searchOverlay {
-  height: 0%;
+.overlay,
+.searchOverlay {
+  height: 0;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -146,10 +158,10 @@ body {
 }
 
 .overlayTable {
-    margin-left:auto; 
-    margin-right:auto;
-    border-collapse: separate;
-    border-spacing: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 50px 0;
 }
 
 .overlayTable td {
@@ -165,7 +177,8 @@ body {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #6b6b6b;
 }
 
@@ -186,7 +199,8 @@ body {
   display: none;
 }
 
-.mobile-screen .overlayFilmek, .mobile-screen .overlaySorozatok {
+.mobile-screen .overlayFilmek,
+.mobile-screen .overlaySorozatok {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -200,21 +214,56 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 835px) {
-  #mainSearch {
-    display: none;
-  }
-  .searchOverlay-btn {
-    display: block;
+.lablec {
+  margin-top: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+.socialMedia,
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia::after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 1px;
+  background-color: whitesmoke;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.lablec a {
+  margin: 40px;
+}
+
+.lablec li {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialMedia::after {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
-@media only screen and (min-width: 836px) {
+@media only screen and (max-width: 990px) {
   #mainSearch {
-    display: block;
-  }
-  .searchOverlay-btn {
     display: none;
+  }
+
+  .searchOverlay-btn {
+    display: block;
   }
 }
 
@@ -244,10 +293,44 @@ body {
   .mobile-screen {
     display: block;
   }
+
+  .socialMedia::after {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 @media only screen and (min-width: 601px) {
-  .leftLogo{
+  .leftLogo {
     display: block;
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  .socialMedia::after {
+    display: none;
+  }
+
+}
+
+@media print {
+  * {
+
+    color: black !important;
+  }
+
+  body {
+    background: none !important;
+    font-family: Arial, sans-serif !important;
+  }
+
+  .overlay,
+  .navBar,
+  footer,
+  iframe,
+  .comment {
+    display: none !important;
+
   }
 }

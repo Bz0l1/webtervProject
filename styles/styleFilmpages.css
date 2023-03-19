@@ -1,3 +1,30 @@
+.main {
+    margin-top: 5%;
+}
+
+.userAvatar{
+    width: 30px;
+}
+
+.userRealName{
+    size: large;
+}
+
+.comment-body{
+    margin-left: 40px;
+}
+.comment-date{
+    font-size: smaller;
+}
+
+.commentSection{
+    width: 45%;
+    position: absolute;
+    left: 30px;
+    top: 1300px;
+    border: solid black 1px;
+}
+
 .tableFilmek {
     text-align: left;
     position: relative;
@@ -5,10 +32,15 @@
     width: 45%;
     border-collapse: collapse;
     float: left;
-
 }
+
+.tableFilmek th{
+    padding: 5px;
+}
+
 .tableFilmek tr:nth-child(even) {
-    background-color: gray;}
+    background-color: gray;
+}
 
 .tableFilmek tr:hover {
     background-color: darkgrey;
@@ -21,11 +53,13 @@ caption{
 }
 
 .comment{
+    clear: both;
     text-align: left;
     font-size: smaller;
     margin-right: 30px;
     margin-left: 30px;
-    float: bottom;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .video-container {
@@ -53,6 +87,7 @@ caption{
 }
 
 .photo-gallery {
+    position: relative;
     margin-right: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -63,9 +98,22 @@ caption{
     margin-bottom: 30px;
 }
 
+.firsInGalley, .fourthInGalley{
+    width: 100%;
+}
+
+.secondInGalley{
+    width: 48%;
+}
+
+.thirdInGalley{
+    width: 48%;
+}
+
+
 .photo-gallery img {
     height: auto;
-    display: block;
+    display: inline-block;
 }
 
 h1{
@@ -87,8 +135,7 @@ h1{
     justify-content: center;
 }
 
-.socialMedia,
-.settings {
+.socialMedia, .settings {
     display: flex;
     align-items: center;
 }
@@ -114,6 +161,44 @@ h1{
 
 .lablec li {
     margin: 20px;
+}
+
+@media print {
+    h1, .szoveg{
+        position: relative;
+    }
+
+    .tableFilmek{
+        position: absolute;
+        top: 155px;
+        width: 100% !important;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+
+    .tableFilmek th{
+        padding: 2px !important;
+    }
+
+    .video-container img{
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        height: auto;
+    }
+
+    .photo-gallery{
+        margin: 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    .photo-gallery img:nth-child(3), img:nth-child(2){
+        display: none;
+    }
 }
 
 

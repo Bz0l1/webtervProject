@@ -9,221 +9,239 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-<div id="id01" class="modal">
-    <form class="modal-content animate" method="post">
-        <div class="container">
-            <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
-            <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
-            <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
-            <div style="display: flex; justify-content: space-between;">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Mégse</button>
-                <button type="button" onclick="document.getElementById('registration').style.display='flex'"
-                        class="signupBTN">Regisztráció</button>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="container">
+                <label>
+                    <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
+                </label>
+                <label>
+                    <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
+                </label>
+                <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
+                <div style="display: flex; justify-content: space-between;">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Mégse</button>
+                    <button type="button" onclick="document.getElementById('registration').style.display='flex'"
+                            class="signupBTN">Regisztráció</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="registration" class="modal">
+        <form method="post" class="modal-content">
+            <div class="container">
+                <h1>Regisztráció</h1>
+                <fieldset>
+                    <label>Teljes név <br>
+                        <input type="text" placeholder="pl.: Kovács Ilona" name="name"
+                               class="formInput firstInput" required></label>
+                    <label>Születési dátum: <br>
+                        <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required/></label>
+                    <label>E-mail cím<br>
+                        <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email"
+                               class="formInput" required></label>
+                    <label>Jelszó<br>
+                        <input type="password" placeholder="Írja be a jelszót" name="psw"
+                               class="formInput" required></label>
+                    <label>Jelszó újra<br>
+                        <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat"
+                               class="formInput" required></label>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('registration').style.display='none'"
+                                class="cancelbtn">Vissza a bejelentkezéshez</button>
+                        <button type="submit" class="signupbtn">Regisztráció</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+    <div id="menuOverlay" class="overlay">
+        <div id="menuActions">
+            <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
+            <a href="./index.html" id="menuHome">&#8962;</a>
+        </div>
+
+        <div class="overlay-content wide-screen">
+            <table class="overlayTable">
+                <thead>
+                <tr>
+                    <th id="filmek"><a href="filmek.html" class="overlayFilmek">Filmek</a></th>
+                    <th id="sorozatok"><a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
+                </tr>
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
+                </tr>
+                <tr>
+                    <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overlay-content mobile-screen">
+            <a href="filmek.html" class="overlayFilmek">Filmek</a>
+
+            <div class="overlayFilm-dropdown">
+                <a href="#" class="overlayT10Film">Top 5 film</a>
+                <a href="#" class="overlayFilmRelease">Film megjelenések</a>
+                <a href="#" class="overlayFilmGenre">Film műfaj</a>
+            </div>
+
+            <a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a>
+
+            <div class="overlaySorozat-dropdown">
+                <a href="#" class="overlayT10Sorozat">Top 5 sorozat</a>
+                <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
+                <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
             </div>
         </div>
-    </form>
-</div>
+    </div>
 
-<div id="registration" class="modal">
-    <form class="modal-content">
-        <div class="container">
-            <h1>Regisztráció</h1>
-            <hr>
-            <label>Teljes név <br>
-                <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput" required></label>
+    <div id="searchOverlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
 
-            <label>Születési dátum: <br>
-                <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" /></label> <br />
+        <div class="overlay-content">
+            <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch"
+                                                      placeholder="Keresés">
+        </div>
+    </div>
 
-            <label>E-mail cím<br>
-                <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput" required>
-                <br></label>
+    <nav class="navBar">
+        <div class="searchbarCenter">
+            <label for="mainSearch"></label><input type="search" class="searchbar"
+                                                   id="mainSearch" placeholder="Keresés">
+            <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
+                                                                          alt="search"></button>
+        </div>
 
-            <label>Jelszó<br>
-                <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput" required></label>
+        <div class="leftLogo">
+            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+        </div>
 
-            <label>Jelszó újra<br>
-                <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
-                       required></label>
+        <div class="menu">
+            <button onclick="openNav()" id="menuBTN">&#9776;Menü</button>
+        </div>
 
-            <div class="clearfix">
-                <button type="button" onclick="document.getElementById('registration').style.display='none'"
-                        class="cancelbtn">Vissza a bejelentkezéshez</button>
-                <button type="submit" class="signupbtn">Regisztráció</button>
+        <div class="rightSide">
+            <button onclick="document.getElementById('id01').style.display='flex'"
+                    class="loginBTN">Bejelentkezés</button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="mainPart">
+            <h1>Top Gun: Maverick</h1>
+            <div class="szoveg">30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti
+                pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy
+                küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az
+                ultimátum áldozatára.<br>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VxGR3l_BYyI" allowfullscreen></iframe><br>
+                <img src="./img/topgun/topgun1.jpg" alt="Top Gun: Maverick"/>
             </div>
         </div>
-    </form>
-</div>
 
-<div id="menuOverlay" class="overlay">
-    <div id="menuActions">
-        <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
-        <a href="./index.html" id="menuHome">&#8962;</a>
-    </div>
+        <div class="secondary">
+            <table class="tableFilmek">
+                <caption>A film adatai:</caption>
+                <tr>
+                    <th class = firstcolumn id="genre">Műfaj: </th>
+                    <th class = firstcolumn id="genreValue">Akció, Dráma</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="premier">Bemutató ideje: </th>
+                    <th class = firstcolumn id="premierValue">2022. május 26.</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="watchTime">Játékidő: </th>
+                    <th class = firstcolumn id="watchTimeValue">131 perc</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="stars">Főszereplők: </th>
+                    <th class = firstcolumn id="starsValue">Tom Cruise, Jennifer Connelly, Miles Teller</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="ageLimit">Korhatár: </th>
+                    <th class = firstcolumn id="ageLimitValue">12+</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="director">Rendező: </th>
+                    <th class = firstcolumn id="directorValue">Joseph Kosinski</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="writer">Író: </th>
+                    <th class = firstcolumn id="writerValue">Jim Cash, Jack Epps Jr., Peter Craig</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="producer">Producerek: </th>
+                    <th class = firstcolumn id="producerValue">Jerry Bruckheimer, Tom Cruise, Christopher McQuarrie</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="manufacturer">Gyártó: </th>
+                    <th class = firstcolumn id="manufacturerValue">Skydance Media, Don Simpson/Jerry
+                        Bruckheimer Films</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="distributor">Forgalmazó: </th>
+                    <th class = firstcolumn id="distributorValue">Paramount Pictures</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="hunDistributor">Magyar forgalmazó: </th>
+                    <th class = firstcolumn id="hunDistributorValue">UIP-Duna</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="language">Eredeti nyelv: </th>
+                    <th class = firstcolumn id="languageValue">Angol</th>
+                </tr>
+            </table>
 
-    <div class="overlay-content wide-screen">
-        <table class="overlayTable">
-            <thead>
-            <tr>
-                <th id="filmek"><a href="#" class="overlayFilmek">Filmek</a></th>
-                <th id="sorozatok"><a href="#" class="overlaySorozatok">Sorozatok</a></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
-                <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
-            </tr>
-
-            <tr>
-                <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
-                <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
-            </tr>
-
-            <tr>
-                <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
-                <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="overlay-content mobile-screen">
-        <a href="#" class="overlayFilmek">Filmek</a>
-
-        <div class="overlayFilm-dropdown">
-            <a href="#" class="overlayT10Film">Top 10 film</a>
-            <a href="#" class="overlayFilmRelease">Film megjelenések</a>
-            <a href="#" class="overlayFilmGenre">Film műfaj</a>
+            <div class="photo-gallery">
+                <img class="firsInGalley" src="./img/topgun/topgun5.jpg" alt="Topgun: Maverick 1. kép"/>
+                <img class="secondInGalley" src="./img/topgun/topgun3.jpg" alt="Topgun: Maverick 2. kép"/>
+                <img class="thirdInGalley" src="./img/topgun/topgun4.jpg" alt="Topgun: Maverick 3. kép"/>
+                <img class="fourthInGalley" src="./img/topgun/topgun2.jpg" alt="Topgun: Maverick 4. kép"/>
+            </div>
         </div>
+    </main>
 
-        <a href="#" class="overlaySorozatok">Sorozatok</a>
-
-        <div class="overlaySorozat-dropdown">
-            <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
-            <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
-            <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
+    <footer class="lablec">
+        <div class="socialMedia">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://discord.com" target="_blank">Discord</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</div>
-
-<div id="searchOverlay" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-
-    <div class="overlay-content">
-        <input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
-    </div>
-</div>
-
-<nav class="navBar">
-    <div class="searchbarCenter">
-        <input type="search" class="searchbar" id="mainSearch" placeholder="Keresés">
-        <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
-                                                                      alt="search"></button>
-    </div>
-
-    <div class="leftLogo">
-        <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
-    </div>
-
-    <div class="menu">
-        <button onclick="openNav()" id="menuBTN">&#9776;Menü</button>
-    </div>
-
-    <div class="rightSide">
-        <button onclick="document.getElementById('id01').style.display='flex'" class="loginBTN">Bejelentkezés</button>
-    </div>
-</nav>
-<h1>Top Gun: Maverick</h1>
-<div class="szoveg">30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az ultimátum áldozatára.<br></div>
-
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/VxGR3l_BYyI" allowfullscreen></iframe><br>
-    <img src="./img/topgun/topgun1.jpg" alt="Top Gun: Maverick"/>
-</div>
-
-<table class="tableFilmek">
-    <caption>A film adatai:</caption>
-    <tr>
-        <th class = firstcolumn id="genre">Műfaj: </th>
-        <th class = firstcolumn id="genreValue">Akció, Dráma</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="premier">Bemutató ideje: </th>
-        <th class = firstcolumn id="premierValue">2022. május 26.</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="watchTime">Játékidő: </th>
-        <th class = firstcolumn id="watchTimeValue">131 perc</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="stars">Főszereplők: </th>
-        <th class = firstcolumn id="starsValue">Tom Cruise, Jennifer Connelly, Miles Teller</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="ageLimit">Korhatár: </th>
-        <th class = firstcolumn id="ageLimitValue">12+</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="director">Rendező: </th>
-        <th class = firstcolumn id="directorValue">Joseph Kosinski</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="writer">Író: </th>
-        <th class = firstcolumn id="writerValue">Jim Cash, Jack Epps Jr., Peter Craig</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="producer">Producerek: </th>
-        <th class = firstcolumn id="producerValue">Jerry Bruckheimer, Tom Cruise, Christopher McQuarrie</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="manufacturer">Gyártó: </th>
-        <th class = firstcolumn id="manufacturerValue">Skydance Media, Don Simpson/Jerry Bruckheimer Films</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="distributor">Forgalmazó: </th>
-        <th class = firstcolumn id="distributorValue">Paramount Pictures</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="hunDistributor">Magyar forgalmazó: </th>
-        <th class = firstcolumn id="hunDistributorValue">UIP-Duna</th>
-    </tr>
-    <tr>
-        <th class = firstcolumn id="language">Eredeti nyelv: </th>
-        <th class = firstcolumn id="languageValue">Angol</th>
-    </tr>
-</table>
-<div class="photo-gallery">
-    <img src="./img/topgun/topgun5.jpg" width="100%"/>
-    <img src="./img/topgun/topgun3.jpg" width="49%"/>
-    <img src="./img/topgun/topgun4.jpg" width="48%"/>
-    <img src="./img/topgun/topgun2.jpg" width="100%"/>
-</div>
-<footer class="lablec">
-    <div class="socialMedia">
-        <ul>
+        <div class="settings">
+          <ul>
             <li>
-                <a href="#">Facebook</a>
+              <a href="#">Profil</a>
             </li>
             <li>
-                <a href="#">Instagram</a>
+              <a href="#">Beállítások</a>
             </li>
-            <li>
-                <a href="#">Discord</a>
-            </li>
-        </ul>
-    </div>
-    <div class="settings">
-        <ul>
-            <li>
-                <a href="#">Profil</a>
-            </li>
-            <li>
-                <a href="#">Beállítások</a>
-            </li>
-        </ul>
-    </div>
-</footer>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>

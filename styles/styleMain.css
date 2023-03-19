@@ -1,22 +1,13 @@
-* {
-    list-style-type: none;
-}
-
-html {
-    height: 100%;
-}
-
 body {
     background-color: #000000;
     background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
-    color: whitesmoke;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -24,14 +15,26 @@ body {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
+#filmVerzum{
+    font-size: 50px;
+    margin-top: 10px;
+    position: center;
+}
+#topMusorok{
+    margin-left: 30px;
+}
+
 .main {
-    margin-top: 5%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+#filmVerzum {
+    display: none;
 }
 
 .mainPart {
@@ -39,7 +42,8 @@ body {
     padding: 15px 15px;
 }
 
-.poster {
+.poster, .poster a{
+    margin-top: 5%;
     width: 100%;
     height: 30%;
     display: flex;
@@ -54,7 +58,7 @@ body {
     padding-left: 20px;
 }
 
-.categoryBTN {
+.category {
     border: none;
     border-radius: 25%;
     margin-right: 5px;
@@ -63,17 +67,17 @@ body {
     cursor: pointer;
 }
 
-.categoryBTN:hover {
-    background-color: rgba(75, 75, 75, 0.5);
-}
-
-
 .secondary {
     width: 100%;
 }
 
+.secondary h2 {
+    margin-left: 20px;
+}
+
 .topmusorok {
-    background-color: #000000c4;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -90,8 +94,8 @@ body {
     margin-bottom: 5px;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.2s linear; 
+    transition: visibility 0s, opacity 0.2s linear;
   }
   
   .topmusorok a {
@@ -103,54 +107,12 @@ body {
     padding: 8px 15px;
     visibility: visible;
     opacity: 0.7; 
-  }
-  
-  
-  
+  } 
 
 .topmusorok img {
     height: 300px;
     width: 200px;
     padding-right: 100px;
-}
-
-
-.lablec {
-    margin-top: 70px;
-    width: 100%;
-    background-color: #000000c4;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-
-.socialMedia,
-.settings {
-    display: flex;
-    align-items: center;
-}
-
-.socialMedia::after {
-    content: "";
-    display: block;
-    height: 50px;
-    width: 1px;
-    background-color: whitesmoke;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.lablec a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.lablec a {
-    margin: 40px;
-}
-
-.lablec li {
-    margin: 20px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -159,47 +121,15 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
-    .poster {
-        width: 60%;
-        height: auto;
-    }
-
-    .sidePosters {
-        width: 100%;
-        padding-left: 120px;
-        padding-top: 25px;
-        display: flex;
-    }
-
-    .smallPoster-slide {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .smallPoster-slide img {
-        width: 50%;
-        height: 250px;
-        object-fit: fill;
-    }
-
-    .slide-desc {
-        width: 60%;
-    }
 }
 
 @media only screen and (max-width: 1300px) {
-    .slider-container {
-        height: 40%;
-    }
-
-    .slider-item img {
-        width: 80%;
-        height: 300px;
+    .topmusorok img {
+        padding-right: 50px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .description p {
         display: none;
     }
@@ -212,21 +142,89 @@ body {
         text-align: center;
     }
 
-    .socialMedia::after {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+    .topmusorok {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+      
+      .topmusorok img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+      }
+      
+      
+      .slide-desc {
+        display: none; 
+      }
 }
 
-@media only screen and (max-width: 800px) {
-    .sidePosters {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .poster {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
         height: 100%;
+      }
+    
+      #posterIMG {
+        width: 100%;
+      }
+    
+      .description {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+    .topmusorok {
+      display: block; 
+      text-align: center; 
+    }
+  
+    .topmusorok img {
+      width: 150px; 
+      height: 250px;
+      object-fit: cover;
+      margin: 20px auto; 
+    }
+  }
+
+@media print {
+    #filmVerzum{
+        position: absolute;
+        top: 0;
+        text-align: center;
+        display: block;
+    }
+    .main{
+        background: none;
+    }
+    .topmusorok{
+        background: none;
+        width: 90%;
+        alignment: center;
+        position: absolute;
+    }
+    .topmusorok img{
+        height: 380px;
+        width: auto;
+        padding: 10px;
+    }
+    .poster{
+        position: absolute;
+        top: 100px;
+
+    }
+    .secondary{
+        position: absolute;
+        top: 550px;
+    }
+    .fourthInTopFilmek{
+        display: none;
     }
 }
