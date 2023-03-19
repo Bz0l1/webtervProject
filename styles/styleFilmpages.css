@@ -4,15 +4,32 @@
 
 .userAvatar{
     width: 30px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .userRealName{
-    size: large;
+    font-size: large;
 }
 
-.comment-body{
-    margin-left: 40px;
+.fullRealComment{
+    display: flex;
+    align-items: flex-start;
 }
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-body p {
+    margin: 0;
+    left: 0;
+}
+
 .comment-date{
     font-size: smaller;
 }
@@ -21,8 +38,17 @@
     width: 45%;
     position: absolute;
     left: 30px;
-    top: 1300px;
-    border: solid black 1px;
+    top: 1100px;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    color: black;
+}
+
+#submit-btn{
+    color: black;
 }
 
 .tableFilmek {
