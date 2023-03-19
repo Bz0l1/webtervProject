@@ -1,9 +1,3 @@
-* {
-    list-style-type: none;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
 body {
     background-color: #000000;
     background-image: linear-gradient(90deg, #535353, #494949, #000000, #494949, #535353);
@@ -13,7 +7,7 @@ body {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -21,7 +15,7 @@ body {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -35,9 +29,12 @@ body {
 }
 
 .main {
-    margin-top: 5%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+#filmVerzum {
+    display: none;
 }
 
 .mainPart {
@@ -46,6 +43,7 @@ body {
 }
 
 .poster, .poster a{
+    margin-top: 5%;
     width: 100%;
     height: 30%;
     display: flex;
@@ -60,7 +58,7 @@ body {
     padding-left: 20px;
 }
 
-.categoryBTN {
+.category {
     border: none;
     border-radius: 25%;
     margin-right: 5px;
@@ -68,11 +66,6 @@ body {
     color: whitesmoke;
     cursor: pointer;
 }
-
-.categoryBTN:hover {
-    background-color: rgba(75, 75, 75, 0.5);
-}
-
 
 .secondary {
     width: 100%;
@@ -83,6 +76,7 @@ body {
 }
 
 .topmusorok {
+    margin-top: 5%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     display: flex;
@@ -199,13 +193,13 @@ body {
       margin: 20px auto; 
     }
   }
-}
 
 @media print {
     #filmVerzum{
         position: absolute;
         top: 0;
         text-align: center;
+        display: block;
     }
     .main{
         background: none;
