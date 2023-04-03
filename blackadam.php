@@ -2,13 +2,15 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Sárkányok háza</title>
+    <title>Black Adam</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleLogin.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
+
     <div id="id01" class="modal">
         <form class="modal-content animate" method="post">
             <div class="container">
@@ -28,7 +30,7 @@
             </div>
         </form>
     </div>
-    
+
     <div id="registration" class="modal">
         <form method="post" class="modal-content">
             <div class="container">
@@ -64,24 +66,26 @@
             <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
             <a href="./index.html" id="menuHome">&#8962;</a>
         </div>
-    
+
         <div class="overlay-content wide-screen">
             <table class="overlayTable">
                 <thead>
                 <tr>
-                    <th id="filmek"><a href="#" class="overlayFilmek">Filmek</a></th>
-                    <th id="sorozatok"><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+                    <th id="filmek"><a href="filmek.html" class="overlayFilmek">Filmek</a></th>
+                    <th id="sorozatok"><a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
-                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
+                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
                 </tr>
+
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
                 </tr>
+
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
@@ -91,18 +95,18 @@
         </div>
     
         <div class="overlay-content mobile-screen">
-            <a href="#" class="overlayFilmek">Filmek</a>
+            <a href="filmek.html" class="overlayFilmek">Filmek</a>
     
             <div class="overlayFilm-dropdown">
-                <a href="#" class="overlayT10Film">Top 10 film</a>
+                <a href="#" class="overlayT10Film">Top 5 film</a>
                 <a href="#" class="overlayFilmRelease">Film megjelenések</a>
                 <a href="#" class="overlayFilmGenre">Film műfaj</a>
             </div>
     
-            <a href="#" class="overlaySorozatok">Sorozatok</a>
+            <a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a>
     
             <div class="overlaySorozat-dropdown">
-                <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
+                <a href="#" class="overlayT10Sorozat">Top 5 sorozat</a>
                 <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
                 <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
             </div>
@@ -111,7 +115,7 @@
     
     <div id="searchOverlay" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-    
+
         <div class="overlay-content">
             <label for="overlaySearch"></label><input type="search" class="searchbar"
                                                       id="overlaySearch" placeholder="Keresés">
@@ -123,11 +127,11 @@
             <label for="mainSearch"></label><input type="search" class="searchbar"
                                                    id="mainSearch" placeholder="Keresés">
             <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
-                    alt="search"></button>
+                                                                          alt="search"></button>
         </div>
     
         <div class="leftLogo">
-            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">FilmVerzum</a>
         </div>
     
         <div class="menu">
@@ -142,105 +146,127 @@
 
     <main class="main">
         <div class="mainPart">
-            <h1>Sárkányok háza</h1>
-            <div class = "szoveg"> Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése
-                előtt 172 évvel.<br></div>
-            
+            <h1>Black Adam</h1>
+            <div class = "szoveg">Majdnem 5,000 évvel azután, hogy az egyiptomi istenek mindenható erejével felruházták
+                (és ugyanolyan gyorsan börtönbe zárták) Black Adam felszabadul földi sírjából, készen arra, hogy sajátos
+                igazságszolgáltatási formáját kibontakoztassa a modern világban.<br></div>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/JOXj6CHQPYI" allowfullscreen></iframe><br>
-                <img src="./img/houseofthedragon/houseofthedragon1.jpg" alt="Black Adam"/>
+                <iframe src="https://www.youtube.com/embed/AP4GC0VDQiI" allowfullscreen></iframe><br>
+                <img src="./img/posters/BlackAdam.jpg" alt="Black Adam"/>
             </div>
         </div>
-        
+
         <div class="secondary">
             <table class="tableFilmek">
-                <caption>A sorozat adatai:</caption>
-                <tr>
-                    <th class = firstcolumn id="originalTitle">Eredeti cím: </th>
-                    <th class = secondcolumn id="originalTitleValue">House of the Dragon</th>
-                </tr>
+                <caption>A film adatai:</caption>
                 <tr>
                     <th class = firstcolumn id="genre">Műfaj: </th>
-                    <th class = secondcolumn id="genreValue">Akció, Kaland, Dráma</th>
+                    <th class = secondcolumn id="genreValue">Akció, Kaland, Fantázia</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="premier">Bemutató ideje: </th>
-                    <th class = secondcolumn id="premierValue">2022. augusztus 2.</th>
+                    <th class = secondcolumn id="premierValue">2022. november 20.</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="seasons">Évadok száma: </th>
-                    <th class = secondcolumn id="seasonsValue">1</th>
-                </tr>
-                <tr>
-                    <th class = firstcolumn id="episodes">Epizódok száma: </th>
-                    <th class = secondcolumn id="episodesValue">10</th>
+                    <th class = firstcolumn id="watchTime">Játékidő: </th>
+                    <th class = secondcolumn id="watchTimeValue">125 perc</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="stars">Főszereplők: </th>
-                    <th class = secondcolumn id="starsValue">Rhys Ifans, Matt Smith, Fabien Frankel</th>
+                    <th class = secondcolumn id="starsValue">Dwayne Johnson, Aldis Hodge, Pierce Brosnan</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="ageLimit">Korhatár: </th>
-                    <th class = secondcolumn id="ageLimitValue">18+</th>
+                    <th class = secondcolumn id="ageLimitValue">16+</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="director">Rendező: </th>
-                    <th class = secondcolumn id="directorValue">Greg Yaitanes, Miguel Sapochnik</th>
+                    <th class = secondcolumn id="directorValue">Jaume Collet-Serra</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="writer">Író: </th>
-                    <th class = secondcolumn id="writerValue">George R. R. Martin, Ryan Condal, Sara Hess,
-                        Charmaine DeGraté</th>
+                    <th class = secondcolumn id="writerValue">Adam Sztykiel, Rory Haines, Sohrab Noshirvani</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="manifacturer">Gyártó: </th>
+                    <th class = secondcolumn id="manifacturerValue">New Line Cinema, DC Films, Seven Bucks Productions,
+                        FlynnPictureCo</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="distributor">Forgalmazó: </th>
-                    <th class = secondcolumn id="distributorValue">HBO</th>
+                    <th class = secondcolumn id="distributorValue">Warner Bros. Pictures</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="language">Nyelv: </th>
+                    <th class = firstcolumn id="language">Eredeti nyelv: </th>
                     <th class = secondcolumn id="languageValue">Angol</th>
                 </tr>
             </table>
-            
-            <div class="photo-gallery">
-                <img class="firsInGalley" src="./img/houseofthedragon/houseofthedragon5.jpg" alt="Sárkányok háza 1. kép"/>
-                <img class="secondInGalley" src="./img/houseofthedragon/houseofthedragon3.jpg" alt="Sárkányok háza 2. kép"/>
-                <img class="thirdInGalley" src="./img/houseofthedragon/houseofthedragon4.jpg" alt="Sárkányok háza 3. kép"/>
-                <img class="fourthInGalley" src="./img/houseofthedragon/houseofthedragon2.jpeg" alt="Sárkányok háza 4. kép"/>
+
+            <div class="commentSection">
+                <h2>Hozzászólások</h2>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Füles Jancsi</a>
+                        <span class="comment-date">2023. március 14., 11:10</span><br>
+                        <p>Egynek elment.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Kovács Attila</a>
+                        <a class="comment-date">2023. március 15., 14:00</a><br>
+                        <p>Nem kiemelkedő de végig lehetett nézni.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Te</a><br>
+                        <form>
+                        <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!" id="felhasznalovelemenye" name="valodicomment" maxlength="200"></textarea> <br/>
+                        <input type="reset" id="submit-btn" value="Küldés"/>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-            <div class="comment">
-                A sorozat előzménye a Trónok harca (2011–2019) című televíziós sorozatnak, és Martin: A tűz és jég dala
-                című regénysorozatán alapul.<br>
-                * A műsor megtekintése HBO Max-on lehetséges, amihez előfizetés szükséges.<br>
+            <div class="photo-gallery">
+                <img class="firsInGalley" src="./img/filmPage/blackadam/blackadam3.jpg" alt="Black Adam 1. kép"/>
+                <img class="secondInGalley" src="./img/filmPage/blackadam/blackadam4.jpg" alt="Black Adam 2. kép"/>
+                <img class="thirdInGalley" src="./img/filmPage/blackadam/blackadam7.jpg" alt="Black Adam 3. kép"/>
+                <img class="fourthInGalley" src="./img/filmPage/blackadam/blackadam6.jpg" alt="Black Adam 4. kép"/>
             </div>
         </div>
     </main>
 
     <footer class="lablec">
         <div class="socialMedia">
-            <ul>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Instagram</a>
-                </li>
-                <li>
-                    <a href="#">Discord</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://discord.com" target="_blank">Discord</a>
+            </li>
+          </ul>
         </div>
         <div class="settings">
-            <ul>
-                <li>
-                    <a href="#">Profil</a>
-                </li>
-                <li>
-                    <a href="#">Beállítások</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#">Profil</a>
+            </li>
+            <li>
+              <a href="#">Beállítások</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>

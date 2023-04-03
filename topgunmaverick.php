@@ -2,7 +2,8 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>A gyűrűk ura: Hatalom gyűrűi</title>
+    <title>Top Gun: Maverick</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleLogin.css">
@@ -28,7 +29,7 @@
             </div>
         </form>
     </div>
-    
+
     <div id="registration" class="modal">
         <form method="post" class="modal-content">
             <div class="container">
@@ -64,26 +65,24 @@
             <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
             <a href="./index.html" id="menuHome">&#8962;</a>
         </div>
-    
+
         <div class="overlay-content wide-screen">
             <table class="overlayTable">
                 <thead>
                 <tr>
-                    <th id="filmek"><a href="#" class="overlayFilmek">Filmek</a></th>
-                    <th id="sorozatok"><a href="#" class="overlaySorozatok">Sorozatok</a></th>
+                    <th id="filmek"><a href="filmek.html" class="overlayFilmek">Filmek</a></th>
+                    <th id="sorozatok"><a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 10 film</a></td>
-                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 10 sorozat</a></td>
+                    <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
+                    <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
                 </tr>
-
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
                 </tr>
-
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
@@ -91,51 +90,51 @@
                 </tbody>
             </table>
         </div>
-    
+
         <div class="overlay-content mobile-screen">
-            <a href="#" class="overlayFilmek">Filmek</a>
-    
+            <a href="filmek.html" class="overlayFilmek">Filmek</a>
+
             <div class="overlayFilm-dropdown">
-                <a href="#" class="overlayT10Film">Top 10 film</a>
+                <a href="#" class="overlayT10Film">Top 5 film</a>
                 <a href="#" class="overlayFilmRelease">Film megjelenések</a>
                 <a href="#" class="overlayFilmGenre">Film műfaj</a>
             </div>
-    
-            <a href="#" class="overlaySorozatok">Sorozatok</a>
-    
+
+            <a href="sorozatok.html" class="overlaySorozatok">Sorozatok</a>
+
             <div class="overlaySorozat-dropdown">
-                <a href="#" class="overlayT10Sorozat">Top 10 sorozat</a>
+                <a href="#" class="overlayT10Sorozat">Top 5 sorozat</a>
                 <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
                 <a href="#" class="overlaySorozatGenre">Sorozat műfaj</a>
             </div>
         </div>
     </div>
-    
+
     <div id="searchOverlay" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-    
+
         <div class="overlay-content">
             <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch"
                                                       placeholder="Keresés">
         </div>
     </div>
-    
+
     <nav class="navBar">
         <div class="searchbarCenter">
-            <label for="mainSearch"></label><input type="search" class="searchbar" id="mainSearch"
-                                                   placeholder="Keresés">
+            <label for="mainSearch"></label><input type="search" class="searchbar"
+                                                   id="mainSearch" placeholder="Keresés">
             <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
                                                                           alt="search"></button>
         </div>
-    
+
         <div class="leftLogo">
-            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">FilmVerzum</a>
         </div>
-    
+
         <div class="menu">
             <button onclick="openNav()" id="menuBTN">&#9776;Menü</button>
         </div>
-    
+
         <div class="rightSide">
             <button onclick="document.getElementById('id01').style.display='flex'"
                     class="loginBTN">Bejelentkezés</button>
@@ -144,110 +143,138 @@
 
     <main class="main">
         <div class="mainPart">
-            <h1>A gyűrűk ura: Hatalom gyűrűi</h1>
-            <div class="szoveg"> Epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien
-                "A hobbit" és "A Gyűrűk Ura" című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket,
-                ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.<br></div>
+            <h1>Top Gun: Maverick</h1>
+            <div class="szoveg">30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti
+                pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy
+                küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az
+                ultimátum áldozatára.<br>
+            </div>
 
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/gvzQyo_jBqI" allowfullscreen></iframe><br>
-                <img src="./img/ringsofpower/ringsofpower1.jpg" alt="A gyűrűk ura: Hatalom gyűrűi"/>
+                <iframe src="https://www.youtube.com/embed/VxGR3l_BYyI" allowfullscreen></iframe><br>
+                <img src="./img/posters/TopGunMaverick.jpg" alt="Top Gun: Maverick"/>
             </div>
         </div>
 
         <div class="secondary">
             <table class="tableFilmek">
-                <caption>A sorozat adatai:</caption>
-                <tr>
-                <th class = firstcolumn id="originalTitle">Eredeti cím: </th>
-                <th class = secondcolumn id="originalTitleValue">The Lord of the Rings: The Rings of Power</th>
-                </tr>
+                <caption>A film adatai:</caption>
                 <tr>
                     <th class = firstcolumn id="genre">Műfaj: </th>
-                    <th class = secondcolumn id="genreValue">Dráma, Fantázia, Kaland, Akció</th>
+                    <th class = firstcolumn id="genreValue">Akció, Dráma</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="premier">Bemutató ideje: </th>
-                    <th class = secondcolumn id="premierValue">2022. szeptember 2.</th>
+                    <th class = firstcolumn id="premierValue">2022. május 26.</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="seasons">Évadok száma: </th>
-                    <th class = secondcolumn id="seasonsValue">1</th>
-                </tr>
-                <tr>
-                    <th class = firstcolumn id="episodes">Epizódok száma: </th>
-                    <th class = secondcolumn id="episodesValue">8 *</th>
+                    <th class = firstcolumn id="watchTime">Játékidő: </th>
+                    <th class = firstcolumn id="watchTimeValue">131 perc</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="stars">Főszereplők: </th>
-                    <th class = secondcolumn id="starsValue">Robert Aramayo, Owain Arthur, Nazanin Boniadi, Tom Budge,
-                        Morfydd Clark</th>
+                    <th class = firstcolumn id="starsValue">Tom Cruise, Jennifer Connelly, Miles Teller</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="ageLimit">Korhatár: </th>
-                    <th class = secondcolumn id="ageLimitValue">13+</th>
+                    <th class = firstcolumn id="ageLimitValue">12+</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="director">Rendező: </th>
-                    <th class = secondcolumn id="directorValue">Wayne Yip, Juan Antonio Bayona,
-                        Charlotte Brandstrom</th>
+                    <th class = firstcolumn id="directorValue">Joseph Kosinski</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="writer">Író: </th>
-                    <th class = secondcolumn id="writerValue">John Ronald Reuel Tolkien</th>
+                    <th class = firstcolumn id="writerValue">Jim Cash, Jack Epps Jr., Peter Craig</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="scriptWriter">Forgatókönyíró: </th>
-                    <th class = secondcolumn id="scriptWriterValue">Jason Cahill, Gennifer Hutchison</th>
+                    <th class = firstcolumn id="producer">Producerek: </th>
+                    <th class = firstcolumn id="producerValue">Jerry Bruckheimer, Tom Cruise, Christopher McQuarrie</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="producer">Producer: </th>
-                    <th class = secondcolumn id="producerValue">Ron Ames, Christopher Newman</th>
+                    <th class = firstcolumn id="manufacturer">Gyártó: </th>
+                    <th class = firstcolumn id="manufacturerValue">Skydance Media, Don Simpson/Jerry
+                        Bruckheimer Films</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="distributor">Forgalmazó: </th>
+                    <th class = firstcolumn id="distributorValue">Paramount Pictures</th>
+                </tr>
+                <tr>
+                    <th class = firstcolumn id="hunDistributor">Magyar forgalmazó: </th>
+                    <th class = firstcolumn id="hunDistributorValue">UIP-Duna</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="language">Eredeti nyelv: </th>
-                    <th class = secondcolumn id="languageValue">Angol</th>
+                    <th class = firstcolumn id="languageValue">Angol</th>
                 </tr>
             </table>
 
-            <div class="photo-gallery">
-                <img class="firsInGalley" src="./img/ringsofpower/ringsofpower2.jpg" alt="A hatalom gyűrűi 1. kép"/>
-                <img class="secondInGalley" src="./img/ringsofpower/ringsofpower3.jpg" alt="A hatalom gyűrűi 2. kép"/>
-                <img class="thirdInGalley" src="./img/ringsofpower/ringsofpower4.jpg" alt="A hatalom gyűrűi 3. kép"/>
-                <img class="fourthInGalley" src="./img/ringsofpower/ringsofpower5.jpg" alt="A hatalom gyűrűi 4. kép"/>
+            <div class="commentSection">
+                <h2>Hozzászólások</h2>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Bakacsi Ferenc</a>
+                        <span class="comment-date">2023. március 19., 03:30</span><br>
+                        <p>Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos folm.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Kozma Bianka</a>
+                        <a class="comment-date">2023. március 19., 12:15</a><br>
+                        <p>Hosszú idő óta végre egy film amiért érdemes moziba menni.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Te</a><br>
+                        <form>
+                        <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!" id="felhasznalovelemenye" name="valodicomment" maxlength="200"></textarea> <br/>
+                        <input type="reset" id="submit-btn" value="Küldés"/>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-            <div class="comment">
-                * Éppen zajlik a 2. évad forgatása, várhatóan az is 8 részes lesz.<br>
-                ** A műsor megtekintése Prime Video-n lehetséges, amihez előfizetés szükséges.<br>
+            <div class="photo-gallery">
+                <img class="firsInGalley" src="./img/filmPage/topgun/topgun5.jpg" alt="Topgun: Maverick 1. kép"/>
+                <img class="secondInGalley" src="./img/filmPage/topgun/topgun3.jpg" alt="Topgun: Maverick 2. kép"/>
+                <img class="thirdInGalley" src="./img/filmPage/topgun/topgun4.jpg" alt="Topgun: Maverick 3. kép"/>
+                <img class="fourthInGalley" src="./img/filmPage/topgun/topgun2.jpg" alt="Topgun: Maverick 4. kép"/>
             </div>
         </div>
     </main>
 
     <footer class="lablec">
         <div class="socialMedia">
-            <ul>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Instagram</a>
-                </li>
-                <li>
-                    <a href="#">Discord</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://discord.com" target="_blank">Discord</a>
+            </li>
+          </ul>
         </div>
         <div class="settings">
-            <ul>
-                <li>
-                    <a href="#">Profil</a>
-                </li>
-                <li>
-                    <a href="#">Beállítások</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#">Profil</a>
+            </li>
+            <li>
+              <a href="#">Beállítások</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>
