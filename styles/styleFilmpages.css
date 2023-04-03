@@ -190,6 +190,10 @@ h1{
 }
 
 @media print {
+    .commentSection{
+        display: none;
+    }
+
     h1, .szoveg{
         position: relative;
     }
@@ -226,4 +230,5 @@ h1{
         display: none;
     }
 }
+
 

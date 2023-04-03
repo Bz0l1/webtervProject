@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+  <title>FilmVerzum</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo.ico">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/styleMain.css">
   <link rel="stylesheet" href="styles/styleLogin.css">
   <script src="scripts/script.js"></script>
 </head>
+
 <body>
   <div id="id01" class="modal">
-    <form class="modal-content animate" method="post">
+    <form class="modal-content animate" method="post" action="./php/login.php">
       <div class="container">
         <label>
           <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
@@ -38,23 +40,22 @@
         <h1>Regisztráció</h1>
         <fieldset>
           <label>Teljes név <br>
-            <input type="text" placeholder="pl.: Kovács Ilona" name="name"
-                   class="formInput firstInput" required></label>
+            <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput"
+              required></label>
           <label>Születési dátum: <br>
-            <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required/></label>
+            <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required /></label>
           <label>E-mail cím<br>
-            <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email"
-                   class="formInput" required></label>
+            <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput"
+              required></label>
           <label>Jelszó<br>
-            <input type="password" placeholder="Írja be a jelszót" name="psw"
-                   class="formInput" required></label>
+            <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput" required></label>
           <label>Jelszó újra<br>
-            <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat"
-                   class="formInput" required></label>
+            <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
+              required></label>
 
           <div class="clearfix">
             <button type="button" onclick="document.getElementById('registration').style.display='none'"
-                    class="cancelbtn">Vissza a bejelentkezéshez</button>
+              class="cancelbtn">Vissza a bejelentkezéshez</button>
             <button type="submit" class="signupbtn">Regisztráció</button>
           </div>
         </fieldset>
@@ -118,7 +119,8 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
 
     <div class="overlay-content">
-      <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch" placeholder="Keresés">
+      <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch"
+        placeholder="Keresés">
     </div>
   </div>
 
@@ -142,7 +144,7 @@
     </div>
   </nav>
 
- 
+
   <main class="main">
     <h1 id="filmVerzum">FilmVerzum</h1>
     <div class="mainPart">
@@ -164,26 +166,26 @@
             tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.</p>
         </div>
       </a>
-      </div>
+    </div>
   </main>
 
   <div class="secondary">
     <h2 id="topMusorok">Top műsorok</h2>
     <div class="topmusorok">
       <a href="houseofthedragon.html" target="_blank">
-        <img class="firstInTopFilmek" src="./img/main/smallPoster/HouseOfDragons.jpg" alt="slide">
+        <img class="firstInTopFilmek" src="./img/posters/HouseOfDragons.jpg" alt="slide">
         <p class="slide-desc">House of the Dragon</p>
       </a>
       <a href="blackadam.html">
-        <img class="secondInTopFilmek" src="./img/main/smallPoster/BlackAdam.jpg" alt="slide">
+        <img class="secondInTopFilmek" src="./img/posters/BlackAdam.jpg" alt="slide">
         <p class="slide-desc">Black Adam</p>
       </a>
       <a href="topgunmaverick.html">
-        <img class="thirdInTopFilmek" src="./img/main/smallPoster/TopGunMaverick.jpg" alt="slide">
+        <img class="thirdInTopFilmek" src="./img/posters/TopGunMaverick.jpg" alt="slide">
         <p class="slide-desc">Top Gun: Maverick</p>
       </a>
       <a href="ringsofpower.html">
-        <img class="fourthInTopFilmek" src="./img/main/smallPoster/RingsOfPower.jpg" alt="slide">
+        <img class="fourthInTopFilmek" src="./img/posters/RingsOfPower.jpg" alt="slide">
         <p class="slide-desc">Rings of Power</p>
       </a>
     </div>
@@ -215,4 +217,5 @@
     </div>
   </footer>
 </body>
+
 </html>

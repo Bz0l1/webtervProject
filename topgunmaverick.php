@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Top Gun: Maverick</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleLogin.css">
@@ -127,7 +128,7 @@
         </div>
 
         <div class="leftLogo">
-            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">FilmVerzum</a>
         </div>
 
         <div class="menu">
@@ -151,7 +152,7 @@
 
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/VxGR3l_BYyI" allowfullscreen></iframe><br>
-                <img src="./img/topgun/topgun1.jpg" alt="Top Gun: Maverick"/>
+                <img src="./img/posters/TopGunMaverick.jpg" alt="Top Gun: Maverick"/>
             </div>
         </div>
 
@@ -209,11 +210,43 @@
                 </tr>
             </table>
 
+            <div class="commentSection">
+                <h2>Hozzászólások</h2>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Bakacsi Ferenc</a>
+                        <span class="comment-date">2023. március 19., 03:30</span><br>
+                        <p>Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos folm.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Kozma Bianka</a>
+                        <a class="comment-date">2023. március 19., 12:15</a><br>
+                        <p>Hosszú idő óta végre egy film amiért érdemes moziba menni.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Te</a><br>
+                        <form>
+                        <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!" id="felhasznalovelemenye" name="valodicomment" maxlength="200"></textarea> <br/>
+                        <input type="reset" id="submit-btn" value="Küldés"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             <div class="photo-gallery">
-                <img class="firsInGalley" src="./img/topgun/topgun5.jpg" alt="Topgun: Maverick 1. kép"/>
-                <img class="secondInGalley" src="./img/topgun/topgun3.jpg" alt="Topgun: Maverick 2. kép"/>
-                <img class="thirdInGalley" src="./img/topgun/topgun4.jpg" alt="Topgun: Maverick 3. kép"/>
-                <img class="fourthInGalley" src="./img/topgun/topgun2.jpg" alt="Topgun: Maverick 4. kép"/>
+                <img class="firsInGalley" src="./img/filmPage/topgun/topgun5.jpg" alt="Topgun: Maverick 1. kép"/>
+                <img class="secondInGalley" src="./img/filmPage/topgun/topgun3.jpg" alt="Topgun: Maverick 2. kép"/>
+                <img class="thirdInGalley" src="./img/filmPage/topgun/topgun4.jpg" alt="Topgun: Maverick 3. kép"/>
+                <img class="fourthInGalley" src="./img/filmPage/topgun/topgun2.jpg" alt="Topgun: Maverick 4. kép"/>
             </div>
         </div>
     </main>

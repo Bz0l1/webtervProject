@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Avatar: A víz útja</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo.ico">
   <link rel="stylesheet" href="styles/styleFilmpages.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/styleLogin.css">
@@ -150,7 +151,7 @@
 
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/VjimL6Yq0rA" allowfullscreen></iframe><br>
-        <img src="./img/avatar/avatar1.jpg" alt="Avatar: A víz útja borítókép" />
+        <img src="./img/posters/Avatar2.jpg" alt="Avatar: A víz útja borítókép" />
       </div>
     </div>
 
@@ -207,7 +208,7 @@
       <div class="commentSection">
         <h2>Hozzászólások</h2>
         <div class="fullRealComment">
-          <img class="userAvatar" src="./img/main/profilepicture.jpg" alt="Felhasználó avatarja">
+          <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
           <div class="comment-body">
             <a class="userRealName">Kiss József</a>
             <span class="comment-date">2023. március 19., 12:30</span><br>
@@ -216,7 +217,7 @@
           </div>
         </div>
         <div class="fullRealComment">
-          <img class="userAvatar" src="./img/main/profilepicture.jpg" alt="Felhasználó avatarja">
+          <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
           <div class="comment-body">
             <a class="userRealName">Mészáros Tamás</a>
             <a class="comment-date">2023. március 19., 13:00</a><br>
@@ -225,21 +226,23 @@
           </div>
         </div>
         <div class="fullRealComment">
-          <img class="userAvatar" src="./img/main/profilepicture.jpg" alt="Felhasználó avatarja">
+          <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
           <div class="comment-body">
             <a class="userRealName">Te</a><br>
+            <form>
             <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!" id="felhasznalovelemenye" name="valodicomment" maxlength="200"></textarea> <br/>
-            <input type="submit" id="submit-btn" value="Küldés"/>
+            <input type="reset" id="submit-btn" value="Küldés"/>
+            </form>
           </div>
         </div>
       </div>
 
     </div>
       <div class="photo-gallery">
-        <img class="firsInGalley" src="./img/avatar/avatar2.jpg" alt="Avatar 1. kép" />
-        <img class="secondInGalley" src="./img/avatar/avatar3.jpg" alt="Avatar 2. kép" />
-        <img class="thirdInGalley" src="./img/avatar/avatar4.jpg" alt="Avatar 3. kép" />
-        <img class="fourthInGalley" src="./img/avatar/avatar5.jpg" alt="Avatar 4. kép" />
+        <img class="firsInGalley" src="./img/filmPage/avatar/avatar2.jpg" alt="Avatar 1. kép" />
+        <img class="secondInGalley" src="./img/filmPage/avatar/avatar3.jpg" alt="Avatar 2. kép" />
+        <img class="thirdInGalley" src="./img/filmPage/avatar/avatar4.jpg" alt="Avatar 3. kép" />
+        <img class="fourthInGalley" src="./img/filmPage/avatar/avatar5.jpg" alt="Avatar 4. kép" />
       </div>
     </div>
   </main>

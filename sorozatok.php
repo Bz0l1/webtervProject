@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorozatok</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/styleLogin.css">
     <link rel="stylesheet" href="./styles/osszMusorStyle.css">
@@ -148,7 +149,7 @@
         <section class="section">
             <h1>Kiemelt sorozatok</h1>
             <table class="film-table">
-                <thead>
+                <thead class="head">
                     <tr>
                         <th>Képek</th>
                         <th><button onclick="sortTable(1)">Címek</button></th>
@@ -158,13 +159,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="houseofthedragon.html"><img src="./img/main/smallPoster/HouseOfDragons.jpg" alt="House of the Dragons"></a></td>
+                        <td><a href="houseofthedragon.html"><img src="./img/smallPoster/HouseOfDragons.jpg" alt="House of the Dragons"></a></td>
                         <td>House of the Dragons</td>
                         <td>2022</td>
                         <td>9.9</td>
                     </tr>
                     <tr>
-                        <td><a href="ringsofpower.html"><img src="./img/main/smallPoster/RingsOfPower.jpg"
+                        <td><a href="ringsofpower.html"><img src="./img/smallPoster/RingsOfPower.jpg"
                                     alt="Rings of Power"></a></td>
                         <td>Rings of Power</td>
                         <td>2022</td>
@@ -181,7 +182,7 @@
             </table>
             <h2>További sorozatok</h2>
             <table class="film-table">
-                <thead>
+                <thead class="head">
                     <tr>
                         <th>Képek</th>
                         <th><button onclick="sortTable(1, 1)">Címek</button></th>

@@ -2,7 +2,8 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>A gyűrűk ura: Hatalom gyűrűi</title>
+    <title>Sárkányok háza</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleLogin.css">
@@ -59,7 +60,7 @@
             </div>
         </form>
     </div>
-
+    
     <div id="menuOverlay" class="overlay">
         <div id="menuActions">
             <a href="javascript:void(0)" class="closeBTN" onclick="closeNav()">&times;</a>
@@ -79,12 +80,10 @@
                     <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
                     <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
                 </tr>
-
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmRelease">Film megjelenések</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a></td>
                 </tr>
-
                 <tr>
                     <td headers="filmek"><a href="#" class="overlayFilmGenre">Film műfaj</a></td>
                     <td headers="sorozatok"><a href="#" class="overlaySorozatGenre">Sorozat műfaj</a></td>
@@ -116,21 +115,21 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
     
         <div class="overlay-content">
-            <label for="overlaySearch"></label><input type="search" class="searchbar" id="overlaySearch"
-                                                      placeholder="Keresés">
+            <label for="overlaySearch"></label><input type="search" class="searchbar"
+                                                      id="overlaySearch" placeholder="Keresés">
         </div>
     </div>
     
     <nav class="navBar">
         <div class="searchbarCenter">
-            <label for="mainSearch"></label><input type="search" class="searchbar" id="mainSearch"
-                                                   placeholder="Keresés">
+            <label for="mainSearch"></label><input type="search" class="searchbar"
+                                                   id="mainSearch" placeholder="Keresés">
             <button class="searchOverlay-btn" onclick="openSearch()"><img src="img/navbar/searchIcon.svg"
-                                                                          alt="search"></button>
+                    alt="search"></button>
         </div>
     
         <div class="leftLogo">
-            <a href="index.html" id="logo" title="Kezdőlap">LOGO</a>
+            <a href="index.html" id="logo" title="Kezdőlap">FilmVerzum</a>
         </div>
     
         <div class="menu">
@@ -146,31 +145,30 @@
 
     <main class="main">
         <div class="mainPart">
-            <h1>A gyűrűk ura: Hatalom gyűrűi</h1>
-            <div class="szoveg"> Epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien
-                "A hobbit" és "A Gyűrűk Ura" című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket,
-                ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.<br></div>
-
+            <h1>Sárkányok háza</h1>
+            <div class = "szoveg"> Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése
+                előtt 172 évvel.<br></div>
+            
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/gvzQyo_jBqI" allowfullscreen></iframe><br>
-                <img src="./img/ringsofpower/ringsofpower1.jpg" alt="A gyűrűk ura: Hatalom gyűrűi"/>
+                <iframe src="https://www.youtube.com/embed/JOXj6CHQPYI" allowfullscreen></iframe><br>
+                <img src="./img/posters/HouseOfDragons.jpg" alt="HouseOfDragons"/>
             </div>
         </div>
-
+        
         <div class="secondary">
             <table class="tableFilmek">
                 <caption>A sorozat adatai:</caption>
                 <tr>
-                <th class = firstcolumn id="originalTitle">Eredeti cím: </th>
-                <th class = secondcolumn id="originalTitleValue">The Lord of the Rings: The Rings of Power</th>
+                    <th class = firstcolumn id="originalTitle">Eredeti cím: </th>
+                    <th class = secondcolumn id="originalTitleValue">House of the Dragon</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="genre">Műfaj: </th>
-                    <th class = secondcolumn id="genreValue">Dráma, Fantázia, Kaland, Akció</th>
+                    <th class = secondcolumn id="genreValue">Akció, Kaland, Dráma</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="premier">Bemutató ideje: </th>
-                    <th class = secondcolumn id="premierValue">2022. szeptember 2.</th>
+                    <th class = secondcolumn id="premierValue">2022. augusztus 2.</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="seasons">Évadok száma: </th>
@@ -178,50 +176,79 @@
                 </tr>
                 <tr>
                     <th class = firstcolumn id="episodes">Epizódok száma: </th>
-                    <th class = secondcolumn id="episodesValue">8 *</th>
+                    <th class = secondcolumn id="episodesValue">10</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="stars">Főszereplők: </th>
-                    <th class = secondcolumn id="starsValue">Robert Aramayo, Owain Arthur, Nazanin Boniadi, Tom Budge,
-                        Morfydd Clark</th>
+                    <th class = secondcolumn id="starsValue">Rhys Ifans, Matt Smith, Fabien Frankel</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="ageLimit">Korhatár: </th>
-                    <th class = secondcolumn id="ageLimitValue">13+</th>
+                    <th class = secondcolumn id="ageLimitValue">18+</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="director">Rendező: </th>
-                    <th class = secondcolumn id="directorValue">Wayne Yip, Juan Antonio Bayona,
-                        Charlotte Brandstrom</th>
+                    <th class = secondcolumn id="directorValue">Greg Yaitanes, Miguel Sapochnik</th>
                 </tr>
                 <tr>
                     <th class = firstcolumn id="writer">Író: </th>
-                    <th class = secondcolumn id="writerValue">John Ronald Reuel Tolkien</th>
+                    <th class = secondcolumn id="writerValue">George R. R. Martin, Ryan Condal, Sara Hess,
+                        Charmaine DeGraté</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="scriptWriter">Forgatókönyíró: </th>
-                    <th class = secondcolumn id="scriptWriterValue">Jason Cahill, Gennifer Hutchison</th>
+                    <th class = firstcolumn id="distributor">Forgalmazó: </th>
+                    <th class = secondcolumn id="distributorValue">HBO</th>
                 </tr>
                 <tr>
-                    <th class = firstcolumn id="producer">Producer: </th>
-                    <th class = secondcolumn id="producerValue">Ron Ames, Christopher Newman</th>
-                </tr>
-                <tr>
-                    <th class = firstcolumn id="language">Eredeti nyelv: </th>
+                    <th class = firstcolumn id="language">Nyelv: </th>
                     <th class = secondcolumn id="languageValue">Angol</th>
                 </tr>
             </table>
 
+            <div class="commentSection">
+                <h2>Hozzászólások</h2>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Kiss József</a>
+                        <span class="comment-date">2023. március 16., 10:30</span><br>
+                        <p>Nagyon jó!! Minden percet megér.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Kiss Zsanett</a>
+                        <a class="comment-date">2023. március 17., 15:00</a><br>
+                        <p>Életem legjobb sorozata!!</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="fullRealComment">
+                    <img class="userAvatar" src="./img/profilepicture.jpg" alt="Felhasználó avatarja">
+                    <div class="comment-body">
+                        <a class="userRealName">Te</a><br>
+                        <form>
+                        <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!" id="felhasznalovelemenye" name="valodicomment" maxlength="200"></textarea> <br/>
+                        <input type="reset" id="submit-btn" value="Küldés"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="photo-gallery">
-                <img class="firsInGalley" src="./img/ringsofpower/ringsofpower2.jpg" alt="A hatalom gyűrűi 1. kép"/>
-                <img class="secondInGalley" src="./img/ringsofpower/ringsofpower3.jpg" alt="A hatalom gyűrűi 2. kép"/>
-                <img class="thirdInGalley" src="./img/ringsofpower/ringsofpower4.jpg" alt="A hatalom gyűrűi 3. kép"/>
-                <img class="fourthInGalley" src="./img/ringsofpower/ringsofpower5.jpg" alt="A hatalom gyűrűi 4. kép"/>
+                <img class="firsInGalley" src="./img/filmPage/houseofthedragon/houseofthedragon5.jpg" alt="Sárkányok háza 1. kép"/>
+                <img class="secondInGalley" src="./img/filmPage/houseofthedragon/houseofthedragon3.jpg" alt="Sárkányok háza 2. kép"/>
+                <img class="thirdInGalley" src="./img/filmPage/houseofthedragon/houseofthedragon4.jpg" alt="Sárkányok háza 3. kép"/>
+                <img class="fourthInGalley" src="./img/filmPage/houseofthedragon/houseofthedragon2.jpeg" alt="Sárkányok háza 4. kép"/>
             </div>
 
             <div class="comment">
-                * Éppen zajlik a 2. évad forgatása, várhatóan az is 8 részes lesz.<br>
-                ** A műsor megtekintése Prime Video-n lehetséges, amihez előfizetés szükséges.<br>
+                A sorozat előzménye a Trónok harca (2011–2019) című televíziós sorozatnak, és Martin: A tűz és jég dala
+                című regénysorozatán alapul.<br>
+                * A műsor megtekintése HBO Max-on lehetséges, amihez előfizetés szükséges.<br>
             </div>
         </div>
     </main>

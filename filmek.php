@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmek</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/styleLogin.css">
     <link rel="stylesheet" href="./styles/osszMusorStyle.css">
@@ -150,7 +151,7 @@
         <section class="section">
             <h1>Kiemelt filmek</h1>
             <table class="film-table">
-                <thead>
+                <thead class="head">
                     <tr>
                         <th>Képek</th>
                         <th><button onclick="sortTable(1)">Címek</button></th>
@@ -160,20 +161,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="avatar.html"><img src="./img/main/smallPoster/Avatar2.jpg" alt="Avatar 2"></a></td>
+                        <td><a href="avatar.html"><img src="./img/smallPoster/Avatar2.jpg" alt="Avatar 2"></a></td>
                         <td>Avatar 2</td>
                         <td>2022</td>
                         <td>9.1</td>
                     </tr>
                     <tr>
-                        <td><a href="blackadam.html"><img src="./img/main/smallPoster/BlackAdam.jpg"
+                        <td><a href="blackadam.html"><img src="./img/smallPoster/BlackAdam.jpg"
                                     alt="Black Adam"></a></td>
                         <td>Black Adam</td>
                         <td>2022</td>
                         <td>8.4</td>
                     </tr>
                     <tr>
-                        <td><a href="topgunmaverick.html"><img src="./img/main/smallPoster/TopGunMaverick.jpg"
+                        <td><a href="topgunmaverick.html"><img src="./img/smallPoster/TopGunMaverick.jpg"
                                     alt="Top Gun: Maverick"></a></td>
                         <td>Top Gun: Maverick</td>
                         <td>2022</td>
@@ -183,7 +184,7 @@
             </table>
             <h2>További filmek</h2>
             <table class="film-table">
-                <thead>
+                <thead class="head">
                     <tr>
                         <th>Képek</th>
                         <th><button onclick="sortTable(1, 1)">Címek</button></th>

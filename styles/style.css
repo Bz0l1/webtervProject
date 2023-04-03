@@ -106,6 +106,7 @@ body {
   outline: solid rgb(0, 1, 38) 0;
   border: solid 3px #323232;
   border-radius: 20px;
+  color: black;
 }
 
 #mainSearch:focus {
