@@ -107,6 +107,17 @@
     cursor: pointer;
 }
 
+.error {
+    border: 1px solid #be2217;
+}
+
+.error-message {
+    text-align: center;
+    color: #be2217;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
 @media screen and (max-width: 600px) {
     .modal-content {
         width: 80%;
