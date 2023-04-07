@@ -89,6 +89,6 @@ include("./navbar.php");
     </main>
 </body>
 <?php
-include("./navbar.php");
+include("./footer.php");
 ?>
 </html>

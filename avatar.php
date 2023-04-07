@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Avatar: A víz útja</title>
-  <link rel="icon" type="image/x-icon" href="./img/logo.ico">
   <link rel="stylesheet" href="styles/styleFilmpages.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/styleLogin.css">
-  <script src="scripts/script.js"></script>
 </head>
 
 <?php
@@ -123,6 +120,6 @@ include("./navbar.php");
   </main>
 </body>
 <?php
-include("./navbar.php");
+include("./footer.php");
 ?>
 </html>

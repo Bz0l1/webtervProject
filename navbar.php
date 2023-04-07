@@ -8,7 +8,6 @@
   <title>FilmVerzum</title>
   <link rel="icon" type="image/x-icon" href="img/logo.ico">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/styleMain.css">
   <link rel="stylesheet" href="styles/styleLogin.css">
   <script src="scripts/script.js"></script>
 </head>

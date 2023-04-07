@@ -9,6 +9,7 @@
 <?php
 include("./navbar.php");
 ?>
+
 <body>
     <main class="main">
         <div class="mainPart">
@@ -22,6 +23,7 @@ include("./navbar.php");
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/VxGR3l_BYyI" allowfullscreen></iframe><br>
                 <img src="./img/posters/TopGunMaverick.jpg" alt="Top Gun: Maverick"/>
+
             </div>
         </div>
 

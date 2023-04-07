@@ -65,6 +65,6 @@ include("./navbar.php");
 </div>
 </body>
 <?php
-include("./navbar.php");
+include("./footer.php");
 ?>
 </html>
