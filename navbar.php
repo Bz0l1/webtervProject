@@ -12,54 +12,9 @@
   <script src="scripts/script.js"></script>
 </head>
 <body>
-  <div id="id01" class="modal">
-    <form class="modal-content animate" method="post" action="php/login.php">
-      <div class="container">
-        <label>
-          <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
-        </label>
-        <label>
-          <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
-        </label>
-        <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
-        <div style="display: flex; justify-content: space-between;">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'"
-            class="cancelbtn">Mégse</button>
-          <button type="button" onclick="document.getElementById('registration').style.display='flex'"
-            class="signupBTN">Regisztráció</button>
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <div id="registration" class="modal">
-    <form method="post" class="modal-content">
-      <div class="container">
-        <h1>Regisztráció</h1>
-        <fieldset>
-          <label>Teljes név <br>
-            <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput"
-              required></label>
-          <label>Születési dátum: <br>
-            <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required /></label>
-          <label>E-mail cím<br>
-            <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput"
-              required></label>
-          <label>Jelszó<br>
-            <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput" required></label>
-          <label>Jelszó újra<br>
-            <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
-              required></label>
-
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('registration').style.display='none'"
-              class="cancelbtn">Vissza a bejelentkezéshez</button>
-            <button type="submit" class="signupbtn">Regisztráció</button>
-          </div>
-        </fieldset>
-      </div>
-    </form>
-  </div>
+  <?php
+  include('./login.php');
+  ?>
 
   <div id="menuOverlay" class="overlay">
     <div id="menuActions">
