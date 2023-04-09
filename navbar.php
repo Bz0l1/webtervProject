@@ -1,3 +1,9 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +17,14 @@
   <link rel="stylesheet" href="styles/styleLogin.css">
   <script src="scripts/script.js"></script>
 </head>
+
 <body>
+
   <?php
+  if (!isset($_SESSION)) {
+    $_SESSION = array();
+  }
+
   include('./login.php');
   ?>
 
@@ -31,7 +43,6 @@
           </tr>
         </thead>
         <tbody>
-
           <tr>
             <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
             <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
@@ -59,7 +70,6 @@
         <a href="#" class="overlayFilmGenre">Film műfaj</a>
       </div>
 
-      <a href="sorozatok.php" class="overlaySorozatok">Sorozatok</a>
       <div class="overlaySorozat-dropdown">
         <a href="#" class="overlayT10Sorozat">Top 5 sorozat</a>
         <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
@@ -93,19 +103,19 @@
     </div>
 
     <div class="rightSide">
-    <?php
-    session_start();
-
-    // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
-    if ($_SESSION['bejelentkezve']) {
-      // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
-      $profile_picture = "./img/profilepicture.jpg";
-      echo '<img src="'.$profile_picture.'" alt="Profilkép">';
-    } else {
-      // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
-      echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
-    }
-    ?>
+      <?php
+      // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
+      if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
+        // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
+        $profile_picture = "./img/profilepicture.jpg";
+        echo '<img src="' . $profile_picture . '" alt="Profilkép">';
+      } else {
+        // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
+        echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
+      }
+      ?>
     </div>
   </nav>
 </body>
+
+</html>

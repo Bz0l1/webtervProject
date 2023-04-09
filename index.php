@@ -1,3 +1,9 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +20,11 @@
 </head>
 
 <?php
+
+if (!isset($_SESSION)) {
+  $_SESSION = array();
+}
+
 include("./navbar.php");
 ?>
 
