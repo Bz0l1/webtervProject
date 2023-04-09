@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user_data = explode($separator, $user);
 
             if ($username === $user_data[0] && password_verify($password, $user_data[2])) {
-                $_SESSION["bejelentkezve"] = TRUE;
+                $_SESSION["bejelentkezve"] = true;
                 header('Location: ../index.php');
                 exit();
             }

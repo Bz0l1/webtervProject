@@ -22,8 +22,8 @@ if (session_status() == PHP_SESSION_NONE) {
 <?php
 
 if (!isset($_SESSION)) {
-  $_SESSION = array();
-}
+    $_SESSION = array();
+  }
 
 include("./navbar.php");
 ?>

@@ -70,6 +70,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <a href="#" class="overlayFilmGenre">Film műfaj</a>
       </div>
 
+      <a href="sorozatok.php" class="overlaySorozatok">Sorozatok</a>
       <div class="overlaySorozat-dropdown">
         <a href="#" class="overlayT10Sorozat">Top 5 sorozat</a>
         <a href="#" class="overlaySorozatRelease">Sorozat megjelenések</a>
