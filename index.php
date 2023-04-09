@@ -16,6 +16,7 @@
 <?php
 include("./navbar.php");
 ?>
+
 <body>
 <main class="main">
     <h1 id="filmVerzum">FilmVerzum</h1>

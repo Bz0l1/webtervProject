@@ -93,7 +93,19 @@
     </div>
 
     <div class="rightSide">
-      <button onclick="document.getElementById('id01').style.display='flex'" class="loginBTN">Bejelentkezés</button>
+    <?php
+    session_start();
+
+    // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
+    if ($_SESSION['bejelentkezve']) {
+      // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
+      $profile_picture = "./img/profilepicture.jpg";
+      echo '<img src="'.$profile_picture.'" alt="Profilkép">';
+    } else {
+      // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
+      echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
+    }
+    ?>
     </div>
   </nav>
 </body>
