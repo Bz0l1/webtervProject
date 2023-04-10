@@ -1,6 +1,6 @@
 <?php
 session_start();
-$errors = [];
+$error = "";
 $username = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -26,7 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         if (!$user_found) {
-            $errors[] = 'Hibás felhasználónév vagy jelszó.';
+            $error = 'Hibás felhasználónév vagy jelszó.';
+            echo $error;
+            exit();
         }
     }
 }

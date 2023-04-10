@@ -64,4 +64,5 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('input[name="email"]').addEventListener('input', validateEmail);
     document.querySelector('input[name="psw"]').addEventListener('input', validatePassword);
     document.querySelector('input[name="psw-repeat"]').addEventListener('input', validatePasswordRepeat);
+    
 });

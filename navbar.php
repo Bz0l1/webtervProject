@@ -109,8 +109,8 @@ if (session_status() == PHP_SESSION_NONE) {
       if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
         // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
         $profile_picture = "./img/profilepicture.jpg";
-        echo '<img src="' . $profile_picture . '" alt="Profilkép">';
-      } else {
+        echo '<img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture">';
+            } else {
         // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
         echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
       }
