@@ -1,3 +1,9 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,55 +17,16 @@
   <link rel="stylesheet" href="styles/styleLogin.css">
   <script src="scripts/script.js"></script>
 </head>
+
 <body>
-  <div id="id01" class="modal">
-    <form class="modal-content animate" method="post" action="php/login.php">
-      <div class="container">
-        <label>
-          <input type="text" placeholder="Felhasználónév" name="uname" class="formInput firstInput" required>
-        </label>
-        <label>
-          <input type="password" placeholder="Jelszó" name="psw" class="formInput" required>
-        </label>
-        <button type="submit" class="overlayLoginBTN">Bejelentkezés</button>
-        <div style="display: flex; justify-content: space-between;">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'"
-            class="cancelbtn">Mégse</button>
-          <button type="button" onclick="document.getElementById('registration').style.display='flex'"
-            class="signupBTN">Regisztráció</button>
-        </div>
-      </div>
-    </form>
-  </div>
 
-  <div id="registration" class="modal">
-    <form method="post" class="modal-content">
-      <div class="container">
-        <h1>Regisztráció</h1>
-        <fieldset>
-          <label>Teljes név <br>
-            <input type="text" placeholder="pl.: Kovács Ilona" name="name" class="formInput firstInput"
-              required></label>
-          <label>Születési dátum: <br>
-            <input type="date" name="date-of-birth" min="1920-01-01" class="formInput" required /></label>
-          <label>E-mail cím<br>
-            <input type="email" placeholder="pl.: kovacsilona@valami.com" name="email" class="formInput"
-              required></label>
-          <label>Jelszó<br>
-            <input type="password" placeholder="Írja be a jelszót" name="psw" class="formInput" required></label>
-          <label>Jelszó újra<br>
-            <input type="password" placeholder="Írja be újra a jelszót" name="psw-repeat" class="formInput"
-              required></label>
+  <?php
+  if (!isset($_SESSION)) {
+    $_SESSION = array();
+  }
 
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('registration').style.display='none'"
-              class="cancelbtn">Vissza a bejelentkezéshez</button>
-            <button type="submit" class="signupbtn">Regisztráció</button>
-          </div>
-        </fieldset>
-      </div>
-    </form>
-  </div>
+  include('./login.php');
+  ?>
 
   <div id="menuOverlay" class="overlay">
     <div id="menuActions">
@@ -76,7 +43,6 @@
           </tr>
         </thead>
         <tbody>
-
           <tr>
             <td headers="filmek"><a href="#" class="overlayT10Film">Top 5 film</a></td>
             <td headers="sorozatok"><a href="#" class="overlayT10Sorozat">Top 5 sorozat</a></td>
@@ -138,7 +104,46 @@
     </div>
 
     <div class="rightSide">
-      <button onclick="document.getElementById('id01').style.display='flex'" class="loginBTN">Bejelentkezés</button>
+      <?php
+      // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
+      if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
+        // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
+        $profile_picture = "./img/profilepicture.jpg";
+        $logout_picture = "./img/navbar/logout.png";
+        $settings_picture = "./img/navbar/setting.png";
+        $admin_picture = "./img/navbar/admin.png";
+
+        echo '
+          <div style="display: inline-block;">
+              <img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture">
+          </div>
+          <div style="display: inline-block;">
+          <a href="profile.php"><img src="' . $settings_picture . '" alt="Beállítások" id="settings" title="Beállítások"></a>
+          </div>
+        ';
+        if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+          echo '
+            <div style="display: inline-block;">
+              <a href="admin.php"><img src="'. $admin_picture. '" alt="Admin" id="admin" title="Admin"></a>
+            </div>
+          ';
+        }
+        echo '
+          <div style="display: inline-block;">
+              <form method="post" action="./includes/include.logout.php">
+                  <input type="image" src="' . $logout_picture . '" alt="Logout" id="logout" title="Kijelentkezés">
+              </form>
+          </div>
+        ';
+
+
+      } else {
+        // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
+        echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
+      }
+      ?>
     </div>
   </nav>
 </body>
+
+</html>

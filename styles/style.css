@@ -61,6 +61,14 @@ body {
   padding: 14px 100px;
 }
 
+#profilePicture, #logout, #settings, #admin {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 
 #menuBTN,
 .loginBTN,
@@ -250,6 +258,7 @@ body {
 .lablec li {
   margin: 20px;
 }
+
 
 @media only screen and (max-width: 1000px) {
   .socialMedia::after {
