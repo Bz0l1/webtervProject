@@ -1,0 +1,199 @@
+{
+  "movies": [
+    {
+      "actors": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver",
+        "Stephen Lang",
+        "Kate Winslet"
+      ],
+      "description": "Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.",
+      "directors": [
+        "James Cameron"
+      ],
+      "mainPosterURL": "./img/main/BigPoster/Avatar2.jpg",
+      "posterURL": "./img/main/smallPoster/Avatar2.jpg",
+      "tags": [
+        "Akció",
+        "Kaland",
+        "Fantázia"
+      ],
+      "title": "Avatar - A víz útja",
+      "originalTitle": "Avatar - The Way of Water",
+      "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
+      "premier": "2022. december 15.",
+      "watchTime": "193 perc",
+      "ageLimit": "16+",
+      "manifacturers": [
+        "USA 2022"
+      ],
+      "distributor": "20th Century Studios",
+      "language": "Angol",
+      "pictures": [
+        "./img/avatar/avatar1.jpg",
+        "./img/avatar/avatar2.jpg",
+        "./img/avatar/avatar3.jpg",
+        "./img/avatar/avatar4.jpg",
+        "./img/avatar/avatar5.jpg"
+      ]
+    },
+    {
+      "actors": [
+        "Dwayne Johnson",
+        "Aldis Hodge",
+        "Pierce Brosnan"
+      ],
+      "description": "Majdnem 5,000 évvel azután, hogy az egyiptomi istenek mindenható erejével felruházták (és ugyanolyan gyorsan börtönbe zárták) Black Adam felszabadul földi sírjából, készen arra, hogy sajátos igazságszolgáltatási formáját kibontakoztassa a modern világban.",
+      "directors": [
+        "Jaume Collet-Serra"
+      ],
+      "mainPosterURL": "./img/posters/BlackAdam.jpg",
+      "posterURL": "./img/posters/BlackAdam.jpg",
+      "tags": [
+        "Akció",
+        "Kaland",
+        "Fantázia"
+      ],
+      "title": "Black Adam",
+      "originalTitle": "Black Adam",
+      "trailerUrl": "https://www.youtube.com/embed/AP4GC0VDQiI",
+      "premier": "2022. november 20.",
+      "watchTime": "125 perc",
+      "ageLimit": "16+",
+      "manifacturers": [
+        "New Line Cinema",
+        "DC Films",
+        "Seven Bucks Productions",
+        "FlynnPictureCo"
+      ],
+      "distributor": "Warner Bros. Pictures",
+      "language": "Angol",
+      "firstPicture": "./img/avatar/avatar1.jpg",
+      "pictures": [
+        "./img/blackadam/blackadam.jpg",
+        "./img/blackadam/blackadam3.jpg",
+        "./img/blackadam/blackadam4.jpg",
+        "./img/blackadam/blackadam7.jpg",
+        "./img/blackadam/blackadam6.jpg"
+      ]
+    },
+    {
+      "actors": [
+        "Rhys Ifans",
+        "Matt Smith",
+        "Fabien Frankel"
+      ],
+      "description": "Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése előtt 172 évvel.",
+      "directors": [
+        "Greg Yaitanes",
+        "Miguel Sapochnik"
+      ],
+      "mainPosterURL": "./img/posters/HouseOfDragons.jpg",
+      "posterURL": "./img/main/smallPoster/HouseOfDragons.jpg",
+      "tags": [
+        "Akció",
+        "Kaland",
+        "Dráma"
+      ],
+      "title": "Sárkányok háza",
+      "originalTitle": "House of the Dragon",
+      "trailerUrl": "https://www.youtube.com/embed/JOXj6CHQPYI",
+      "premier": "2022. augusztus 2.",
+      "watchTime": "1 évad 10 rész",
+      "ageLimit": "18+",
+      "manifacturers": [
+        "HBO"
+      ],
+      "distributor": "HBO Max",
+      "language": "Angol",
+      "pictures": [
+        "./img/houseofthedragon/houseofthedragon1.jpg",
+        "./img/houseofthedragon/houseofthedragon5.jpg",
+        "./img/houseofthedragon/houseofthedragon3.jpg",
+        "./img/houseofthedragon/houseofthedragon4.jpg",
+        "./img/houseofthedragon/houseofthedragon2.jpg"
+      ]
+    },
+    {
+      "actors": [
+        "Robert Aramayo",
+        "Owain Arthur",
+        "Nazanin Boniadir",
+        "Tom Budge",
+        "Morfydd Clark"
+      ],
+      "description": "Epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien: A hobbit és A Gyűrűk Ura című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket, ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.",
+      "directors": [
+        "Wayne Yip",
+        "Juan Antonio Bayona",
+        "Charlotte Brandstrom"
+      ],
+      "mainPosterURL": "./img/posters/RingsOfPower.jpg",
+      "posterURL": "./img/main/smallPoster/RingsOfPower.jpg",
+      "tags": [
+        "Dráma",
+        "Akció",
+        "Kaland",
+        "Fantázia"
+      ],
+      "title": "A gyűrűk ura: Hatalom gyűrűi",
+      "originalTitle": "The Lord of the Rings: The Rings of Power",
+      "trailerUrl": "https://www.youtube.com/embed/gvzQyo_jBqI",
+      "premier": "2022. szeptember 2.",
+      "watchTime": "1 évad 8 rész",
+      "ageLimit": "13+",
+      "manifacturers": [
+        "Amazon Studios",
+        "Cause and FX",
+        "Harper Collins Publishers",
+        "New Line Cinema"
+      ],
+      "distributor": "New Line Cinema",
+      "language": "Angol",
+      "pictures": [
+        "./img/ringsofpower/ringsofpower1.jpg",
+        "./img/ringsofpower/ringsofpower2.jpg",
+        "./img/ringsofpower/ringsofpower3.jpg",
+        "./img/ringsofpower/ringsofpower4.jpg",
+        "./img/ringsofpower/ringsofpower5.jpg"
+      ]
+    },
+    {
+      "actors": [
+        "Tom Cruise",
+        "Jennifer Connelly",
+        "Miles Teller"
+      ],
+      "description": "30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az ultimátum áldozatára.",
+      "directors": [
+        "Joseph Kosinski"
+      ],
+      "mainPosterURL": "./img/posters/TopGunMaverick.jpg",
+      "posterURL": "./img/main/smallPoster/TopGunMaverick.jpg",
+      "tags": [
+        "Akció",
+        "Dráma"
+      ],
+      "title": "Top Gun: Maverick",
+      "originalTitle": "Top Gun: Maverick",
+      "trailerUrl": "https://www.youtube.com/embed/VxGR3l_BYyI",
+      "premier": "2022. május 26.",
+      "watchTime": "131 perc",
+      "ageLimit": "12+",
+      "manifacturers": [
+        "Skydance Media",
+        "Don Simpson/Jerry Bruckheimer Films"
+      ],
+      "distributor": "Paramount Pictures",
+      "language": "Angol",
+      "pictures": [
+        "./img/topgun/topgun1.jpg",
+        "./img/topgun/topgun5.jpg",
+        "./img/topgun/topgun3.jpg",
+        "./img/topgun/topgun4.jpg",
+        "./img/topgun/topgun2.jpg"
+      ]
+    }
+  ]
+}
