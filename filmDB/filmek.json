@@ -6,14 +6,13 @@
                 "Zoe Saldaña",
                 "Sigourney Weaver",
                 "Stephen Lang",
-                "Kate Winslet",
-                "Cliff Curtis"
+                "Kate Winslet"
             ],
             "description": "Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.",
             "directors": [
                 "James Cameron"
             ],
-            "mainPosterURL": "./img/main/Avatar2.jpg",
+            "mainPosterURL": "./img/posters/Avatar2.jpg",
             "posterURL": "./img/main/smallPoster/Avatar2.jpg",
             "tags": [
                 "Akció",
@@ -21,14 +20,21 @@
                 "Fantázia"
             ],
             "title": "Avatar - A víz útja",
+            "originalTitle": "Avatar - The Way of Water",
             "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
-            "year": 2022,
+            "premier": "2022. december 15.",
+            "watchTime": "193 perc",
+            "ageLimit": "16+",
+            "manifacturer": "USA 2022",
+            "distributor": "20th Century Studios",
+            "language": "Angol",
+            "firstPicture": "./img/avatar/avatar1.jpg",
             "pictures": [
-                "./img/fimlPage/avatar2/Avatar2-1.jpg",
-                "./img/fimlPage/avatar2/Avatar2-2.jpg",
-                "./img/fimlPage/avatar2/Avatar2-3.jpg",
-                "./img/fimlPage/avatar2/Avatar2-4.jpg",
-                "./img/fimlPage/avatar2/Avatar2-5.jpg"
+                "./img/avatar/avatar1.jpg",
+                "./img/avatar/avatar2.jpg",
+                "./img/avatar/avatar3.jpg",
+                "./img/avatar/avatar4.jpg",
+                "./img/avatar/avatar5.jpg"
             ]
         },
         {
