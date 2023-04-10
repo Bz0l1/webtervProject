@@ -1,3 +1,13 @@
+<?php
+// Betöltjük a JSON fájl tartalmát egy változóba
+$jsonData = file_get_contents('filmDB/filmek.json');
+
+// JSON adatok átalakítása PHP tömbbe
+$data = json_decode($jsonData, true);
+
+$link = $data['movies'][0]['trailerUrl'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,49 +32,43 @@ include("./navbar.php");
     <div class="mainPart">
 
         <a href="avatar.php" class="poster">
-            <img src="./img/main/bigPoster/Avatar2.jpg" alt="poster" id="posterIMG">
+            <img src="<?php echo $data['movies'][0]['mainPosterURL']; ?>" alt="poster" id="posterIMG">
 
             <div class="description">
-                <h2 id="mainTitle">Az AVATAR: A VÍZ ÚTJA</h2>
+                <h2 id="mainTitle"><?php echo $data['movies'][0]['title']; ?> </h2>
 
                 <div class="categories">
-                    <p class="category">Akció</p>
-                    <p class="category">Kaland</p>
-                    <p class="category">Fantázia</p>
+                    <?php foreach ($data['movies'][0]['tags'] as $genre) {
+                        echo $genre . '  ';
+                    } ?>
                 </div>
 
-                <p>Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és
-                    gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az
-                    őket sújtó
-                    tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.</p>
+                <p><?php echo $data['movies'][0]['description']; ?></p>
             </div>
         </a>
     </div>
 </main>
 
 <div class="secondary">
-    <h2 id="topMusorok">Top műsorok</h2>
+    <h2>Top műsorok</h2>
     <div class="topmusorok">
-        <a href="houseofthedragon.php" target="_blank">
-            <img class="firstInTopFilmek" src="./img/posters/HouseOfDragons.jpg" alt="slide">
-            <p class="slide-desc">House of the Dragon</p>
+        <a href="houseofthedragon.php">
+            <img src="<?php echo $data['movies'][2]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="blackadam.php">
-            <img class="secondInTopFilmek" src="./img/posters/BlackAdam.jpg" alt="slide">
-            <p class="slide-desc">Black Adam</p>
+            <img src="<?php echo $data['movies'][1]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="topgunmaverick.php">
-            <img class="thirdInTopFilmek" src="./img/posters/TopGunMaverick.jpg" alt="slide">
-            <p class="slide-desc">Top Gun: Maverick</p>
+            <img src="<?php echo $data['movies'][4]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="ringsofpower.php">
-            <img class="fourthInTopFilmek" src="./img/posters/RingsOfPower.jpg" alt="slide">
-            <p class="slide-desc">Rings of Power</p>
+            <img src="<?php echo $data['movies'][3]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
     </div>
 </div>
+
 </body>
 <?php
-include("./navbar.php");
+include("./footer.php");
 ?>
 </html>

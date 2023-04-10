@@ -5,6 +5,7 @@ $jsonData = file_get_contents('filmDB/filmek.json');
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);
 
+$link = $data['movies'][0]['trailerUrl'];
 ?>
 
 <!DOCTYPE html>
@@ -24,14 +25,15 @@ include("./navbar.php");
 ?>
 
 <body>
+
 <main class="main">
     <div class="mainPart">
         <h1><?php echo $data['movies'][0]['title']; ?></h1>
         <div class="szoveg"> <?php echo $data['movies'][0]['description']; ?><br></div>
-
         <div class="video-container">
-            <iframe <?php echo $data['movies'][0]['trailerUrl']; ?> allowfullscreen></iframe>
-            <br>
+            <iframe src="<?php echo $link; ?>" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             <img src="<?php echo $data['movies'][0]['mainPosterURL']; ?>" alt="A film borítóképe"/>
         </div>
     </div>
