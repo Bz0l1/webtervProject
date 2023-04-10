@@ -19,6 +19,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user_data = explode($separator, $user);
 
             if ($username === $user_data[0] && password_verify($password, $user_data[2])) {
+                $user_found = true;
+                if ($username === 'admin') {
+                    $_SESSION["admin"] = true;
+                } else {
+                    $_SESSION["admin"] = false;
+                }
                 $_SESSION["bejelentkezve"] = true;
                 header('Location: ../index.php');
                 exit();

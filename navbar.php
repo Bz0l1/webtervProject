@@ -109,8 +109,35 @@ if (session_status() == PHP_SESSION_NONE) {
       if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
         // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
         $profile_picture = "./img/profilepicture.jpg";
-        echo '<img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture">';
-            } else {
+        $logout_picture = "./img/navbar/logout.png";
+        $settings_picture = "./img/navbar/setting.png";
+        $admin_picture = "./img/navbar/admin.png";
+
+        echo '
+          <div style="display: inline-block;">
+              <img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture">
+          </div>
+          <div style="display: inline-block;">
+          <a href="profile.php"><img src="' . $settings_picture . '" alt="Beállítások" id="settings" title="Beállítások"></a>
+          </div>
+        ';
+        if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+          echo '
+            <div style="display: inline-block;">
+              <a href="admin.php"><img src="'. $admin_picture. '" alt="Admin" id="admin" title="Admin"></a>
+            </div>
+          ';
+        }
+        echo '
+          <div style="display: inline-block;">
+              <form method="post" action="./includes/include.logout.php">
+                  <input type="image" src="' . $logout_picture . '" alt="Logout" id="logout" title="Kijelentkezés">
+              </form>
+          </div>
+        ';
+
+
+      } else {
         // Ha nincs bejelentkezve, akkor megjelenítjük a Bejelentkezés gombot
         echo '<button onclick="document.getElementById(\'id01\').style.display=\'flex\'" class="loginBTN">Bejelentkezés</button>';
       }
