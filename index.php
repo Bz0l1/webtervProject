@@ -1,6 +1,6 @@
 <?php
 // Betöltjük a JSON fájl tartalmát egy változóba
-$jsonData = file_get_contents('filmDB/filmek.json');
+$jsonData = file_get_contents('db/filmek.json');
 
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);

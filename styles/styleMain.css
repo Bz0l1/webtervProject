@@ -5,6 +5,7 @@ body {
     animation: gradient 20s ease infinite;
 }
 
+
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -19,11 +20,12 @@ body {
     }
 }
 
-#filmVerzum{
+#filmVerzum {
     font-size: 50px;
     margin-top: 10px;
 }
-#topMusorok{
+
+#topMusorok {
     margin-left: 30px;
 }
 
@@ -41,7 +43,7 @@ body {
     padding: 15px 15px;
 }
 
-.poster, .poster a{
+.poster, .poster a {
     margin-top: 5%;
     width: 100%;
     height: 30%;
@@ -58,7 +60,7 @@ body {
 }
 
 .categories {
-    display: flex;  
+    display: flex;
 }
 
 .category {
@@ -79,44 +81,14 @@ body {
 }
 
 .topmusorok {
-    margin-top: 5%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
-  
 
-.slide-desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: black;
-    color: whitesmoke;
-    margin-bottom: 5px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.2s linear; 
-    transition: visibility 0s, opacity 0.2s linear;
-  }
-  
-  .topmusorok a {
-    position: relative;
-  }
-  
-  .topmusorok a:hover .slide-desc {
-    width: 150px;
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7; 
-  } 
-
-.topmusorok img {
-    height: 300px;
+.topmusorok .top-poster {
     width: 200px;
-    padding-right: 100px;
 }
+
 
 @media only screen and (max-width: 1600px) {
     .mainPart {
@@ -152,18 +124,18 @@ body {
         gap: 20px;
         justify-items: center;
         align-items: center;
-      }
-      
-      .topmusorok img {
+    }
+
+    .topmusorok img {
         width: 250px;
         height: 350px;
         object-fit: cover;
-      }
-      
-      
-      .slide-desc {
-        display: none; 
-      }
+    }
+
+
+    .slide-desc {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -172,61 +144,67 @@ body {
         align-items: center;
         justify-content: flex-end;
         height: 100%;
-      }
-    
-      #posterIMG {
+    }
+
+    #posterIMG {
         width: 100%;
-      }
-    
-      .description {
+    }
+
+    .description {
         width: 100%;
         text-align: center;
         margin-top: 10px;
-      }
+    }
 
     .topmusorok {
-      display: block; 
-      text-align: center; 
+        display: block;
+        text-align: center;
     }
-  
+
     .topmusorok img {
-      width: 150px; 
-      height: 250px;
-      object-fit: cover;
-      margin: 20px auto; 
+        width: 150px;
+        height: 250px;
+        object-fit: cover;
+        margin: 20px auto;
     }
-  }
+}
 
 @media print {
-    #filmVerzum{
+    #filmVerzum {
         position: absolute;
         top: 0;
         text-align: center;
         display: block;
     }
-    .main{
+
+    .main {
         background: none;
     }
-    .topmusorok{
+
+    .topmusorok {
         background: none;
         width: 90%;
         position: absolute;
     }
-    .topmusorok img{
+
+    .topmusorok img {
         height: 380px;
         width: auto;
         padding: 10px;
     }
-    .poster{
+
+    .poster {
         position: absolute;
         top: 100px;
 
     }
-    .secondary{
+
+    .secondary {
         position: absolute;
         top: 550px;
     }
-    .fourthInTopFilmek{
+
+    .fourthInTopFilmek {
         display: none;
     }
 }
