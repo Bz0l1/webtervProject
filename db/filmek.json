@@ -37,6 +37,20 @@
         "./img/avatar/avatar3.jpg",
         "./img/avatar/avatar4.jpg",
         "./img/avatar/avatar5.jpg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kovács Béla",
+          "comment": "Nagyon jó film volt, nagyon tetszett a szereplőknek a színvonala, a történet pedig nagyon izgalmas volt. Azt hiszem, hogy a következő rész is nagyon jó lesz.",
+          "commentDate": "2021. május 12. 12:00"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kovács Béla",
+          "comment": "Nagyon jó film volt, nagyon tetszett a szereplőknek a színvonala, a történet pedig nagyon izgalmas volt. Azt hiszem, hogy a következő rész is nagyon jó lesz.",
+          "commentDate": "2021. május 12. 12:00"
+        }
       ]
     },
     {

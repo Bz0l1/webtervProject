@@ -108,7 +108,7 @@ if (session_status() == PHP_SESSION_NONE) {
       // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
       if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
         // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
-        $profile_picture = "./img/profilepicture.jpg";
+        $profile_picture = "./img/default.jpg";
         $logout_picture = "./img/navbar/logout.png";
         $settings_picture = "./img/navbar/setting.png";
         $admin_picture = "./img/navbar/admin.png";
