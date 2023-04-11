@@ -1,3 +1,11 @@
+<?php
+// Betöltjük a JSON fájl tartalmát egy változóba
+$jsonData = file_get_contents('db/filmek.json');
+
+// JSON adatok átalakítása PHP tömbbe
+$data = json_decode($jsonData, true);
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -32,24 +40,25 @@ include("./navbar.php");
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="avatar.php"><img src="./img/posters/Avatar2.jpg" alt="Avatar 2"></a></td>
-                        <td>Avatar 2</td>
-                        <td>2022</td>
-                        <td>9.1</td>
+                        <td><a href="secondpage.php?valtozo=0"><img src="<?php echo $data['movies'][0]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][0]['title']; ?> </td>
+                        <?php $year = $data['movies'][0]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][0]['rating']; ?></td>
                     </tr>
                     <tr>
-                        <td><a href="blackadam.php"><img src="./img/posters/BlackAdam.jpg"
-                                    alt="Black Adam"></a></td>
-                        <td>Black Adam</td>
-                        <td>2022</td>
-                        <td>8.4</td>
+                        <td><a href="secondpage.php?valtozo=1"><img src="<?php echo $data['movies'][1]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][1]['title']; ?> </td>
+                        <?php $year = $data['movies'][1]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][1]['rating']; ?></td>
                     </tr>
                     <tr>
-                        <td><a href="topgunmaverick.php"><img src="./img/posters/TopGunMaverick.jpg"
-                                    alt="Top Gun: Maverick"></a></td>
-                        <td>Top Gun: Maverick</td>
-                        <td>2022</td>
-                        <td>7.8</td>
+                        <td><a href="secondpage.php?valtozo=4"><img src="<?php echo $data['movies'][4]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][4]['title']; ?> </td>
+                        <?php $year = $data['movies'][4]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][4]['rating']; ?></td>
                     </tr>
                 </tbody>
             </table>

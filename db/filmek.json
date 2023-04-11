@@ -13,7 +13,7 @@
         "James Cameron"
       ],
       "mainPosterURL": "./img/main/BigPoster/Avatar2.jpg",
-      "posterURL": "./img/main/smallPoster/Avatar2.jpg",
+      "posterURL": "./img/posters/Avatar2.jpg",
       "tags": [
         "Akció",
         "Kaland",
@@ -21,15 +21,16 @@
       ],
       "title": "Avatar - A víz útja",
       "originalTitle": "Avatar - The Way of Water",
-      "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
+      "trailerUrl": "d9MyW72ELq0",
       "premier": "2022. december 15.",
       "watchTime": "193 perc",
       "ageLimit": "16+",
-      "manifacturers": [
+      "production": [
         "USA 2022"
       ],
       "distributor": "20th Century Studios",
       "language": "Angol",
+      "rating": "9.1",
       "pictures": [
         "./img/avatar/avatar1.jpg",
         "./img/avatar/avatar2.jpg",
@@ -57,11 +58,11 @@
       ],
       "title": "Black Adam",
       "originalTitle": "Black Adam",
-      "trailerUrl": "https://www.youtube.com/embed/AP4GC0VDQiI",
+      "trailerUrl": "AP4GC0VDQiI",
       "premier": "2022. november 20.",
       "watchTime": "125 perc",
       "ageLimit": "16+",
-      "manifacturers": [
+      "production": [
         "New Line Cinema",
         "DC Films",
         "Seven Bucks Productions",
@@ -69,7 +70,7 @@
       ],
       "distributor": "Warner Bros. Pictures",
       "language": "Angol",
-      "firstPicture": "./img/avatar/avatar1.jpg",
+      "rating": "8.4",
       "pictures": [
         "./img/blackadam/blackadam.jpg",
         "./img/blackadam/blackadam3.jpg",
@@ -90,7 +91,7 @@
         "Miguel Sapochnik"
       ],
       "mainPosterURL": "./img/posters/HouseOfDragons.jpg",
-      "posterURL": "./img/main/smallPoster/HouseOfDragons.jpg",
+      "posterURL": "./img/posters/HouseOfDragons.jpg",
       "tags": [
         "Akció",
         "Kaland",
@@ -98,21 +99,22 @@
       ],
       "title": "Sárkányok háza",
       "originalTitle": "House of the Dragon",
-      "trailerUrl": "https://www.youtube.com/embed/JOXj6CHQPYI",
+      "trailerUrl": "JOXj6CHQPYI",
       "premier": "2022. augusztus 2.",
       "watchTime": "1 évad 10 rész",
       "ageLimit": "18+",
-      "manifacturers": [
+      "production": [
         "HBO"
       ],
       "distributor": "HBO Max",
       "language": "Angol",
+      "rating": "9.9",
       "pictures": [
         "./img/houseofthedragon/houseofthedragon1.jpg",
         "./img/houseofthedragon/houseofthedragon5.jpg",
         "./img/houseofthedragon/houseofthedragon3.jpg",
         "./img/houseofthedragon/houseofthedragon4.jpg",
-        "./img/houseofthedragon/houseofthedragon2.jpg"
+        "./img/houseofthedragon/houseofthedragon2.jpeg"
       ]
     },
     {
@@ -130,7 +132,7 @@
         "Charlotte Brandstrom"
       ],
       "mainPosterURL": "./img/posters/RingsOfPower.jpg",
-      "posterURL": "./img/main/smallPoster/RingsOfPower.jpg",
+      "posterURL": "./img/posters/RingsOfPower.jpg",
       "tags": [
         "Dráma",
         "Akció",
@@ -139,11 +141,11 @@
       ],
       "title": "A gyűrűk ura: Hatalom gyűrűi",
       "originalTitle": "The Lord of the Rings: The Rings of Power",
-      "trailerUrl": "https://www.youtube.com/embed/gvzQyo_jBqI",
+      "trailerUrl": "gvzQyo_jBqI",
       "premier": "2022. szeptember 2.",
       "watchTime": "1 évad 8 rész",
       "ageLimit": "13+",
-      "manifacturers": [
+      "production": [
         "Amazon Studios",
         "Cause and FX",
         "Harper Collins Publishers",
@@ -151,6 +153,7 @@
       ],
       "distributor": "New Line Cinema",
       "language": "Angol",
+      "rating": "9.4",
       "pictures": [
         "./img/ringsofpower/ringsofpower1.jpg",
         "./img/ringsofpower/ringsofpower2.jpg",
@@ -170,29 +173,70 @@
         "Joseph Kosinski"
       ],
       "mainPosterURL": "./img/posters/TopGunMaverick.jpg",
-      "posterURL": "./img/main/smallPoster/TopGunMaverick.jpg",
+      "posterURL": "./img/posters/TopGunMaverick.jpg",
       "tags": [
         "Akció",
         "Dráma"
       ],
       "title": "Top Gun: Maverick",
       "originalTitle": "Top Gun: Maverick",
-      "trailerUrl": "https://www.youtube.com/embed/VxGR3l_BYyI",
+      "trailerUrl": "VxGR3l_BYyI",
       "premier": "2022. május 26.",
       "watchTime": "131 perc",
       "ageLimit": "12+",
-      "manifacturers": [
+      "production": [
         "Skydance Media",
         "Don Simpson/Jerry Bruckheimer Films"
       ],
       "distributor": "Paramount Pictures",
       "language": "Angol",
+      "rating": "7.8",
       "pictures": [
         "./img/topgun/topgun1.jpg",
         "./img/topgun/topgun5.jpg",
         "./img/topgun/topgun3.jpg",
         "./img/topgun/topgun4.jpg",
         "./img/topgun/topgun2.jpg"
+      ]
+    },
+    {
+      "actors": [
+        "Jenna Ortega",
+        "Emma Myers",
+        "Christina Ricci",
+        "Percy Hynes White"
+      ],
+      "description": "Az okos, szarkasztikus és belül egy kicsit halott Wednesday Addams egy gyilkosságsorozat ügyében nyomoz, míg új barátokat és ellenségeket szerez a Nevermore Akadémián.",
+      "directors": [
+        "Tim Burton",
+        "Fred Armisen",
+        "James Marshall"
+      ],
+      "mainPosterURL": "./img/main/BigPoster/Wednesday.jpeg",
+      "posterURL": "./img/posters/Wednesday.png",
+      "tags": [
+        "Horrorkomédia"
+      ],
+      "title": "Wednesday",
+      "originalTitle": "Wednesday",
+      "trailerUrl": "Di310WS8zLk",
+      "premier": "2022. november 23.",
+      "watchTime": "1 évad 8 rész",
+      "ageLimit": "14+",
+      "production": [
+        "MGM Television",
+        "Millar Gough Ink",
+        "Tim Burton Productions"
+      ],
+      "distributor": "Netflix",
+      "language": "Angol",
+      "rating": "7.5",
+      "pictures": [
+        "./img/wednesday/wednesday1.jpeg",
+        "./img/wednesday/wednesday2.jpeg",
+        "./img/wednesday/wednesday3.jpg",
+        "./img/wednesday/wednesday4.jpeg",
+        "./img/wednesday/wednesday5.jpg"
       ]
     }
   ]

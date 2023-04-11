@@ -1,3 +1,11 @@
+<?php
+// Betöltjük a JSON fájl tartalmát egy változóba
+$jsonData = file_get_contents('db/filmek.json');
+
+// JSON adatok átalakítása PHP tömbbe
+$data = json_decode($jsonData, true);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,24 +37,25 @@ include("./navbar.php");
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="houseofthedragon.php"><img src="./img/posters/HouseOfDragons.jpg" alt="House of the Dragons"></a></td>
-                        <td>House of the Dragons</td>
-                        <td>2022</td>
-                        <td>9.9</td>
+                        <td><a href="secondpage.php?valtozo=2"><img src="<?php echo $data['movies'][2]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][2]['title']; ?> </td>
+                        <?php $year = $data['movies'][2]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][2]['rating']; ?></td>
                     </tr>
                     <tr>
-                        <td><a href="ringsofpower.php"><img src="./img/posters/RingsOfPower.jpg"
-                                    alt="Rings of Power"></a></td>
-                        <td>Rings of Power</td>
-                        <td>2022</td>
-                        <td>9.4</td>
+                        <td><a href="secondpage.php?valtozo=3"><img src="<?php echo $data['movies'][3]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][3]['title']; ?> </td>
+                        <?php $year = $data['movies'][3]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][3]['rating']; ?></td>
                     </tr>
                     <tr>
-                        <td><a href="topgunmaverick.php"><img src="./img/posters/Wednesday.jpg"
-                                    alt="Wednesday"></a></td>
-                        <td>Wednesday</td>
-                        <td>2022</td>
-                        <td>7.5</td>
+                        <td><a href="secondpage.php?valtozo=5"><img src="<?php echo $data['movies'][5]['posterURL']; ?>" alt="A film borítóképe"></a></td>
+                        <td><?php echo $data['movies'][5]['title']; ?> </td>
+                        <?php $year = $data['movies'][5]['premier']; ?>
+                        <td><?php echo substr($year, 0, 4);?></td>
+                        <td><?php echo $data['movies'][5]['rating']; ?></td>
                     </tr>
                 </tbody>
             </table>

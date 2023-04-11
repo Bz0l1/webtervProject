@@ -4,8 +4,6 @@ $jsonData = file_get_contents('db/filmek.json');
 
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);
-
-$link = $data['movies'][0]['trailerUrl'];
 ?>
 
 <!DOCTYPE html>
@@ -26,16 +24,17 @@ $link = $data['movies'][0]['trailerUrl'];
 <?php
 include("./navbar.php");
 ?>
+
 <body>
 <main class="main">
     <h1 id="filmVerzum">FilmVerzum</h1>
     <div class="mainPart">
 
-        <a href="avatar.php" class="poster">
+        <a href="secondpage.php?valtozo=0" class="poster">
             <img src="<?php echo $data['movies'][0]['mainPosterURL']; ?>" alt="poster" id="posterIMG">
 
             <div class="description">
-                <h2 id="mainTitle"><?php echo $data['movies'][0]['title']; ?> </h2>
+                <h2 id="mainTitle"><?php echo $data['movies'][0]['title']; ?></h2>
 
                 <div class="categories">
                     <?php foreach ($data['movies'][0]['tags'] as $genre) {
@@ -52,16 +51,16 @@ include("./navbar.php");
 <div class="secondary">
     <h2>Top műsorok</h2>
     <div class="topmusorok">
-        <a href="houseofthedragon.php">
+        <a href="secondpage.php?valtozo=2">
             <img src="<?php echo $data['movies'][2]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
-        <a href="blackadam.php">
+        <a href="secondpage.php?valtozo=1">
             <img src="<?php echo $data['movies'][1]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
-        <a href="topgunmaverick.php">
+        <a href="secondpage.php?valtozo=4">
             <img src="<?php echo $data['movies'][4]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
-        <a href="ringsofpower.php">
+        <a href="secondpage.php?valtozo=3">
             <img src="<?php echo $data['movies'][3]['mainPosterURL']; ?>" alt="poster" class="top-poster">
         </a>
     </div>

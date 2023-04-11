@@ -1,18 +1,19 @@
 <?php
-// Betöltjük a JSON fájl tartalmát egy változóba
+$valtozo = $_GET['valtozo'];
 $jsonData = file_get_contents('db/filmek.json');
 
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);
 
-$link = $data['movies'][0]['trailerUrl'];
+$link = $data['movies'][$valtozo]['trailerUrl'];
+$video = '<iframe width="813" height="508" src="https://www.youtube.com/embed/'.$link.' " title="A film trailere" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 ?>
 
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $data['movies'][0]['title']; ?></title>
+    <title><?php echo $data['movies'][$valtozo]['title']; ?></title>
     <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -28,13 +29,11 @@ include("./navbar.php");
 
 <main class="main">
     <div class="mainPart">
-        <h1><?php echo $data['movies'][0]['title']; ?></h1>
-        <div class="szoveg"> <?php echo $data['movies'][0]['description']; ?><br></div>
+        <h1><?php echo $data['movies'][$valtozo]['title']; ?></h1>
+        <div class="szoveg"> <?php echo $data['movies'][$valtozo]['description']; ?><br></div>
         <div class="video-container">
-            <iframe src="<?php echo $link; ?>" title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            <img src="<?php echo $data['movies'][0]['mainPosterURL']; ?>" alt="A film borítóképe"/>
+            <?php echo $video ?>
+            <img src="<?php echo $data['movies'][$valtozo]['posterURL']; ?>" alt="A film borítóképe"/>
         </div>
     </div>
 
@@ -45,54 +44,62 @@ include("./navbar.php");
                 <tr>
                     <th class=firstcolumn id="originalTitle">Eredeti cím:</th>
                     <th class=secondcolumn
-                        id="originalTitleValue"><?php echo $data['movies'][0]['originalTitle']; ?></th>
+                        id="originalTitleValue"><?php echo $data['movies'][$valtozo]['originalTitle']; ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="genre">Műfaj:</th>
-                    <th class=secondcolumn id="genreValue"><?php foreach ($data['movies'][0]['tags'] as $genre) {
-                            echo $genre . '  ';
+                    <th class=secondcolumn id="genreValue"><?php foreach ($data['movies'][$valtozo]['tags'] as $index => $genre) {
+                            echo $data['movies'][$valtozo]['tags'][$index];
+                            if ($index !== count($data['movies'][$valtozo]['tags']) - 1) {
+                                echo ', ';
+                            }
                         } ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="premier">Bemutató ideje:</th>
-                    <th class=secondcolumn id="premierValue"><?php echo $data['movies'][0]['premier']; ?></th>
+                    <th class=secondcolumn id="premierValue"><?php echo $data['movies'][$valtozo]['premier']; ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="watchTime">Játékidő:</th>
-                    <th class=secondcolumn id="watchTimeValue"><?php echo $data['movies'][0]['watchTime']; ?></th>
+                    <th class=secondcolumn id="watchTimeValue"><?php echo $data['movies'][$valtozo]['watchTime']; ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="stars">Főszereplők:</th>
                     <th class=secondcolumn
-                        id="starsValue"><?php foreach ($data['movies'][0]['actors'] as $index => $actor) {
-                            echo $data['movies'][0]['actors'][$index];
-                            if ($index !== count($data['movies'][0]['actors']) - 1) {
+                        id="starsValue"><?php foreach ($data['movies'][$valtozo]['actors'] as $index => $actor) {
+                            echo $data['movies'][$valtozo]['actors'][$index];
+                            if ($index !== count($data['movies'][$valtozo]['actors']) - 1) {
                                 echo ', ';
                             }
                         } ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="ageLimit">Korhatár:</th>
-                    <th class=secondcolumn id="ageLimitValue"><?php echo $data['movies'][0]['ageLimit']; ?></th>
+                    <th class=secondcolumn id="ageLimitValue"><?php echo $data['movies'][$valtozo]['ageLimit']; ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="director">Rendezők:</th>
                     <th class=secondcolumn
-                        id="directorValue"><?php foreach ($data['movies'][0]['directors'] as $index => $directors) {
-                            echo $data['movies'][0]['directors'][$index];
+                        id="directorValue"><?php foreach ($data['movies'][$valtozo]['directors'] as $index => $directors) {
+                            echo $data['movies'][$valtozo]['directors'][$index];
                         } ?></th>
                 </tr>
                 <tr>
-                    <th class=firstcolumn id="manifacturer">Gyártó:</th>
-                    <th class=secondcolumn id="manifacturerValue"><?php echo $data['movies'][0]['manifacturer']; ?></th>
+                    <th class=firstcolumn id="production">Gyártó:</th>
+                    <th class=secondcolumn id="productionValue"><?php foreach ($data['movies'][$valtozo]['production'] as $index => $production) {
+                            echo $data['movies'][$valtozo]['production'][$index];
+                            if ($index !== count($data['movies'][$valtozo]['production']) - 1) {
+                                echo ', ';
+                            }
+                        } ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="distributor">Forgalmazó:</th>
-                    <th class=secondcolumn id="distributorValue"><?php echo $data['movies'][0]['distributor']; ?></th>
+                    <th class=secondcolumn id="distributorValue"><?php echo $data['movies'][$valtozo]['distributor']; ?></th>
                 </tr>
                 <tr>
                     <th class=firstcolumn id="language">Eredeti nyelv:</th>
-                    <th class=secondcolumn id="languageValue"><?php echo $data['movies'][0]['language']; ?></th>
+                    <th class=secondcolumn id="languageValue"><?php echo $data['movies'][$valtozo]['language']; ?></th>
                 </tr>
             </table>
             <!--
@@ -132,14 +139,14 @@ include("./navbar.php");
             </div>
             -->
             <div class="photo-gallery">
-                <img class="firsInGalley" src="<?php echo $data['movies'][0]['pictures'][1]; ?>" alt="Film kép 1"/>
-                <img class="secondInGalley" src="<?php echo $data['movies'][0]['pictures'][2]; ?>" alt="Film kép 2"/>
-                <img class="thirdInGalley" src="<?php echo $data['movies'][0]['pictures'][3]; ?>" alt="Film kép 3"/>
-                <img class="fourthInGalley" src="<?php echo $data['movies'][0]['pictures'][4]; ?>" alt="Film kép 4"/>
+                <img class="firsInGalley" src="<?php echo $data['movies'][$valtozo]['pictures'][1]; ?>" alt="Film kép 1"/>
+                <img class="secondInGalley" src="<?php echo $data['movies'][$valtozo]['pictures'][2]; ?>" alt="Film kép 2"/>
+                <img class="thirdInGalley" src="<?php echo $data['movies'][$valtozo]['pictures'][3]; ?>" alt="Film kép 3"/>
+                <img class="fourthInGalley" src="<?php echo $data['movies'][$valtozo]['pictures'][4]; ?>" alt="Film kép 4"/>
             </div>
 </main>
 </body>
 <?php
-include("./navbar.php");
+include("./footer.php");
 ?>
 </html>
