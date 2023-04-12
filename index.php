@@ -52,16 +52,19 @@ include("./navbar.php");
     <h2>Top műsorok</h2>
     <div class="topmusorok">
         <a href="secondpage.php?valtozo=2">
-            <img src="<?php echo $data['movies'][2]['mainPosterURL']; ?>" alt="poster" class="top-poster">
+            <img src="<?php echo $data['movies'][2]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="secondpage.php?valtozo=1">
-            <img src="<?php echo $data['movies'][1]['mainPosterURL']; ?>" alt="poster" class="top-poster">
+            <img src="<?php echo $data['movies'][1]['posterURL']; ?>" alt="poster" class="top-poster">
+        </a>
+        <a href="secondpage.php?valtozo=5">
+            <img src="<?php echo $data['movies'][5]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="secondpage.php?valtozo=4">
-            <img src="<?php echo $data['movies'][4]['mainPosterURL']; ?>" alt="poster" class="top-poster">
+            <img src="<?php echo $data['movies'][4]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>
         <a href="secondpage.php?valtozo=3">
-            <img src="<?php echo $data['movies'][3]['mainPosterURL']; ?>" alt="poster" class="top-poster">
+            <img src="<?php echo $data['movies'][3]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>
     </div>
 </div>

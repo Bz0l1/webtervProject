@@ -41,15 +41,15 @@
       "comments": [
         {
           "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kovács Béla",
-          "comment": "Nagyon jó film volt, nagyon tetszett a szereplőknek a színvonala, a történet pedig nagyon izgalmas volt. Azt hiszem, hogy a következő rész is nagyon jó lesz.",
-          "commentDate": "2021. május 12. 12:00"
+          "name": "Kiss József",
+          "comment": "Borzalmas, túl hosszú és unalmas. Nem éri meg megnézni. Csalódás...",
+          "commentDate": "2023. március 19., 12:30"
         },
         {
           "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kovács Béla",
-          "comment": "Nagyon jó film volt, nagyon tetszett a szereplőknek a színvonala, a történet pedig nagyon izgalmas volt. Azt hiszem, hogy a következő rész is nagyon jó lesz.",
-          "commentDate": "2021. május 12. 12:00"
+          "name": "Mészáros Tamás",
+          "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
+          "commentDate": "2023. március 19., 13:00"
         }
       ]
     },
@@ -91,6 +91,20 @@
         "./img/blackadam/blackadam4.jpg",
         "./img/blackadam/blackadam7.jpg",
         "./img/blackadam/blackadam6.jpg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Füles Jancsi",
+          "comment": "Egynek elment.",
+          "commentDate": "2023. március 14., 11:10"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kovács Attila",
+          "comment": "Nem kiemelkedő de végig lehetett nézni.",
+          "commentDate": "2023. március 15., 14:00"
+        }
       ]
     },
     {
@@ -129,6 +143,20 @@
         "./img/houseofthedragon/houseofthedragon3.jpg",
         "./img/houseofthedragon/houseofthedragon4.jpg",
         "./img/houseofthedragon/houseofthedragon2.jpeg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kiss József",
+          "comment": "Nagyon jó!! Minden percet megér.",
+          "commentDate": "2023. március 16., 10:30"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kocsis Zsanett",
+          "comment": "Életem legjobb sorozata!!",
+          "commentDate": "2023. március 17., 15:00"
+        }
       ]
     },
     {
@@ -174,6 +202,20 @@
         "./img/ringsofpower/ringsofpower3.jpg",
         "./img/ringsofpower/ringsofpower4.jpg",
         "./img/ringsofpower/ringsofpower5.jpg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Nagy Aladár",
+          "comment": "Legjobb!",
+          "commentDate": "2023. március 19., 12:30"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Lengyel Mátyás",
+          "comment": "Alig várom az új évadot!!!",
+          "commentDate": "2023. március 15., 01:10"
+        }
       ]
     },
     {
@@ -211,6 +253,20 @@
         "./img/topgun/topgun3.jpg",
         "./img/topgun/topgun4.jpg",
         "./img/topgun/topgun2.jpg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Kozma Bianka",
+          "comment": "Hosszú idő óta végre egy film amiért érdemes moziba menni.",
+          "commentDate": "2023. március 19., 12:15"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Bakacsi Ferenc",
+          "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film.",
+          "commentDate": "2023. március 19., 03:30"
+        }
       ]
     },
     {
@@ -251,6 +307,20 @@
         "./img/wednesday/wednesday3.jpg",
         "./img/wednesday/wednesday4.jpeg",
         "./img/wednesday/wednesday5.jpg"
+      ],
+      "comments": [
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Tóth Janka",
+          "comment": "1 nap alatt végignéztem, jöhetne már a kövi évad...",
+          "commentDate": "2023. március 22., 18:42"
+        },
+        {
+          "profilePicture": "./img/profiles/default.jpg",
+          "name": "Magyar Márton",
+          "comment": "A vége fele már unalmas lett, de azért jó volt.",
+          "commentDate": "2023. március 17., 10:30"
+        }
       ]
     }
   ]

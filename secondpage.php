@@ -17,7 +17,6 @@ $video = '<iframe width="813" height="508" src="https://www.youtube.com/embed/' 
     <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/styleFilmpages.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/styleLogin.css">
     <script src="scripts/script.js"></script>
 </head>
 
@@ -142,12 +141,15 @@ include("./navbar.php");
                             <input type="reset" id="submit-btn" value="Küldés"/>
                         </form>
                     </div>';
-                }
-                else{
-                    echo '
-                    <div class="comment-body">
-                        <p> A hozzászóláshoz be kell jelentkezned!</p>
-                    </div>';
+                } else {
+                    echo '<div class="comment-body">
+                            <p>
+                                <a class="login-link" href="#" onclick="document.getElementById(\'id01\').style.display=\'flex\'">Jelentkezz be</a>
+                                    vagy
+                                <a class="login-link" href="#" onclick="document.getElementById(\'registration\').style.display=\'flex\'">regisztrálj</a>
+                                    a hozzászóláshoz!
+                            </p>
+                           </div>';
                 }
                 ?>
             </div>
