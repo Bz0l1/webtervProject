@@ -60,13 +60,16 @@ $email = isset($email) ? $email : "";
                         class="formInput" disabled="disabled" required>
                     <span class="error-message"><br></span>
                 </label>
-
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('registration').style.display='none'"
-                        class="cancelbtn">Vissza a bejelentkezéshez</button>
-                    <button type="submit" class="signupbtn">Regisztráció</button>
-                </div>
             </fieldset>
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('registration').style.display='none'"
+                    class="cancelbtn">Vissza a bejelentkezéshez</button>
+                <button type="submit" class="signupBTN">Regisztráció</button>
+            </div>
+        </div>
+
+        <div class="profilePictureUpload">
+            
         </div>
     </form>
 </div>

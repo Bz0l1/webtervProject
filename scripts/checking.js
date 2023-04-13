@@ -66,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('input[name="psw-repeat"]').addEventListener('input', validatePasswordRepeat);
     
 });
+

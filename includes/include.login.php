@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION["admin"] = false;
                 }
                 $_SESSION["bejelentkezve"] = true;
+                $_SESSION["user"] = $username;
                 header('Location: ../index.php');
                 exit();
             }

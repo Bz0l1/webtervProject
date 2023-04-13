@@ -15,10 +15,10 @@
     <div class="settings">
         <ul>
             <li>
-                <a href="#">Profil</a>
+                <a href="./profil.php">Profil</a>
             </li>
             <li>
-                <a href="#">Beállítások</a>
+                <a href="./settings.php">Beállítások</a>
             </li>
         </ul>
     </div>

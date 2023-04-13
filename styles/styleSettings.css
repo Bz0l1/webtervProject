@@ -34,24 +34,51 @@ body {
     background-color: #171717;
 }
 
-.avatar {
+.ProfilSettingsContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .avatar img {
-    width: 100px;
-    height: 100px;
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    color: black;
+}
+
+.profile-img {
     border-radius: 50%;
     object-fit: cover;
-  }
+    width: 150px;
+    height: 150px;
+}
 
-  .avatar h1 {
-    margin: 0;
-  }
-
-  .avatar p {
-    margin-top: 0;
+.profilePicture {
     text-align: center;
-  }
+}
+
+
+#cancelBTN {
+    width: 50%;
+    background-color: #be2217;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+#saveBTN {
+    width: 50%;
+    background-color: #03688a;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
