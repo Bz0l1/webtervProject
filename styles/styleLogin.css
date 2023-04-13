@@ -86,7 +86,7 @@
     float: left;
 }
 
-.signupBTN, .signupbtn {
+.signupBTN, .signupbtn, .nextBTN {
     width: 50%;
     background-color: #03688a;
     color: whitesmoke;
@@ -98,11 +98,11 @@
     float: right;
 }
 
-.cancelbtn, .signupBTN, .overlayLoginBTN {
+.cancelbtn, .signupBTN, .overlayLoginBTN, .nextBTN {
     transition: all 0.5s ease;
 }
 
-.cancelbtn:hover, .signupBTN:hover, .overlayLoginBTN:hover {
+.cancelbtn:hover, .signupBTN:hover, .overlayLoginBTN:hover, .nextBTN:hover {
     filter: brightness(90%);
     cursor: pointer;
 }

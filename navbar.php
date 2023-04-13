@@ -2,10 +2,12 @@
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
+
+include_once('./includes/include.profilPicture.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8">
@@ -108,17 +110,17 @@ if (session_status() == PHP_SESSION_NONE) {
       // Ellenőrizzük, hogy a felhasználó be van-e jelentkezve
       if (isset($_SESSION['bejelentkezve']) && $_SESSION['bejelentkezve']) {
         // Ha be van jelentkezve, akkor megjelenítjük a felhasználó profilképét
-        $profile_picture = "./img/default.jpg";
+        $profile_picture = $profile_picture = get_profile_pictureNavbar_path($_SESSION['user']);
         $logout_picture = "./img/navbar/logout.png";
         $settings_picture = "./img/navbar/setting.png";
         $admin_picture = "./img/navbar/admin.png";
 
-        echo '
+        echo '  
           <div style="display: inline-block;">
-              <img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture">
+              <a href="./profil.php" target="_self"><img src="' . $profile_picture . '" alt="Profilkép" id="profilePicture"></a>
           </div>
           <div style="display: inline-block;">
-          <a href="profile.php"><img src="' . $settings_picture . '" alt="Beállítások" id="settings" title="Beállítások"></a>
+          <a href="settings.php"><img src="' . $settings_picture . '" alt="Beállítások" id="settings" title="Beállítások"></a>
           </div>
         ';
         if (isset($_SESSION['admin']) && $_SESSION['admin']) {

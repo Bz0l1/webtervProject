@@ -43,9 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $file_data = implode($separator, $user_data) . PHP_EOL;
             file_put_contents($filename, $file_data, FILE_APPEND);
 
-            header('Location: ../index.php');
             $_SESSION["bejelentkezve"] = TRUE;
+            header('Location: ../index.php');
             exit();
+        } else {
+            foreach ($error as $errors) echo 'Error: '.$errors;  
         }
     }
 }

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function validatePassword() {
         const pass = document.querySelector('input[name="psw"]');
         const passRepeat = document.querySelector('input[name="psw-repeat"]');
-        const passRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+        const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
       
         if (passRegex.test(pass.value)) {
           passRepeat.disabled = false;
@@ -66,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('input[name="psw-repeat"]').addEventListener('input', validatePasswordRepeat);
     
 });
+
