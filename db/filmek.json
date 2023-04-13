@@ -50,6 +50,12 @@
                     "name": "Mészáros Tamás",
                     "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
                     "commentDate": "2023. március 19., 13:00"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "asd",
+                    "comment": "asd",
+                    "commentDate": "2023-04-13 20:34"
                 }
             ]
         },
@@ -330,6 +336,12 @@
                     "name": "asd",
                     "comment": "asd",
                     "commentDate": "asd"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "asd",
+                    "comment": "asd",
+                    "commentDate": "2023-04-13 20:32"
                 }
             ]
         }
