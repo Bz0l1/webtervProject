@@ -1,327 +1,337 @@
 {
-  "movies": [
-    {
-      "actors": [
-        "Sam Worthington",
-        "Zoe Saldaña",
-        "Sigourney Weaver",
-        "Stephen Lang",
-        "Kate Winslet"
-      ],
-      "description": "Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.",
-      "directors": [
-        "James Cameron"
-      ],
-      "mainPosterURL": "./img/main/BigPoster/Avatar2.jpg",
-      "posterURL": "./img/posters/Avatar2.jpg",
-      "tags": [
-        "Akció",
-        "Kaland",
-        "Fantázia"
-      ],
-      "title": "Avatar - A víz útja",
-      "originalTitle": "Avatar - The Way of Water",
-      "trailerUrl": "d9MyW72ELq0",
-      "premier": "2022. december 15.",
-      "watchTime": "193 perc",
-      "ageLimit": "16+",
-      "production": [
-        "USA 2022"
-      ],
-      "distributor": "20th Century Studios",
-      "language": "Angol",
-      "rating": "9.1",
-      "pictures": [
-        "./img/avatar/avatar1.jpg",
-        "./img/avatar/avatar2.jpg",
-        "./img/avatar/avatar3.jpg",
-        "./img/avatar/avatar4.jpg",
-        "./img/avatar/avatar5.jpg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kiss József",
-          "comment": "Borzalmas, túl hosszú és unalmas. Nem éri meg megnézni. Csalódás...",
-          "commentDate": "2023. március 19., 12:30"
+    "movies": {
+        "0": {
+            "actors": [
+                "Sam Worthington",
+                "Zoe Saldaña",
+                "Sigourney Weaver",
+                "Stephen Lang",
+                "Kate Winslet"
+            ],
+            "description": "Több mint egy évtizeddel az első rész eseményeit követően meséli el a Sully család (Jake, Neytiri és gyermekeik) történetét; a rájuk leselkedő veszélyeket, az életben maradásért vívott harcaikat, az őket sújtó tragédiákat és azt, meddig képesek elmenni, hogy biztonságban tudhassák egymást.",
+            "directors": [
+                "James Cameron"
+            ],
+            "mainPosterURL": "./img/main/BigPoster/Avatar2.jpg",
+            "posterURL": "./img/posters/Avatar2.jpg",
+            "tags": [
+                "Akció",
+                "Kaland",
+                "Fantázia"
+            ],
+            "title": "Avatar - A víz útja",
+            "originalTitle": "Avatar - The Way of Water",
+            "trailerUrl": "d9MyW72ELq0",
+            "premier": "2022. december 15.",
+            "watchTime": "193 perc",
+            "ageLimit": "16+",
+            "production": [
+                "USA 2022"
+            ],
+            "distributor": "20th Century Studios",
+            "language": "Angol",
+            "rating": "9.1",
+            "pictures": [
+                "./img/avatar/avatar1.jpg",
+                "./img/avatar/avatar2.jpg",
+                "./img/avatar/avatar3.jpg",
+                "./img/avatar/avatar4.jpg",
+                "./img/avatar/avatar5.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Kiss József",
+                    "comment": "Borzalmas, túl hosszú és unalmas. Nem éri meg megnézni. Csalódás...",
+                    "commentDate": "2023. március 19., 12:30"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Mészáros Tamás",
+                    "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
+                    "commentDate": "2023. március 19., 13:00"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Mészáros Tamás",
-          "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
-          "commentDate": "2023. március 19., 13:00"
-        }
-      ]
-    },
-    {
-      "actors": [
-        "Dwayne Johnson",
-        "Aldis Hodge",
-        "Pierce Brosnan"
-      ],
-      "description": "Majdnem 5,000 évvel azután, hogy az egyiptomi istenek mindenható erejével felruházták (és ugyanolyan gyorsan börtönbe zárták) Black Adam felszabadul földi sírjából, készen arra, hogy sajátos igazságszolgáltatási formáját kibontakoztassa a modern világban.",
-      "directors": [
-        "Jaume Collet-Serra"
-      ],
-      "mainPosterURL": "./img/posters/BlackAdam.jpg",
-      "posterURL": "./img/posters/BlackAdam.jpg",
-      "tags": [
-        "Akció",
-        "Kaland",
-        "Fantázia"
-      ],
-      "title": "Black Adam",
-      "originalTitle": "Black Adam",
-      "trailerUrl": "AP4GC0VDQiI",
-      "premier": "2022. november 20.",
-      "watchTime": "125 perc",
-      "ageLimit": "16+",
-      "production": [
-        "New Line Cinema",
-        "DC Films",
-        "Seven Bucks Productions",
-        "FlynnPictureCo"
-      ],
-      "distributor": "Warner Bros. Pictures",
-      "language": "Angol",
-      "rating": "8.4",
-      "pictures": [
-        "./img/blackadam/blackadam.jpg",
-        "./img/blackadam/blackadam3.jpg",
-        "./img/blackadam/blackadam4.jpg",
-        "./img/blackadam/blackadam7.jpg",
-        "./img/blackadam/blackadam6.jpg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Füles Jancsi",
-          "comment": "Egynek elment.",
-          "commentDate": "2023. március 14., 11:10"
+        "1": {
+            "actors": [
+                "Dwayne Johnson",
+                "Aldis Hodge",
+                "Pierce Brosnan"
+            ],
+            "description": "Majdnem 5,000 évvel azután, hogy az egyiptomi istenek mindenható erejével felruházták (és ugyanolyan gyorsan börtönbe zárták) Black Adam felszabadul földi sírjából, készen arra, hogy sajátos igazságszolgáltatási formáját kibontakoztassa a modern világban.",
+            "directors": [
+                "Jaume Collet-Serra"
+            ],
+            "mainPosterURL": "./img/posters/BlackAdam.jpg",
+            "posterURL": "./img/posters/BlackAdam.jpg",
+            "tags": [
+                "Akció",
+                "Kaland",
+                "Fantázia"
+            ],
+            "title": "Black Adam",
+            "originalTitle": "Black Adam",
+            "trailerUrl": "AP4GC0VDQiI",
+            "premier": "2022. november 20.",
+            "watchTime": "125 perc",
+            "ageLimit": "16+",
+            "production": [
+                "New Line Cinema",
+                "DC Films",
+                "Seven Bucks Productions",
+                "FlynnPictureCo"
+            ],
+            "distributor": "Warner Bros. Pictures",
+            "language": "Angol",
+            "rating": "8.4",
+            "pictures": [
+                "./img/blackadam/blackadam.jpg",
+                "./img/blackadam/blackadam3.jpg",
+                "./img/blackadam/blackadam4.jpg",
+                "./img/blackadam/blackadam7.jpg",
+                "./img/blackadam/blackadam6.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Füles Jancsi",
+                    "comment": "Egynek elment.",
+                    "commentDate": "2023. március 14., 11:10"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Kovács Attila",
+                    "comment": "Nem kiemelkedő de végig lehetett nézni.",
+                    "commentDate": "2023. március 15., 14:00"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kovács Attila",
-          "comment": "Nem kiemelkedő de végig lehetett nézni.",
-          "commentDate": "2023. március 15., 14:00"
-        }
-      ]
-    },
-    {
-      "actors": [
-        "Rhys Ifans",
-        "Matt Smith",
-        "Fabien Frankel"
-      ],
-      "description": "Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése előtt 172 évvel.",
-      "directors": [
-        "Greg Yaitanes",
-        "Miguel Sapochnik"
-      ],
-      "mainPosterURL": "./img/posters/HouseOfDragons.jpg",
-      "posterURL": "./img/posters/HouseOfDragons.jpg",
-      "tags": [
-        "Akció",
-        "Kaland",
-        "Dráma"
-      ],
-      "title": "Sárkányok háza",
-      "originalTitle": "House of the Dragon",
-      "trailerUrl": "JOXj6CHQPYI",
-      "premier": "2022. augusztus 2.",
-      "watchTime": "1 évad 10 rész",
-      "ageLimit": "18+",
-      "production": [
-        "HBO"
-      ],
-      "distributor": "HBO Max",
-      "language": "Angol",
-      "rating": "9.9",
-      "pictures": [
-        "./img/houseofthedragon/houseofthedragon1.jpg",
-        "./img/houseofthedragon/houseofthedragon5.jpg",
-        "./img/houseofthedragon/houseofthedragon3.jpg",
-        "./img/houseofthedragon/houseofthedragon4.jpg",
-        "./img/houseofthedragon/houseofthedragon2.jpeg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kiss József",
-          "comment": "Nagyon jó!! Minden percet megér.",
-          "commentDate": "2023. március 16., 10:30"
+        "2": {
+            "actors": [
+                "Rhys Ifans",
+                "Matt Smith",
+                "Fabien Frankel"
+            ],
+            "description": "Egy belső trónharc a Targaryen Házban a hatalma csúcsán, Daenerys Targaryen születése előtt 172 évvel.",
+            "directors": [
+                "Greg Yaitanes",
+                "Miguel Sapochnik"
+            ],
+            "mainPosterURL": "./img/posters/HouseOfDragons.jpg",
+            "posterURL": "./img/posters/HouseOfDragons.jpg",
+            "tags": [
+                "Akció",
+                "Kaland",
+                "Dráma"
+            ],
+            "title": "Sárkányok háza",
+            "originalTitle": "House of the Dragon",
+            "trailerUrl": "JOXj6CHQPYI",
+            "premier": "2022. augusztus 2.",
+            "watchTime": "1 évad 10 rész",
+            "ageLimit": "18+",
+            "production": [
+                "HBO"
+            ],
+            "distributor": "HBO Max",
+            "language": "Angol",
+            "rating": "9.9",
+            "pictures": [
+                "./img/houseofthedragon/houseofthedragon1.jpg",
+                "./img/houseofthedragon/houseofthedragon5.jpg",
+                "./img/houseofthedragon/houseofthedragon3.jpg",
+                "./img/houseofthedragon/houseofthedragon4.jpg",
+                "./img/houseofthedragon/houseofthedragon2.jpeg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Kiss József",
+                    "comment": "Nagyon jó!! Minden percet megér.",
+                    "commentDate": "2023. március 16., 10:30"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Kocsis Zsanett",
+                    "comment": "Életem legjobb sorozata!!",
+                    "commentDate": "2023. március 17., 15:00"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kocsis Zsanett",
-          "comment": "Életem legjobb sorozata!!",
-          "commentDate": "2023. március 17., 15:00"
-        }
-      ]
-    },
-    {
-      "actors": [
-        "Robert Aramayo",
-        "Owain Arthur",
-        "Nazanin Boniadir",
-        "Tom Budge",
-        "Morfydd Clark"
-      ],
-      "description": "Epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien: A hobbit és A Gyűrűk Ura című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket, ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.",
-      "directors": [
-        "Wayne Yip",
-        "Juan Antonio Bayona",
-        "Charlotte Brandstrom"
-      ],
-      "mainPosterURL": "./img/posters/RingsOfPower.jpg",
-      "posterURL": "./img/posters/RingsOfPower.jpg",
-      "tags": [
-        "Dráma",
-        "Akció",
-        "Kaland",
-        "Fantázia"
-      ],
-      "title": "A gyűrűk ura: Hatalom gyűrűi",
-      "originalTitle": "The Lord of the Rings: The Rings of Power",
-      "trailerUrl": "gvzQyo_jBqI",
-      "premier": "2022. szeptember 2.",
-      "watchTime": "1 évad 8 rész",
-      "ageLimit": "13+",
-      "production": [
-        "Amazon Studios",
-        "Cause and FX",
-        "Harper Collins Publishers",
-        "New Line Cinema"
-      ],
-      "distributor": "New Line Cinema",
-      "language": "Angol",
-      "rating": "9.4",
-      "pictures": [
-        "./img/ringsofpower/ringsofpower1.jpg",
-        "./img/ringsofpower/ringsofpower2.jpg",
-        "./img/ringsofpower/ringsofpower3.jpg",
-        "./img/ringsofpower/ringsofpower4.jpg",
-        "./img/ringsofpower/ringsofpower5.jpg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Nagy Aladár",
-          "comment": "Legjobb!",
-          "commentDate": "2023. március 19., 12:30"
+        "3": {
+            "actors": [
+                "Robert Aramayo",
+                "Owain Arthur",
+                "Nazanin Boniadir",
+                "Tom Budge",
+                "Morfydd Clark"
+            ],
+            "description": "Epikus dráma, amely több ezer évvel az események előtt játszódik J.R.R. Tolkien: A hobbit és A Gyűrűk Ura című művei előtt. Egy szereplőgárda követi az ismert és új karaktereket, ahogy szembenéznek a középföldi gonosz régóta féltett újra feltűnésével.",
+            "directors": [
+                "Wayne Yip",
+                "Juan Antonio Bayona",
+                "Charlotte Brandstrom"
+            ],
+            "mainPosterURL": "./img/posters/RingsOfPower.jpg",
+            "posterURL": "./img/posters/RingsOfPower.jpg",
+            "tags": [
+                "Dráma",
+                "Akció",
+                "Kaland",
+                "Fantázia"
+            ],
+            "title": "A gyűrűk ura: Hatalom gyűrűi",
+            "originalTitle": "The Lord of the Rings: The Rings of Power",
+            "trailerUrl": "gvzQyo_jBqI",
+            "premier": "2022. szeptember 2.",
+            "watchTime": "1 évad 8 rész",
+            "ageLimit": "13+",
+            "production": [
+                "Amazon Studios",
+                "Cause and FX",
+                "Harper Collins Publishers",
+                "New Line Cinema"
+            ],
+            "distributor": "New Line Cinema",
+            "language": "Angol",
+            "rating": "9.4",
+            "pictures": [
+                "./img/ringsofpower/ringsofpower1.jpg",
+                "./img/ringsofpower/ringsofpower2.jpg",
+                "./img/ringsofpower/ringsofpower3.jpg",
+                "./img/ringsofpower/ringsofpower4.jpg",
+                "./img/ringsofpower/ringsofpower5.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Nagy Aladár",
+                    "comment": "Legjobb!",
+                    "commentDate": "2023. március 19., 12:30"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Lengyel Mátyás",
+                    "comment": "Alig várom az új évadot!!!",
+                    "commentDate": "2023. március 15., 01:10"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Lengyel Mátyás",
-          "comment": "Alig várom az új évadot!!!",
-          "commentDate": "2023. március 15., 01:10"
-        }
-      ]
-    },
-    {
-      "actors": [
-        "Tom Cruise",
-        "Jennifer Connelly",
-        "Miles Teller"
-      ],
-      "description": "30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az ultimátum áldozatára.",
-      "directors": [
-        "Joseph Kosinski"
-      ],
-      "mainPosterURL": "./img/posters/TopGunMaverick.jpg",
-      "posterURL": "./img/posters/TopGunMaverick.jpg",
-      "tags": [
-        "Akció",
-        "Dráma"
-      ],
-      "title": "Top Gun: Maverick",
-      "originalTitle": "Top Gun: Maverick",
-      "trailerUrl": "VxGR3l_BYyI",
-      "premier": "2022. május 26.",
-      "watchTime": "131 perc",
-      "ageLimit": "12+",
-      "production": [
-        "Skydance Media",
-        "Don Simpson/Jerry Bruckheimer Films"
-      ],
-      "distributor": "Paramount Pictures",
-      "language": "Angol",
-      "rating": "7.8",
-      "pictures": [
-        "./img/topgun/topgun1.jpg",
-        "./img/topgun/topgun5.jpg",
-        "./img/topgun/topgun3.jpg",
-        "./img/topgun/topgun4.jpg",
-        "./img/topgun/topgun2.jpg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Kozma Bianka",
-          "comment": "Hosszú idő óta végre egy film amiért érdemes moziba menni.",
-          "commentDate": "2023. március 19., 12:15"
+        "4": {
+            "actors": [
+                "Tom Cruise",
+                "Jennifer Connelly",
+                "Miles Teller"
+            ],
+            "description": "30 év elteltével Maverick még mindig határait feszegeti az egyik legjobb tengerészeti pilótaként, de szembe kell néznie múltjának kísérteteivel, amikor vezeti a TOP GUN elit végzősait egy küldetésen, amely azon a feltételen áll, hogy az arra kiválasztottak készek legyenek az ultimátum áldozatára.",
+            "directors": [
+                "Joseph Kosinski"
+            ],
+            "mainPosterURL": "./img/posters/TopGunMaverick.jpg",
+            "posterURL": "./img/posters/TopGunMaverick.jpg",
+            "tags": [
+                "Akció",
+                "Dráma"
+            ],
+            "title": "Top Gun: Maverick",
+            "originalTitle": "Top Gun: Maverick",
+            "trailerUrl": "VxGR3l_BYyI",
+            "premier": "2022. május 26.",
+            "watchTime": "131 perc",
+            "ageLimit": "12+",
+            "production": [
+                "Skydance Media",
+                "Don Simpson/Jerry Bruckheimer Films"
+            ],
+            "distributor": "Paramount Pictures",
+            "language": "Angol",
+            "rating": "7.8",
+            "pictures": [
+                "./img/topgun/topgun1.jpg",
+                "./img/topgun/topgun5.jpg",
+                "./img/topgun/topgun3.jpg",
+                "./img/topgun/topgun4.jpg",
+                "./img/topgun/topgun2.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Kozma Bianka",
+                    "comment": "Hosszú idő óta végre egy film amiért érdemes moziba menni.",
+                    "commentDate": "2023. március 19., 12:15"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Bakacsi Ferenc",
+                    "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film.",
+                    "commentDate": "2023. március 19., 03:30"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Bakacsi Ferenc",
-          "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film.",
-          "commentDate": "2023. március 19., 03:30"
-        }
-      ]
-    },
-    {
-      "actors": [
-        "Jenna Ortega",
-        "Emma Myers",
-        "Christina Ricci",
-        "Percy Hynes White"
-      ],
-      "description": "Az okos, szarkasztikus és belül egy kicsit halott Wednesday Addams egy gyilkosságsorozat ügyében nyomoz, míg új barátokat és ellenségeket szerez a Nevermore Akadémián.",
-      "directors": [
-        "Tim Burton",
-        "Fred Armisen",
-        "James Marshall"
-      ],
-      "mainPosterURL": "./img/main/BigPoster/Wednesday.jpeg",
-      "posterURL": "./img/posters/Wednesday.png",
-      "tags": [
-        "Horrorkomédia"
-      ],
-      "title": "Wednesday",
-      "originalTitle": "Wednesday",
-      "trailerUrl": "Di310WS8zLk",
-      "premier": "2022. november 23.",
-      "watchTime": "1 évad 8 rész",
-      "ageLimit": "14+",
-      "production": [
-        "MGM Television",
-        "Millar Gough Ink",
-        "Tim Burton Productions"
-      ],
-      "distributor": "Netflix",
-      "language": "Angol",
-      "rating": "7.5",
-      "pictures": [
-        "./img/wednesday/wednesday1.jpeg",
-        "./img/wednesday/wednesday2.jpeg",
-        "./img/wednesday/wednesday3.jpg",
-        "./img/wednesday/wednesday4.jpeg",
-        "./img/wednesday/wednesday5.jpg"
-      ],
-      "comments": [
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Tóth Janka",
-          "comment": "1 nap alatt végignéztem, jöhetne már a kövi évad...",
-          "commentDate": "2023. március 22., 18:42"
+        "5": {
+            "actors": [
+                "Jenna Ortega",
+                "Emma Myers",
+                "Christina Ricci",
+                "Percy Hynes White"
+            ],
+            "description": "Az okos, szarkasztikus és belül egy kicsit halott Wednesday Addams egy gyilkosságsorozat ügyében nyomoz, míg új barátokat és ellenségeket szerez a Nevermore Akadémián.",
+            "directors": [
+                "Tim Burton",
+                "Fred Armisen",
+                "James Marshall"
+            ],
+            "mainPosterURL": "./img/main/BigPoster/Wednesday.jpeg",
+            "posterURL": "./img/posters/Wednesday.png",
+            "tags": [
+                "Horrorkomédia"
+            ],
+            "title": "Wednesday",
+            "originalTitle": "Wednesday",
+            "trailerUrl": "Di310WS8zLk",
+            "premier": "2022. november 23.",
+            "watchTime": "1 évad 8 rész",
+            "ageLimit": "14+",
+            "production": [
+                "MGM Television",
+                "Millar Gough Ink",
+                "Tim Burton Productions"
+            ],
+            "distributor": "Netflix",
+            "language": "Angol",
+            "rating": "7.5",
+            "pictures": [
+                "./img/wednesday/wednesday1.jpeg",
+                "./img/wednesday/wednesday2.jpeg",
+                "./img/wednesday/wednesday3.jpg",
+                "./img/wednesday/wednesday4.jpeg",
+                "./img/wednesday/wednesday5.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Tóth Janka",
+                    "comment": "1 nap alatt végignéztem, jöhetne már a kövi évad...",
+                    "commentDate": "2023. március 22., 18:42"
+                },
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "Magyar Márton",
+                    "comment": "A vége fele már unalmas lett, de azért jó volt.",
+                    "commentDate": "2023. március 17., 10:30"
+                }
+            ]
         },
-        {
-          "profilePicture": "./img/profiles/default.jpg",
-          "name": "Magyar Márton",
-          "comment": "A vége fele már unalmas lett, de azért jó volt.",
-          "commentDate": "2023. március 17., 10:30"
+        "": {
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/default.jpg",
+                    "name": "asd",
+                    "comment": "asd",
+                    "commentDate": "asd"
+                }
+            ]
         }
-      ]
     }
-  ]
 }

@@ -133,15 +133,16 @@ include("./navbar.php");
                     <img class="userAvatar" src="img/profiles/default.jpg" alt="Felhasználó avatarja">
                     <div class="comment-body">
                         <a class="userRealName"> Te</a><br>
-                        <form>
+                        <form action="includes/include.handle_comment.php?valtozo='.$valtozo.'">
                             <label for="felhasznalovelemenye"></label><textarea placeholder="Írd le a véleményed!"
                                                                                 id="felhasznalovelemenye"
                                                                                 name="valodicomment"
                                                                                 maxlength="200"></textarea> <br/>
-                            <input type="reset" id="submit-btn" value="Küldés"/>
+                            <input type="submit" id="submit-btn" value="Küldés"/>
                         </form>
                     </div>';
-                } else {
+
+                 } else {
                     echo '<div class="comment-body">
                             <p>
                                 <a class="login-link" href="#" onclick="document.getElementById(\'id01\').style.display=\'flex\'">Jelentkezz be</a>
