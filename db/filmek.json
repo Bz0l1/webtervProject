@@ -41,135 +41,15 @@
             "comments": [
                 {
                     "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Kiss József",
+                    "name": "kissjozsi66",
                     "comment": "Borzalmas, túl hosszú és unalmas. Nem éri meg megnézni. Csalódás...",
                     "commentDate": "2023. március 19., 12:30"
                 },
                 {
                     "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Mészáros Tamás",
+                    "name": "meszros.tamas",
                     "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
                     "commentDate": "2023. március 19., 13:00"
-                },
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 20:34"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:32"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:33"
-                },
-                {
-                    "profilePicture": "./img/profiles/z0l1.png",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:34"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:35"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:36"
-                },
-                {
-                    "profilePicture": "./img/profiles/z0l1.png",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:37"
-                },
-                {
-                    "profilePicture": "../img/profiles/z0l1.png",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:37"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:48"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:49"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:49"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:50"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:50"
-                },
-                {
-                    "profilePicture": "./img/profiles/d.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:51"
-                },
-                {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": null,
-                    "commentDate": "2023-04-13 21:57"
-                },
-                {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": "",
-                    "commentDate": "2023-04-13 21:58"
-                },
-                {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": "",
-                    "commentDate": "2023-04-13 21:58"
-                },
-                {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": null,
-                    "commentDate": "2023-04-13 22:00"
-                },
-                {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": "c",
-                    "commentDate": "2023-04-13 22:12"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "d",
-                    "comment": "o",
-                    "commentDate": "2023-04-13 22:17"
                 },
                 {
                     "profilePicture": "./img/profiles/profilepicture.jpg",
