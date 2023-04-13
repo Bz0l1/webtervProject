@@ -1,7 +1,3 @@
 admin;FilmVerzum admin;$2y$10$wsgkB4Q9DhySNrPR9cFGa.n4zXt8NIcyVmDjmjN.EZddNzGlZ/pm6;admin@filmverzum.gg
-z0l1;Banicz Zoltán;$2y$10$LYbOP0EVit.0GFQocChuF.BnXk9CrpjnJxKNuCvogsr8zXaM6YlkS;banicz33@gmail.com
-
-
-asd;Asd Asd;$2y$10$uGuXr5tXMhwSx.rBBl6tg.Swd3UQZQCjKyxfwIl7dUA/H89n41/PO;asd@asd.asd
-asd;Asd Asd;$2y$10$tFZTYyan7ijOQJ5M80UktO3qv1fyAgr/ONbDKtN8IXB/xunYOqFVC;asd@asd.asd
-fukbb;Aiho Hojhh;$2y$10$S5z4lcMnN85ZgJRaLz6IXeneSFQvDATC67YIqMhubrTHHCxZKC.si;auoihn@fsd.cds
+z0l1;Banicz Zoltán;$2y$10$LYbOP0EVit.0GFQocChuF.BnXk9CrpjnJxKNuCvogsr8zXaM6YlkS;banicz33@gmail.comasd;Asd Aasd;$2y$10$e9aPsKfJfT25i4Esd7qCwufiRiDAYqz2azhnCvBmobK.2wX4vR5gu;fdsfsd@fdasfdas.da
+d;Dd Dd;$2y$10$j3bkyJdCjCWwQ2EsmYCy7eLqe6Bc7xefJJ.4o1YIHTAMM0FJvD8yi;fdsf@fds.fds

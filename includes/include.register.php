@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $name = $_POST['name'];
         $email = $_POST['email'];
 
-        $password_pattern = '/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/';
+        $password_pattern = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/';
         if (!preg_match($password_pattern, $_POST['psw'])) {
             $errors[] = 'A jelszó minimum 8 karakter hosszú legyen, tartalmazzon kis-, és nagybetűket, számokat, és minimum 1 speciális karaktert.';
         }
