@@ -40,19 +40,7 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "kissjozsi66",
-                    "comment": "Borzalmas, túl hosszú és unalmas. Nem éri meg megnézni. Csalódás...",
-                    "commentDate": "2023. március 19., 12:30"
-                },
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "meszros.tamas",
-                    "comment": "Nekem nagyon tetszett, lehetne kicsivel rövidebb de szerintem így is megéri végigülni.",
-                    "commentDate": "2023. március 19., 13:00"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
+                    "profilePicture": "./img/profiles/z0l1.png",
                     "name": "z0l1",
                     "comment": "Ez egy igen jó film!!!",
                     "commentDate": "2023-04-13 22:17"
@@ -150,20 +138,7 @@
                 "./img/houseofthedragon/houseofthedragon4.jpg",
                 "./img/houseofthedragon/houseofthedragon2.jpeg"
             ],
-            "comments": [
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Kiss József",
-                    "comment": "Nagyon jó!! Minden percet megér.",
-                    "commentDate": "2023. március 16., 10:30"
-                },
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Kocsis Zsanett",
-                    "comment": "Életem legjobb sorozata!!",
-                    "commentDate": "2023. március 17., 15:00"
-                }
-            ]
+            "comments": []
         },
         "3": {
             "actors": [

@@ -41,7 +41,7 @@ $data = json_decode($json, true);
 
 // Az új komment létrehozása
 $newComment = array(
-    "profilePicture" => get_profile_pictureProfil_path($user),
+    "profilePicture" => substr(get_profile_pictureProfil_path($user), 1),
     "name" => $user,
     "comment" => $comment,
     "commentDate" => date("Y-m-d H:i")
@@ -57,5 +57,5 @@ $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON
 file_put_contents('../db/filmek.json', $jsonData);
 
 header("Location: ../secondpage.php?valtozo=$valtozo");
+// MINDIG AZ AVATAR OLDALARA VISZ VISSZA, ÍGY NEM JÓ
 exit();
-?>
