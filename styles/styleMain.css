@@ -25,10 +25,6 @@ body {
     margin-top: 10px;
 }
 
-#topMusorok {
-    margin-left: 30px;
-}
-
 .main {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -80,15 +76,12 @@ body {
     margin-left: 20px;
 }
 
-.topmusorok {
-    display: flex;
-    justify-content: space-between;
+.topmusorok img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    padding: 30px;
 }
-
-.topmusorok .top-poster {
-    width: 200px;
-}
-
 
 @media only screen and (max-width: 1600px) {
     .mainPart {
@@ -127,8 +120,8 @@ body {
     }
 
     .topmusorok img {
-        width: 250px;
-        height: 350px;
+        width: 200px;
+        height: 280px;
         object-fit: cover;
     }
 
