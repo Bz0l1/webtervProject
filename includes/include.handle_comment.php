@@ -1,6 +1,9 @@
 <?php
+
+$comment = $_POST['valodicomment'];
+$valtozo = $_POST["valtozo"];
 session_start();
-function load_user_data($username)
+function load_user_data($username): ?array
 {
   $filename = '../db/users.txt';
 
@@ -22,11 +25,6 @@ if (isset($_SESSION['user'])) {
   $username = $_SESSION['user'];
   $user_data = load_user_data($username);
 }
-
-
-$comment = $_POST['valodicomment'];
-$valtozo = intval($_POST['valtozo']);
-
 
 include('./include.profilPicture.php');
 
@@ -56,6 +54,5 @@ $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON
 // Az eredmény kiírása a fájlba
 file_put_contents('../db/filmek.json', $jsonData);
 
-header("Location: ../secondpage.php?valtozo=$valtozo");
-// MINDIG AZ AVATAR OLDALARA VISZ VISSZA, ÍGY NEM JÓ
+header("Location: ../secondpage.php?valtozo=" . urlencode($valtozo));
 exit();

@@ -10,7 +10,7 @@ $link = $data['movies'][$valtozo]['trailerUrl'];
 $video = '<iframe width="813" height="508" src="https://www.youtube.com/embed/' . $link . ' " title="A film trailere" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 include_once('./includes/include.profilPicture.php');
 
-function load_user_data($username)
+function load_user_data($username): ?array
 {
     $filename = './db/users.txt';
 
@@ -174,13 +174,13 @@ include("./navbar.php");
                         <div class="comment-body">
                             <a class="userRealName">' . $username . '</a><br>
                             <form action="includes/include.handle_comment.php" method="post">
-                            <label for="felhasznalovelemenye"></label>
+                                <label for="felhasznalovelemenye"></label>
                                 <textarea placeholder="Írd le a véleményed!"
                                     id="felhasznalovelemenye"
                                     name="valodicomment"
                                     maxlength="200"></textarea>
-                                    <input type="hidden" name="valtozo" value="<?php echo $valtozo; ?>"><br>
-                                    <input type="submit" id="submit-btn" value="Küldés"/>
+                                <input type="hidden" name="valtozo" value='.$valtozo.'><br>
+                                <input type="submit" id="submit-btn" value="Küldés"/>
                             </form>
                         </div>
                     </div>';
