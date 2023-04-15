@@ -67,7 +67,7 @@ $email = $user_data[3];
     ?>
 
     <main class="main">
-        <form action="/includes/include.settings.php" method="POST">
+        <form action="./includes/include.settings.php" method="POST">
             <fieldset class="ProfilSettingsContainer">
                 <legend>
                     <?php echo $username; ?> adatai

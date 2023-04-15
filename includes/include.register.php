@@ -45,9 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $_SESSION["bejelentkezve"] = TRUE;
             header('Location: ../index.php');
-            exit();
         } else {
-            foreach ($error as $errors) echo 'Error: '.$errors;  
+            foreach ($errors as $error) echo 'Error: '.$error;  
         }
     }
+    exit();
 }
