@@ -1,6 +1,9 @@
 <?php
+
+$comment = $_POST['valodicomment'];
+$valtozo = $_POST["valtozo"];
 session_start();
-function load_user_data($username)
+function load_user_data($username): ?array
 {
   $filename = '../db/users.txt';
 
@@ -23,11 +26,6 @@ if (isset($_SESSION['user'])) {
   $user_data = load_user_data($username);
 }
 
-
-$comment = $_POST['valodicomment'];
-$valtozo = intval($_POST['valtozo']);
-
-
 include('./include.profilPicture.php');
 
 $user = $_SESSION['user'];
@@ -41,7 +39,7 @@ $data = json_decode($json, true);
 
 // Az új komment létrehozása
 $newComment = array(
-    "profilePicture" => get_profile_pictureProfil_path($user),
+    "profilePicture" => substr(get_profile_pictureProfil_path($user), 1),
     "name" => $user,
     "comment" => $comment,
     "commentDate" => date("Y-m-d H:i")
@@ -56,6 +54,5 @@ $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON
 // Az eredmény kiírása a fájlba
 file_put_contents('../db/filmek.json', $jsonData);
 
-header("Location: ../secondpage.php?valtozo=$valtozo");
+header("Location: ../secondpage.php?valtozo=" . urlencode($valtozo));
 exit();
-?>
