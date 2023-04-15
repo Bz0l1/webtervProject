@@ -4,7 +4,6 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 include_once('./includes/include.profilPicture.php');
-include('./includes/include.settings.php');
 
 function load_user_data($username)
 {
@@ -46,7 +45,14 @@ $email = $user_data[3];
     <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleSettings.css">
-    <script src="scripts/script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cancelButton = document.getElementById('cancelBTN');
+        cancelButton.addEventListener('click', function() {
+            location.reload();
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -71,19 +77,17 @@ $email = $user_data[3];
                     <input type="checkbox" id="username_public" name="username_public">
                     <label for="username_public">Publikus?</label>
                     <input type="text" id="username" name="username" placeholder="Felhasználónév"
-                        value="<?php echo $username; ?>" required>
+                        value="<?php echo $username; ?>">
 
                     <p>Email:</p>
                     <input type="checkbox" id="email_public" name="email_public">
                     <label for="email_public">Publikus?</label>
-                    <input type="email" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>"
-                        required>
+                    <input type="email" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
 
                     <p>Jelszó:</p>
                     <input type="checkbox" id="password_public" name="password_public">
                     <label for="password_public">Publikus?</label>
-                    <input type="password" id="password" name="password" placeholder="********"
-                        value="<?php echo $pass; ?>" required>
+                    <input type="password" id="password" name="password" placeholder="********">
                 </div>
                 <div class="profilePicture">
                     <img src="<?php echo $profile_picture_path; ?>" alt="Profilkép" class="profile-img">

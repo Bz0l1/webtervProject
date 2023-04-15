@@ -1,30 +1,40 @@
 <?php
-if (isset($_POST['save_changes'])) {
-    $new_username = trim($_POST['username']);
-    $new_email = trim($_POST['email']);
-    $new_password = password_hash(trim($_POST['password']), PASSWORD_BCRYPT);
+if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    if (!empty($new_username) && !empty($new_email) && !empty($new_password)) {
-        $filename = './db/users.txt';
-        $file_contents = file_get_contents($filename);
-        $users = explode(PHP_EOL, $file_contents);
-        $new_users = [];
+    $filename = './db/users.txt';
 
-        foreach ($users as $user) {
-            $user_data = explode(';', $user);
+    $file_contents = file_get_contents($filename);
+    $users = explode(PHP_EOL, $file_contents);
+    $updated_users = [];
 
-            if ($username === $user_data[0]) {
-                $user_data[0] = $new_username;
-                $user_data[1] = $new_password;
-                $user_data[3] = $new_email;
+    $user_data_changed = false;
+
+    foreach ($users as $user) {
+        $user_data = explode(';', $user);
+
+        if ($_SESSION['user'] === $user_data[0]) {
+            if ($username !== $user_data[0] || $email !== $user_data[3]) {
+                $user_data_changed = true;
+                $user_data[0] = $username;
+                $user_data[3] = $email;
+                $_SESSION['user'] = $username;
             }
-
-            $new_users[] = implode(';', $user_data);
+            if (!empty($password)) {
+                $user_data[2] = $password;
+            }
         }
 
-        file_put_contents($filename, implode(PHP_EOL, $new_users));
-        echo 'A változtatások mentése sikeres.';
-        header("LOCATION: ../settings.php");
+        $updated_users[] = implode(';', $user_data);
+    }
+
+    if ($user_data_changed) {
+        $updated_file_contents = implode(PHP_EOL, $updated_users);
+        file_put_contents($filename, $updated_file_contents);
     }
 }
-?>
+
+header('Location: ../settings.php');
+exit();
