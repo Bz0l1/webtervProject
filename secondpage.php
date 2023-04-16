@@ -1,10 +1,14 @@
 <?php
 session_start();
-$valtozo = $_GET['valtozo'];
+$valtozo = filter_var($_GET['valtozo'], FILTER_VALIDATE_INT);
 $jsonData = file_get_contents('db/filmek.json');
 
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);
+if ($data === null) {
+    echo 'Hiba a JSON feldolgozásakor!';
+    exit;
+}
 
 $link = $data['movies'][$valtozo]['trailerUrl'];
 $video = '<iframe width="813" height="508" src="https://www.youtube.com/embed/' . $link . ' " title="A film trailere" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
