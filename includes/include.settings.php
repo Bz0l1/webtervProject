@@ -59,4 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // fájl bezárása
     fclose($fp);
+
+    $_SESSION['user'] = $userData['username'];
+
 }
