@@ -388,7 +388,7 @@
                 "Paul Dano",
                 "Jeffrey Wright"
             ],
-            "description": "",
+            "description": "Batman (Robert Pattinson) már két éve rója Gotham City utcáit, és üldözi a város gonosztevőit – így hát egyre mélyebbre merül a sikátorok sötétségébe. Már alig néhány emberben bízhat: mindenfelől korrupt hivatalnokok és romlott nagymenők veszik körül. csupán Alfred Pennyworth-szel (Andy Serkis) és Jame Gordon hadnaggyal (Jeffrey Wright) oszthatja meg a titkait. Egyedül maradt: rajta kívül nincs más, aki bosszút állhatna a város lakóinak sérelmeiért. Egy gyilkos épp Gotham elitjét veszi célba, és a szadista machinációi után hátrahagyott titokzatos nyomok a világ legnagyobb detektívjét a város alvilágába vezetik. Ott találkozik Selina Kyle-lal, vagyis Macskanővel (Zoë Kravitz), Oswald Cobblepottal, a Pingvinnel (Colin Farrell), Carmine Falcone-nal (John Turturro) és Edward Nashtonnal, Rébusszal (Paul Dano). A bizonyítékok azonban a saját otthona felé vezetik, és minél jobban szűkül a gyanúsítottak köre, annál félelmetesebbé válik. Batmannek új szövetségeket kell kötnie, le kell lepleznie az igazi bűnöst, és meg kell szabadítania Gothamet a hatalmaskodás és a korrupció pestisétől. Az egyik legmenőbb képregényhős fantasztikus szereposztással tér vissza, és közben látványosabb, izgalmasabb és keményebb, mint valaha.",
             "directors": [
                 "Matt Reeves"
             ],
@@ -554,12 +554,52 @@
             "pictures": [
                 "./img/besugo/besugo1.jpg",
                 "./img/besugo/besugo2.jpg",
-                "./img/besugo/bsugo3.jpg",
+                "./img/besugo/besugo3.jpg",
                 "./img/besugo/besugo4.jpg",
                 "./img/besugo/besugo5.jpg"
             ],
             "comments": []
         },
+        "11": {
+            "actors": [
+                "John Cena",
+                "Steve Agee",
+                "Danielle Brooks",
+                "Chris Conrad"
+            ],
+            "description": "A Peacemaker egy 2022-es televíziós sorozat, amit James Gunn készített. A főszereplő John Cena, Danielle Brooks, Freddie Stroma és Jennifer Holland. A Suicide Squad (2021) című film után játszódik, ahol a Peacemaker hazatér Bloodsporttal való találkozása után, csak hogy rájöjjön, hogy szabadsága ára van.",
+            "directors": [
+                "James Gunn"
+            ],
+            "mainPosterURL": "./img/posters/Peacemaker.jpg",
+            "posterURL": "./img/posters/peacemaker.jpg",
+            "tags": [
+                "Akció",
+                "Kaland",
+                "Vígjáték"
+            ],
+            "title": "Békeharcos",
+            "originalTitle": "Peacemaker",
+            "trailerUrl": "WHXq62VCaCM",
+            "premier": "2022. január 13.",
+            "watchTime": "50 perc",
+            "ageLimit": "16+",
+            "production": [
+                "USA 2022"
+            ],
+            "distributor": "HBO",
+            "language": "Angol",
+            "rating": "7.6",
+            "pictures": [
+                "./img/peacemaker/peacemaker1.jpg",
+                "./img/peacemaker/peacemaker2.jpg",
+                "./img/peacemaker/peacemaker3.jpg",
+                "./img/peacemaker/peacemaker4.jpg",
+                "./img/peacemaker/peacemaker5.jpg"
+            ],
+            "comments": []
+        },
+
         "<?php echo $valtozo; ?>": {
             "comments": [
                 {

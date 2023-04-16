@@ -108,7 +108,7 @@ include("./navbar.php");
                         </td>
                     </tr>
                     <tr>
-                        <td><a href="secondpage.php?valtozo=9"><img src="<?php echo $data['movies'][10]['posterURL']; ?>"
+                        <td><a href="secondpage.php?valtozo=10"><img src="<?php echo $data['movies'][10]['posterURL']; ?>"
                                     alt="A film borítóképe"></a></td>
                         <td>
                             <?php echo $data['movies'][10]['title']; ?>
@@ -122,10 +122,18 @@ include("./navbar.php");
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="./img/posters/Peacemaker.jpg" alt="Peacemaker"></td>
-                        <td>Peacemaker</td>
-                        <td>2022</td>
-                        <td>5.3</td>
+                        <td><a href="secondpage.php?valtozo=11"><img src="<?php echo $data['movies'][11]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][11]['title']; ?>
+                        </td>
+                        <?php $year = $data['movies'][11]['premier']; ?>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][11]['rating']; ?>
+                        </td>
                     </tr>
                 </tbody>
             </table>

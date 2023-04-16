@@ -3,6 +3,7 @@
 <head>
     <script src="scripts/checking.js"></script>
     <title>Bejelentkezés</title>
+    <meta charset="utf-8">
 </head>
 <html lang="en">
 <?php
