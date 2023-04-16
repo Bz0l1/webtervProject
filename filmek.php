@@ -40,25 +40,46 @@ include("./navbar.php");
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="secondpage.php?valtozo=0"><img src="<?php echo $data['movies'][0]['posterURL']; ?>" alt="A film borítóképe"></a></td>
-                        <td><?php echo $data['movies'][0]['title']; ?> </td>
+                        <td><a href="secondpage.php?valtozo=0"><img src="<?php echo $data['movies'][0]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][0]['title']; ?>
+                        </td>
                         <?php $year = $data['movies'][0]['premier']; ?>
-                        <td><?php echo substr($year, 0, 4);?></td>
-                        <td><?php echo $data['movies'][0]['rating']; ?></td>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][0]['rating']; ?>
+                        </td>
                     </tr>
                     <tr>
-                        <td><a href="secondpage.php?valtozo=1"><img src="<?php echo $data['movies'][1]['posterURL']; ?>" alt="A film borítóképe"></a></td>
-                        <td><?php echo $data['movies'][1]['title']; ?> </td>
+                        <td><a href="secondpage.php?valtozo=1"><img src="<?php echo $data['movies'][1]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][1]['title']; ?>
+                        </td>
                         <?php $year = $data['movies'][1]['premier']; ?>
-                        <td><?php echo substr($year, 0, 4);?></td>
-                        <td><?php echo $data['movies'][1]['rating']; ?></td>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][1]['rating']; ?>
+                        </td>
                     </tr>
                     <tr>
-                        <td><a href="secondpage.php?valtozo=4"><img src="<?php echo $data['movies'][4]['posterURL']; ?>" alt="A film borítóképe"></a></td>
-                        <td><?php echo $data['movies'][4]['title']; ?> </td>
+                        <td><a href="secondpage.php?valtozo=4"><img src="<?php echo $data['movies'][4]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][4]['title']; ?>
+                        </td>
                         <?php $year = $data['movies'][4]['premier']; ?>
-                        <td><?php echo substr($year, 0, 4);?></td>
-                        <td><?php echo $data['movies'][4]['rating']; ?></td>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][4]['rating']; ?>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -74,23 +95,46 @@ include("./navbar.php");
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="./img/posters/AllQuietOnTheWesternFront.jpg" alt="All Quiet on the Western Front">
+                        <td><a href="secondpage.php?valtozo=6"><img src="<?php echo $data['movies'][6]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][6]['title']; ?>
                         </td>
-                        <td>All Quiet on the Western Front</td>
-                        <td>2022</td>
-                        <td>8.2</td>
+                        <?php $year = $data['movies'][6]['premier']; ?>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][6]['rating']; ?>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="./img/posters/BatmanBegins.jpg" alt="Batman Begins"></td>
-                        <td>Batman Begins</td>
-                        <td>2022</td>
-                        <td>9.0</td>
+                        <td><a href="secondpage.php?valtozo=7"><img src="<?php echo $data['movies'][7]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][7]['title']; ?>
+                        </td>
+                        <?php $year = $data['movies'][7]['premier']; ?>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][7]['rating']; ?>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="./img/posters/Elvis.jpg" alt="Elvis"></td>
-                        <td>Elvis</td>
-                        <td>2022</td>
-                        <td>7.5</td>
+                        <td><a href="secondpage.php?valtozo=8"><img src="<?php echo $data['movies'][8]['posterURL']; ?>"
+                                    alt="A film borítóképe"></a></td>
+                        <td>
+                            <?php echo $data['movies'][8]['title']; ?>
+                        </td>
+                        <?php $year = $data['movies'][8]['premier']; ?>
+                        <td>
+                            <?php echo substr($year, 0, 4); ?>
+                        </td>
+                        <td>
+                            <?php echo $data['movies'][8]['rating']; ?>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -100,4 +144,5 @@ include("./navbar.php");
 <?php
 include("./navbar.php");
 ?>
+
 </html>

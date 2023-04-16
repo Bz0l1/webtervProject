@@ -332,6 +332,234 @@
                 }
             ]
         },
+        "6": {
+            "actors": [
+                "Felix Kammerer",
+                "Albercht Schuch",
+                "Aaron Hilmer",
+                "Moritz Klaus",
+                "Adrian Grünewald"
+            ],
+            "description": "A Nyugaton a helyzet változatlan egy fiatal német katona lebilincselő történetét meséli el az I. világháború nyugati frontján. Paul és társai a saját bőrükön tapasztalják meg, hogyan változik a háború kezdeti eufóriája kétségbeeséssé és félelemmé, miközben a saját és társaik életéért küzdenek a lövészárkokban.",
+            "directors": [
+                "Edward Berger"
+            ],
+            "mainPosterURL": "./img/main/BigPoster/AllQuietOnTheWesternFront.jpg",
+            "posterURL": "./img/posters/AllQuietOnTheWesternFront.jpg",
+            "tags": [
+                "Akció",
+                "Kaland",
+                "Dráma"
+            ],
+            "title": "Nyugaton a helyzet változatlan",
+            "originalTitle": "Im Westen nichts Neues",
+            "trailerUrl": "hf8EYbVxtCY",
+            "premier": "2022. október 20.",
+            "watchTime": "180 perc",
+            "ageLimit": "18+",
+            "production": [
+                "Germany 2022"
+            ],
+            "distributor": "Netflix",
+            "language": "German, English",
+            "rating": "7.8",
+            "pictures": [
+                "./img/allquietonthewesternfront/aqotwf1.jpg",
+                "./img/allquietonthewesternfront/aqotwf2.jpg",
+                "./img/allquietonthewesternfront/aqotwf3.jpg",
+                "./img/allquietonthewesternfront/aqotwf4.jpg",
+                "./img/allquietonthewesternfront/aqotwf5.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/z0l1.png",
+                    "name": "z0l1",
+                    "comment": "Ez egy igen jó film!!!",
+                    "commentDate": "2023-04-13 22:17"
+                }
+            ]
+        },
+        "7": {
+            "actors": [
+                "Robert Pattinson",
+                "Zoë Kravitz",
+                "Andy Serkis",
+                "Alfred Pennyworth",
+                "Paul Dano",
+                "Jeffrey Wright"
+            ],
+            "description": "",
+            "directors": [
+                "Matt Reeves"
+            ],
+            "mainPosterURL": "./img/posters/Batman.jpg",
+            "posterURL": "./img/posters/Batman.jpg",
+            "tags": [
+                "Akció",
+                "Krimi",
+                "Dráma"
+            ],
+            "title": "Batman",
+            "originalTitle": "Batman",
+            "trailerUrl": "mqqft2x_Aa4",
+            "premier": "2022. március 3.",
+            "watchTime": "176 perc",
+            "ageLimit": "16+",
+            "production": [
+                "USA 2022"
+            ],
+            "distributor": "Warner Brothers",
+            "language": "Angol",
+            "rating": "7.8",
+            "pictures": [
+                "./img/batman/Batman1.jpg",
+                "./img/batman/Batman2.jpg",
+                "./img/batman/Batman3.jpg",
+                "./img/batman/Batman4.jpg",
+                "./img/batman/Batman5.jpg"
+            ],
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/profilepicture.png",
+                    "name": "István",
+                    "comment": "Nagyszerű film, minden elismerésem a rendezőnek és a színészeknek!",
+                    "commentDate": "2023-04-15 20:32"
+                },
+                {
+                    "profilePicture": "./img/profiles/profilepicture.png",
+                    "name": "Katalin",
+                    "comment": "Igazán izgalmas és érdekfeszítő, már alig várom a folytatást!",
+                    "commentDate": "2023-04-15 21:47"
+                },
+                {
+                    "profilePicture": "./img/profiles/profilepicture.png",
+                    "name": "Ferenc",
+                    "comment": "Ez a legjobb Batman film, amit valaha láttam. Mindenkinek ajánlom!",
+                    "commentDate": "2023-04-15 23:05"
+                }
+            ]
+        },
+        "8": {
+            "actors": [
+                "Austin Butler",
+                "Tom Hanks",
+                "Kodi Smit-McPhee",
+                "David Wenham"
+            ],
+            "description": "A legendás Elvis Presley élete, ahogy még sosem láttuk: titokzatos menedzsere, a magát csak „ezredesnek” szólíttató Tom Parker szemén keresztül. A két férfi közti különös, sokat változó kapcsolat (néha barátság, néha gyűlölet) több mint 20 évig tartott. Akkor kezdődött, amikor Elvis még a pályája elején állt, nem múlt el akkor sem, amikor az énekes addig példátlan hírnevű sztárrá emelkedett, és akkor is megmaradt, amikor megismerte élete legfontosabb nőjét, Priscillát. Közben Amerika háborúba ment, elveszítette az ártatlanságát, és megváltozott az egész világ. De a két férfi között mindig megmaradt valami furcsa kapcsolat… Baz Luhrmann rendező mindig különleges látványvilágú, izgalmas filmeket rendez, és a zenéhez is nagyon ért: ezt bebizonyította már a Moulin Rouge-zsal és A nagy Gatsbyvel is. Ezúttal Tom Hanks főszereplésével mutatja be a 20. század egyik legnagyobb sztárja életét.",
+            "directors": [
+                "Baz Luhrmann"
+            ],
+            "mainPosterURL": "./img/posters/Elvis.jpg",
+            "posterURL": "./img/posters/Elvis.jpg",
+            "tags": [
+                "Zenés",
+                "Dráma",
+                "Életrajzi"
+            ],
+            "title": "Elvis",
+            "originalTitle": "Elvis",
+            "trailerUrl": "la_yfBQhTTw",
+            "premier": "2022. június 23.",
+            "watchTime": "159 perc",
+            "ageLimit": "12+",
+            "production": [
+                "USA 2022"
+            ],
+            "distributor": "Warner Bros",
+            "language": "Angol",
+            "rating": "8",
+            "pictures": [
+                "./img/elvis/Elvis1.jpg",
+                "./img/elvis/Elvis2.jpg",
+                "./img/elvis/Elvis3.jpg",
+                "./img/elvis/Elvis4.jpg",
+                "./img/elvis/Elvis5.jpg"
+            ],
+            "comments": []
+        },
+        "9": {
+            "actors": [
+                "Diego Luna",
+                "Adria Arjona",
+                "Denise Gough",
+                "Fiona Shaw",
+                "Stellan Skarsgård"
+            ],
+            "description": "Az Andor 2022-ben bemutatott amerikai kalandsorozat, amit Tony Gilroy alkotott. A Csillagok háborúja világában játszódik. Főbb szerepekben Diego Luna (mint a címszereplő, Andor), Genevieve O'Reilly, Stellan Skarsgård, Adria Arjona, Fiona Shaw, Denise Gough és Kyle Soller látható. A sorozat a Zsivány Egyes – Egy Star Wars-történet (2016) előzménye és a Star Wars: Lázadók című sorozattal párhuzamosan játszódik.",
+            "directors": [
+                "Toby Haynes"
+            ],
+            "mainPosterURL": "./img/posters/Andor.jpg",
+            "posterURL": "./img/posters/Andor.jpg",
+            "tags": [
+                "Krimi",
+                "Akció",
+                "Kaland"
+            ],
+            "title": "Andor",
+            "originalTitle": "Andor",
+            "trailerUrl": "cKOegEuCcfw",
+            "premier": "2022. szeptember 21.",
+            "watchTime": "60 perc",
+            "ageLimit": "16+",
+            "production": [
+                "USA 2022"
+            ],
+            "distributor": "Disney+",
+            "language": "Angol",
+            "rating": "7.3",
+            "pictures": [
+                "./img/andor/Andor1.jpg",
+                "./img/andor/Andor2.jpg",
+                "./img/andor/Andor3.jpg",
+                "./img/andor/Andor4.jpg",
+                "./img/andor/Andor5.jpg"
+            ],
+            "comments": []
+        },
+        "10": {
+            "actors": [
+                "Váradi Gergely",
+                "Patkós Márton",
+                "Szász Júlia",
+                "Szőke Abigél",
+                "Thuróczy Szabolcs"
+            ],
+            "description": "1985. A kommunista Magyarország a politikai változások küszöbén. A húszéves Gergő szíve tele van izgalommal és várakozással; Budapestre költözik, hogy a Gazdaságtudományi Egyetemen tanuljon. Kollégiumi élete első napján csatlakozik egy csapat demokratikus ellenzéki fiatalhoz, akik tüntetéseket szerveznek a kommunista rendszer ellen. A csoportot Száva Zsolt, a karizmatikus fiatal diák vezeti, aki hamarosan Gergő legjobb barátja lesz. A vidéki srác élete egy pillanat alatt megváltozik a gyönyörű lányok, bulik és politikai viták hatására.Gergő azonban súlyos titkot őriz. Az Állambiztonság besúgója, akinek nincs választása: ha életben akarja tartani súlyosan beteg öccsét, akkor szüksége van az állam által biztosított gyógyszerre... Miközben Száva azt kutatja, ki a besúgó a csoportban, Gergő minden nap kihívással küzd: hogyan cselezze ki az Állambiztonságot és tartsa meg új barátait? Az idő szorít, a végső összecsapás előtt döntenie kell, hogy kinek az oldalára áll.",
+            "directors": [
+                "Szentgyörgyi Bálint",
+                "Mátyássy Áron",
+                "Miklauzic Bence"
+            ],
+            "mainPosterURL": "./img/posters/besugo.jpg",
+            "posterURL": "./img/posters/besugo.jpg",
+            "tags": [
+                "Krimi",
+                "Dráma",
+                "Akció"
+            ],
+            "title": "A besúgó",
+            "originalTitle": "A besúgó",
+            "trailerUrl": "pqhmXkGf8gs",
+            "premier": "2022. március 31.",
+            "watchTime": "44 perc",
+            "ageLimit": "15+",
+            "production": [
+                "Magyarország 2022"
+            ],
+            "distributor": "HBO",
+            "language": "Magyar",
+            "rating": "8.4",
+            "pictures": [
+                "./img/besugo/besugo1.jpg",
+                "./img/besugo/besugo2.jpg",
+                "./img/besugo/bsugo3.jpg",
+                "./img/besugo/besugo4.jpg",
+                "./img/besugo/besugo5.jpg"
+            ],
+            "comments": []
+        },
         "<?php echo $valtozo; ?>": {
             "comments": [
                 {
