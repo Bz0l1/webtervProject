@@ -94,7 +94,7 @@
                     "commentDate": "2023-04-13 22:17"
                 },
                 {
-                    "profilePicture": "./img/profiles/lead.jpg",
+                    "profilePicture": "./img/profiles/lead.png",
                     "name": "lead",
                     "comment": "Nem kiemelkedő de végig lehetett nézni.",
                     "commentDate": "2023-04-13 23:38"
@@ -186,13 +186,13 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/lead.jpg",
+                    "profilePicture": "./img/profiles/lead.png",
                     "name": "lead",
                     "comment": "Alig várom az új évadot, nagyon jó!!!.",
                     "commentDate": "2023-04-10 10:11"
                 },
                 {
-                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "profilePicture": "./img/profiles/z0l1.png",
                     "name": "z0l1",
                     "comment": "NNagyon tetszett.",
                     "commentDate": "2023-04-11 18:38"
@@ -237,13 +237,13 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/lead.jpg",
+                    "profilePicture": "./img/profiles/lead.png",
                     "name": "lead",
                     "comment": "Hosszú idő óta végre egy film amiért érdemes moziba menni.",
                     "commentDate": "2023-03-18 12:15"
                 },
                 {
-                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "profilePicture": "./img/profiles/z0l1.png",
                     "name": "z0l1",
                     "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film..",
                     "commentDate": "2023-04-19 03:29"
@@ -291,13 +291,13 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "profilePicture": "./img/profiles/z0l1.png",
                     "name": "z0l1",
                     "comment": "1 nap alatt végignéztem, jöhetne már a kövi évad...",
                     "commentDate": "2023-03-22 18:42"
                 },
                 {
-                    "profilePicture": "./img/profiles/lead.jpg",
+                    "profilePicture": "./img/profiles/lead.png",
                     "name": "lead",
                     "comment": "A vége fele már unalmas lett, de azért jó volt.",
                     "commentDate": "2023-03-27 10:11"
@@ -581,7 +581,7 @@
                 {
                     "profilePicture": "./img/profiles/z0l1.png",
                     "name": "z0l1",
-                    "comment": "Hát mit is mondak...",
+                    "comment": "Hát mit is mondjak...",
                     "commentDate": "2023-04-12 22:22"
                 }
             ]
