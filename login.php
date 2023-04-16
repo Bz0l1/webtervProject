@@ -1,3 +1,5 @@
+<!-- admin jelszava: 12345 -->
+
 <!DOCTYPE html>
 
 <head>

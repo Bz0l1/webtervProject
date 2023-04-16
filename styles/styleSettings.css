@@ -36,8 +36,8 @@ body {
 
 .ProfilSettingsContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Change this from space-between to center */
+    align-items: flex-start; /* Change this from center to flex-start */
 }
 
 

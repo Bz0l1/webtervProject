@@ -4,7 +4,9 @@ $username = '';
 $name = '';
 $email = '';
 
+// Regisztrációs adatok POSTolása
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Ha megvan adva a username, name, psw, email
     if (isset($_POST['username']) && isset($_POST['name']) && isset($_POST['psw']) && isset($_POST['psw-repeat']) && isset($_POST['email'])) {
         $username = $_POST['username'];
         $name = $_POST['name'];
@@ -27,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $errors[] = 'A jelszavak nem egyeznek.';
         }
 
+        // Ha nincs hiba, az adatok a users.txt-be kerülnek
         if (empty($errors)) {
             $filename = '../db/users.txt';
             $separator = ';';
@@ -43,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $file_data = implode($separator, $user_data) . PHP_EOL;
             file_put_contents($filename, $file_data, FILE_APPEND);
 
+
+            // Sikeres bejelentkezés után a felhasználó visszakerül az index.php-ra
             $_SESSION["bejelentkezve"] = TRUE;
             header('Location: ../index.php');
         } else {

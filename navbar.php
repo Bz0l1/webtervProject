@@ -1,8 +1,11 @@
 <?php
+
+// Ha nincs elindítva a session
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
+// Az 'include.profilPicture.php' csak egyszer includolja, mivel a get_profile_pictureNavbar_path csak egyszer kell ó, hogy lefusson
 include_once('./includes/include.profilPicture.php');
 ?>
 
@@ -123,6 +126,8 @@ include_once('./includes/include.profilPicture.php');
           <a href="settings.php"><img src="' . $settings_picture . '" alt="Beállítások" id="settings" title="Beállítások"></a>
           </div>
         ';
+
+        // Ha a felhasználó az admin
         if (isset($_SESSION['admin']) && $_SESSION['admin']) {
           echo '
             <div style="display: inline-block;">

@@ -1,8 +1,11 @@
 <?php
 
+// Változók beállítása a beérkező POST adatok alapján, változó = film sorszáma
 $comment = $_POST['valodicomment'];
 $valtozo = $_POST["valtozo"];
 session_start();
+
+// Felhasználói adatok betöltése a felhasználónév alapján
 function load_user_data($username): ?array
 {
   $filename = '../db/users.txt';
@@ -31,10 +34,8 @@ include('./include.profilPicture.php');
 $user = $_SESSION['user'];
 date_default_timezone_set('Europe/Budapest');
 
-// Betöltjük a JSON fájlt
+// JSON fájl betöltése
 $json = file_get_contents('../db/filmek.json');
-
-// A JSON fájlt PHP asszociatív tömbbe alakítjuk
 $data = json_decode($json, true);
 
 // Az új komment létrehozása
@@ -45,13 +46,13 @@ $newComment = array(
     "commentDate" => date("Y-m-d H:i")
 );
 
-// Az új komment hozzáadása a "comments" tömbhöz
+// Az új komment hozzáadása a "comments"-hez
 $data['movies'][$valtozo]['comments'][] = $newComment;
 
 // A módosított tömb visszaalakítása JSON formátumra
 $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
-// Az eredmény kiírása a fájlba
+// JSON-be írás
 file_put_contents('../db/filmek.json', $jsonData);
 
 header("Location: ../secondpage.php?valtozo=" . urlencode($valtozo));

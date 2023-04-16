@@ -7,6 +7,7 @@ if (isset($_SESSION['user'])) {
     $sessionUser = $_SESSION['user'];
 }
 
+// Az aktív felhasználó beolvasása a userData tömbbe
 $userData = [];
 $usersFile = fopen("../db/users.txt", "r");
 if ($usersFile) {
@@ -25,6 +26,7 @@ if ($usersFile) {
     fclose($usersFile);
 }
 
+// Van módosítás a settings.php beviteli mezeiben, akkor a userData bizonyos értékei a módosított érték alapján változzanak
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['username'], $_POST['email'])) {
         if ($_POST['username'] !== $userData['username'])
@@ -33,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $userData['email'] = $_POST['email'];
         if ($_POST['password'] !== "" && preg_match($password_pattern, $_POST['password']))
             $userData['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT);
+            
     }
 
     // az eredeti fájl beolvasása
@@ -49,17 +52,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $sor_tomb[1] = $userData['name'];
             $sor_tomb[2] = $userData['password'];
             $sor_tomb[3] = $userData['email'];
-            $sor = implode(";", $sor_tomb);
+            $sor = implode(";", $sor_tomb) . "\n";
         }
         $megjelenitett_sorok .= $sor;
     }
 
     // a módosított sorok kiírása a fájlba
     file_put_contents($fajl, $megjelenitett_sorok);
-
-    // fájl bezárása
     fclose($fp);
 
+    // Az aktív felhasználó frissítése
     $_SESSION['user'] = $userData['username'];
+    header("LOCATION: ../settings.php");
 
 }

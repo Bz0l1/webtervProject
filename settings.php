@@ -5,6 +5,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 include_once('./includes/include.profilPicture.php');
 
+// Felhasználói adatok betöltése a felhasználónév alapján
 function load_user_data($username)
 {
     $filename = './db/users.txt';
@@ -89,6 +90,11 @@ $email = $user_data[3];
                     <label for="password_public">Publikus?</label>
                     <input type="password" id="password" name="password" placeholder="********">
                 </div>
+
+
+
+
+                <!-- Nem működik -->
                 <div class="profilePicture">
                     <img src="<?php echo $profile_picture_path; ?>" alt="Profilkép" class="profile-img">
                     <p>Profilkép módosítása</p>

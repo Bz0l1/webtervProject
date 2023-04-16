@@ -6,10 +6,12 @@ $jsonData = file_get_contents('db/filmek.json');
 // JSON adatok átalakítása PHP tömbbe
 $data = json_decode($jsonData, true);
 
+// A youtube videók nem töltődtek be, csak ha a videók id-je külön, szétválasztva kerül be a videó linkjébe
 $link = $data['movies'][$valtozo]['trailerUrl'];
 $video = '<iframe width="813" height="508" src="https://www.youtube.com/embed/' . $link . ' " title="A film trailere" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 include_once('./includes/include.profilPicture.php');
 
+// Felhasználói adatok betöltése a felhasználónév alapján
 function load_user_data($username): ?array
 {
     $filename = './db/users.txt';

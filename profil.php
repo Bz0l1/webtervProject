@@ -5,6 +5,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
 include_once('./includes/include.profilPicture.php');
 
+
+// Felhasználói adatok betöltése a felhasználónév alapján
 function load_user_data($username)
 {
   $filename = './db/users.txt';
@@ -55,6 +57,7 @@ $email = $user_data[3];
   }
 
   include("./navbar.php");
+  // A felhasználó profilképének betöltése
   $profile_picture_path = get_profile_pictureProfil_path($username);
   ?>
 

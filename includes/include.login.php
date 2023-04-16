@@ -3,6 +3,7 @@ session_start();
 $error = "";
 $username = '';
 
+// Felhasználónév és jelszó megadása
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['uname']) && isset($_POST['loginPSW'])) {
         $username = $_POST['uname'];
@@ -20,6 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($username === $user_data[0] && password_verify($password, $user_data[2])) {
                 $user_found = true;
+
+                // Ha a felhasználó admin, a user hozzáférést kap az admin oldalhoz
+                // admin jelszava: 12345
                 if ($username === 'admin') {
                     $_SESSION["admin"] = true;
                 } else {
