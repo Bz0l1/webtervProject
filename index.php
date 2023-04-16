@@ -55,9 +55,6 @@ include("./navbar.php");
         <a href="secondpage.php?valtozo=1">
             <img src="<?php echo $data['movies'][1]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>
-        <a href="secondpage.php?valtozo=5">
-            <img src="<?php echo $data['movies'][5]['posterURL']; ?>" alt="poster" class="top-poster">
-        </a>
         <a href="secondpage.php?valtozo=4">
             <img src="<?php echo $data['movies'][4]['posterURL']; ?>" alt="poster" class="top-poster">
         </a>

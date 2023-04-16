@@ -88,16 +88,16 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Füles Jancsi",
-                    "comment": "Egynek elment.",
-                    "commentDate": "2023. március 14., 11:10"
+                    "profilePicture": "./img/profiles/z0l1.png",
+                    "name": "z0l1",
+                    "comment": "Egész jó",
+                    "commentDate": "2023-04-13 22:17"
                 },
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Kovács Attila",
+                    "profilePicture": "./img/profiles/lead.jpg",
+                    "name": "lead",
                     "comment": "Nem kiemelkedő de végig lehetett nézni.",
-                    "commentDate": "2023. március 15., 14:00"
+                    "commentDate": "2023-04-13 23:38"
                 }
             ]
         },
@@ -186,16 +186,16 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Nagy Aladár",
-                    "comment": "Legjobb!",
-                    "commentDate": "2023. március 19., 12:30"
+                    "profilePicture": "./img/profiles/lead.jpg",
+                    "name": "lead",
+                    "comment": "Alig várom az új évadot, nagyon jó!!!.",
+                    "commentDate": "2023-04-10 10:11"
                 },
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Lengyel Mátyás",
-                    "comment": "Alig várom az új évadot!!!",
-                    "commentDate": "2023. március 15., 01:10"
+                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "name": "z0l1",
+                    "comment": "NNagyon tetszett.",
+                    "commentDate": "2023-04-11 18:38"
                 }
             ]
         },
@@ -237,16 +237,16 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Kozma Bianka",
+                    "profilePicture": "./img/profiles/lead.jpg",
+                    "name": "lead",
                     "comment": "Hosszú idő óta végre egy film amiért érdemes moziba menni.",
-                    "commentDate": "2023. március 19., 12:15"
+                    "commentDate": "2023-03-18 12:15"
                 },
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Bakacsi Ferenc",
-                    "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film.",
-                    "commentDate": "2023. március 19., 03:30"
+                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "name": "z0l1",
+                    "comment": "Az akciójelenetek nagyon tetszettek, azokon kívül egy átlagos film..",
+                    "commentDate": "2023-04-19 03:29"
                 }
             ]
         },
@@ -291,44 +291,16 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Tóth Janka",
+                    "profilePicture": "./img/profiles/z0l1.jpg",
+                    "name": "z0l1",
                     "comment": "1 nap alatt végignéztem, jöhetne már a kövi évad...",
-                    "commentDate": "2023. március 22., 18:42"
+                    "commentDate": "2023-03-22 18:42"
                 },
                 {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "Magyar Márton",
+                    "profilePicture": "./img/profiles/lead.jpg",
+                    "name": "lead",
                     "comment": "A vége fele már unalmas lett, de azért jó volt.",
-                    "commentDate": "2023. március 17., 10:30"
-                }
-            ]
-        },
-        "": {
-            "comments": [
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "asd"
-                },
-                {
-                    "profilePicture": "./img/profiles/default.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 20:32"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:31"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.jpg",
-                    "name": "asd",
-                    "comment": "asd",
-                    "commentDate": "2023-04-13 21:31"
+                    "commentDate": "2023-03-27 10:11"
                 }
             ]
         },
@@ -420,22 +392,16 @@
             ],
             "comments": [
                 {
-                    "profilePicture": "./img/profiles/profilepicture.png",
-                    "name": "István",
+                    "profilePicture": "./img/profiles/z0l1.png",
+                    "name": "z0l1",
                     "comment": "Nagyszerű film, minden elismerésem a rendezőnek és a színészeknek!",
                     "commentDate": "2023-04-15 20:32"
                 },
                 {
-                    "profilePicture": "./img/profiles/profilepicture.png",
-                    "name": "Katalin",
+                    "profilePicture": "./img/profiles/lead.png",
+                    "name": "lead",
                     "comment": "Igazán izgalmas és érdekfeszítő, már alig várom a folytatást!",
                     "commentDate": "2023-04-15 21:47"
-                },
-                {
-                    "profilePicture": "./img/profiles/profilepicture.png",
-                    "name": "Ferenc",
-                    "comment": "Ez a legjobb Batman film, amit valaha láttam. Mindenkinek ajánlom!",
-                    "commentDate": "2023-04-15 23:05"
                 }
             ]
         },
@@ -476,7 +442,14 @@
                 "./img/elvis/Elvis4.jpg",
                 "./img/elvis/Elvis5.jpg"
             ],
-            "comments": []
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/lead.png",
+                    "name": "lead",
+                    "comment": "Nem mindennapi az egyszer biztos",
+                    "commentDate": "2023-04-18 21:47"
+                }
+            ]
         },
         "9": {
             "actors": [
@@ -516,7 +489,14 @@
                 "./img/andor/Andor4.jpg",
                 "./img/andor/Andor5.jpg"
             ],
-            "comments": []
+            "comments": [
+                {
+                    "profilePicture": "./img/profiles/lead.png",
+                    "name": "lead",
+                    "comment": "Remélem folytatják még mert nagyon komoly sori",
+                    "commentDate": "2023-04-16 21:47"
+                }
+            ]
         },
         "10": {
             "actors": [
@@ -597,16 +577,12 @@
                 "./img/peacemaker/peacemaker4.jpg",
                 "./img/peacemaker/peacemaker5.jpg"
             ],
-            "comments": []
-        },
-
-        "<?php echo $valtozo; ?>": {
             "comments": [
                 {
-                    "profilePicture": "../img/profiles/d.jpg",
-                    "name": "d",
-                    "comment": "g",
-                    "commentDate": "2023-04-13 22:08"
+                    "profilePicture": "./img/profiles/z0l1.png",
+                    "name": "z0l1",
+                    "comment": "Hát mit is mondak...",
+                    "commentDate": "2023-04-12 22:22"
                 }
             ]
         }

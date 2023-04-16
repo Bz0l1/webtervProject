@@ -1,2 +1,3 @@
 admin;FilmVerzum admin;$2y$10$wsgkB4Q9DhySNrPR9cFGa.n4zXt8NIcyVmDjmjN.EZddNzGlZ/pm6;admin@filmverzum.gg
-z0l10;new_valu1e;$2y$10$D0UGGi/1RQtOh0eUSnin7ucK3f8EFiHFixgWveIDPzRen.P1TRplm;banicz33@gmail.com
+z0l1;Banicz Zoltán;$2y$10$PrXHBoCF6Qz0mpLdXIa4.OJGLetm4ZOqL1a/d4T4P1OeZoQ2YBPRq;banicz33@gmail.com
+lead;Lenart Adam;$2y$10$91uIXLa1L2DuWB1byGomkupP0weyK8Xa7kvMrWuSYyr9NyuBmoSwK;adamlenart@gmail.com
